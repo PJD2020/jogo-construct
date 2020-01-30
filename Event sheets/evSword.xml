@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evSword</name>
+    <events>
+        <event-block sid="144978657156361">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="620867522350056" type="Sword">
+                    <param id="0" name="Object">SpawnGoblin</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="370190741323602" type="System">
+                    <param id="0" name="Variable">atacking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="511762363600164" type="SpawnGoblin" />
+            </actions>
+        </event-block>
+        <event-block sid="670377811019826">
+            <conditions>
+                <condition id="-11" name="For Each" sid="830651770548972" type="System">
+                    <param id="0" name="Object">Goblin</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="328553416155320">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="216215245135232" type="Sword">
+                            <param id="0" name="Object">Goblin</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="773422363890038" type="System">
+                            <param id="0" name="Variable">atacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="329883398358718" type="Goblin" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

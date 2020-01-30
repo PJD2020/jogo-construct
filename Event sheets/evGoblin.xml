@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evGoblin</name>
+    <events>
+        <event-block sid="216470711055728">
+            <conditions>
+                <condition id="-11" name="For Each" sid="527213107261278" type="System">
+                    <param id="0" name="Object">Goblin</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="259107891002489">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="861161820806182" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="937865830298122" type="Goblin">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="754898598009822">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="753724415883912" type="Goblin" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="554368609983484" type="Goblin" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
