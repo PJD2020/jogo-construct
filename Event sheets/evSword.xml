@@ -8,8 +8,8 @@
                 <condition id="1" name="Is overlapping another object" sid="620867522350056" type="Sword">
                     <param id="0" name="Object">SpawnGoblin</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="370190741323602" type="System">
-                    <param id="0" name="Variable">atacking</param>
+                <condition id="-7" name="Compare instance variable" sid="370190741323602" type="Player">
+                    <param id="0" name="Instance variable">attacking</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -31,8 +31,8 @@
                         <condition id="1" name="Is overlapping another object" sid="216215245135232" type="Sword">
                             <param id="0" name="Object">Goblin</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="773422363890038" type="System">
-                            <param id="0" name="Variable">atacking</param>
+                        <condition id="-7" name="Compare instance variable" sid="302327984735065" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>

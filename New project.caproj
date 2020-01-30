@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1idpstlps3dhu</unique-id>
-    <saved-with-version>24400</saved-with-version>
+    <saved-with-version>27200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -62,6 +62,10 @@
         </object-type>
         <object-type name="Player" sid="333708097526333">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="right" sid="842004979723208" type="number" />
+                <instance-variable name="attacking" sid="762280591198661" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="783970744914982">
                     <behavior id="Platform" />
@@ -128,6 +132,9 @@
         </object-type>
         <object-type name="Goblin" sid="696570153455874">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="right" sid="676950742090516" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="319274503507632">
                     <behavior id="Platform" />

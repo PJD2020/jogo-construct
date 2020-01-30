@@ -3,18 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evGoblin</name>
     <events>
-        <event-block sid="216470711055728">
+        <event-block sid="259107891002489">
             <conditions>
-                <condition id="-11" name="For Each" sid="527213107261278" type="System">
-                    <param id="0" name="Object">Goblin</param>
+                <condition id="-6" name="Every X seconds" sid="861161820806182" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
                 </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="259107891002489">
+                <event-block sid="216470711055728">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="861161820806182" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
+                        <condition id="-11" name="For Each" sid="527213107261278" type="System">
+                            <param id="0" name="Object">Goblin</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -23,16 +23,42 @@
                             <param id="1" name="Y">Player.Y</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="754898598009822">
-                    <conditions>
-                        <condition behavior="Pathfinding" id="0" name="On path found" sid="753724415883912" type="Goblin" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Pathfinding" id="1" name="Move along path" sid="554368609983484" type="Goblin" />
-                    </actions>
+                    <sub-events>
+                        <event-block sid="178002399835588">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="158397784514809" type="Goblin">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Player.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="290952597054960" type="Goblin">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="231418553873658">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="970096041896118" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="204224056719615" type="Goblin">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="754898598009822">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="753724415883912" type="Goblin" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="554368609983484" type="Goblin" />
+            </actions>
+        </event-block>
+        <comment>Falta colocar a condição de quando o mostro vai para a esqurerda ou direita, ele vira</comment>
     </events>
 </c2eventsheet>
