@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1580443689,
+	"version": 1580444910,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -11,8 +11,8 @@
 		"images/spawngoblin-sheet0.png",
 		"images/goblin-sheet0.png",
 		"images/background-sheet0.png",
-		"images/button_new_game.png",
-		"images/bg_new_game.png",
+		"images/newgamebutton.png",
+		"images/newgamebackground.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
