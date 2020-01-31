@@ -98,7 +98,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="510724503721695" speed="5">
-                    <frame duration="1" hotspotX="0.448276" hotspotY="0.690217" />
+                    <frame duration="1" hotspotX="0.41358" hotspotY="0.775316" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\Weapons\espada.png">
+                        <collision-poly>
+                            <point x="0.314815" y="0.128165" />
+                            <point x="0.530864" y="0.0490506" />
+                            <point x="0.685185" y="0.143987" />
+                            <point x="0.808642" y="0.531646" />
+                            <point x="0.623457" y="0.903481" />
+                            <point x="0.530864" y="0.982595" />
+                            <point x="0.438272" y="0.903481" />
+                            <point x="0.314815" y="0.531646" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

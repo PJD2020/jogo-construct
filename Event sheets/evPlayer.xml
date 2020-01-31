@@ -70,6 +70,9 @@
                 <action id="7" name="Set mirrored" sid="448602033367117" type="Player">
                     <param id="0" name="State">1</param>
                 </action>
+                <action id="7" name="Set mirrored" sid="242049536279689" type="Sword">
+                    <param id="0" name="State">1</param>
+                </action>
                 <action id="-8" name="Set angle" sid="293489738476956" type="Sword">
                     <param id="0" name="Angle">45</param>
                 </action>
@@ -86,6 +89,9 @@
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="628775092312759" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="886029117044667" type="Sword">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-8" name="Set angle" sid="818545187901176" type="Sword">
