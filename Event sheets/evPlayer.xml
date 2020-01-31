@@ -3,8 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evPlayer</name>
     <events>
-        <variable constant="0" name="toRight" sid="828343487029679" static="0" type="number">1</variable>
-        <variable constant="0" name="atacking" sid="350337218873880" static="0" type="number">0</variable>
         <event-block sid="398100477638952">
             <conditions>
                 <condition id="0" name="On key pressed" sid="364098884773604" type="Keyboard">
@@ -132,6 +130,18 @@
                     <param id="0" name="Instance variable">attacking</param>
                     <param id="1" name="Value">0</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="814488796276628">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="566137105869117" type="Player">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="450650065719779" type="Player" />
             </actions>
         </event-block>
     </events>

@@ -18,6 +18,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -69,6 +70,7 @@
             <instance-variables>
                 <instance-variable name="right" sid="842004979723208" type="number" />
                 <instance-variable name="attacking" sid="762280591198661" type="number" />
+                <instance-variable name="hp" sid="812454145426413" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="783970744914982">
@@ -138,6 +140,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="right" sid="676950742090516" type="number" />
+                <instance-variable name="hp" sid="827484124572619" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="319274503507632">
@@ -148,6 +151,9 @@
                 </behavior-type>
                 <behavior-type name="Pathfinding" sid="948390355802147">
                     <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="526189216839337">
+                    <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
