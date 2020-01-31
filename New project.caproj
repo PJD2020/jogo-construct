@@ -197,8 +197,8 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Main.xml</layout>
         <layout>MainMenu.xml</layout>
+        <layout>Main.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>evMain.xml</event-sheet>
