@@ -10,12 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Main</layout>
-        <event-sheet order="1">evMain</event-sheet>
-        <event-sheet order="2">evPlayer</event-sheet>
-        <event-sheet order="3">evSword</event-sheet>
-        <event-sheet order="4">evSpawnGoblin</event-sheet>
-        <event-sheet active="1" order="5">evGoblin</event-sheet>
+        <layout order="0">MainMenu</layout>
+        <event-sheet active="1" order="1">evMainMenu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -37,5 +33,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sword/" />
         <folder expanded="1" path="animation-folder/SpawnGoblin/" />
         <folder expanded="1" path="animation-folder/Goblin/" />
+        <folder expanded="1" path="animation-folder/Background/" />
     </folders-expanded>
 </c2uistate>
