@@ -11,7 +11,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="975094549889844" type="NewGameBG">
+                <action id="-15" name="Set visible" sid="975094549889844" type="NewGameBackground">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
@@ -21,7 +21,7 @@
                 <condition id="-22" name="Else" sid="851857248649173" type="System" />
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="845963230893247" type="NewGameBG">
+                <action id="-15" name="Set visible" sid="845963230893247" type="NewGameBackground">
                     <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
@@ -33,7 +33,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="799057810883369" type="QuitBG">
+                <action id="-15" name="Set visible" sid="799057810883369" type="QuitBackground">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
@@ -43,7 +43,7 @@
                 <condition id="-22" name="Else" sid="966433923611934" type="System" />
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="942727145585138" type="QuitBG">
+                <action id="-15" name="Set visible" sid="942727145585138" type="QuitBackground">
                     <param id="0" name="Visibility">0</param>
                 </action>
             </actions>

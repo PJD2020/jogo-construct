@@ -182,14 +182,14 @@
             <plugin id="Spritefont2" />
             <texture original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\SpriteFont-white.png" />
         </object-type>
-        <object-type name="NewGameBG" sid="281851262029964">
+        <object-type name="NewGameBackground" sid="281851262029964">
             <plugin id="TiledBg" />
             <texture />
         </object-type>
         <object-type name="Mouse" sid="868772022593132">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="QuitBG" sid="988009148975276">
+        <object-type name="QuitBackground" sid="988009148975276">
             <plugin id="TiledBg" />
             <texture />
         </object-type>
