@@ -52,19 +52,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Block" sid="346334359676584">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="932900269011979">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677391638082592" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Player" sid="333708097526333">
             <plugin id="Sprite" />
             <instance-variables>
@@ -199,6 +186,27 @@
         <object-type name="QuitBackground" sid="988009148975276">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="Level" sid="945919070150982">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869499258322055" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\nivel_teste.jpeg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformCollider" sid="338091686563256">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="824454140903995">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109165501226714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
