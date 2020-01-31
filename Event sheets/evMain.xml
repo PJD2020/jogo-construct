@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evMain</name>
     <events>
+        <include>evHUD</include>
         <include>evGoblin</include>
         <include>evSpawnGoblin</include>
         <include>evSword</include>

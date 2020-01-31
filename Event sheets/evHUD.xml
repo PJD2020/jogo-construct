@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evHUD</name>
+    <events>
+        <event-block sid="789338390305052">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="590443469483625" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="415522322883898" type="HealthBar">
+                    <param id="0" name="Width">(128 / 100) * Player.hp</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
