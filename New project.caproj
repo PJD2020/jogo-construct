@@ -65,9 +65,6 @@
                 <behavior-type name="ScrollTo" sid="485977731619673">
                     <behavior id="scrollto" />
                 </behavior-type>
-                <behavior-type name="Solid" sid="114078666972718">
-                    <behavior id="solid" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869274521637166" speed="5">
@@ -153,18 +150,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108711361465092" speed="5">
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.538462" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\Monstro1\Monstro1_0.png">
-                        <collision-poly>
-                            <point x="0.153846" y="0.153846" />
-                            <point x="0.461538" y="0.0769231" />
-                            <point x="0.846154" y="0.153846" />
-                            <point x="1" y="0.461538" />
-                            <point x="0.846154" y="0.846154" />
-                            <point x="0.461538" y="1" />
-                            <point x="0.153846" y="0.846154" />
-                            <point x="0.0769231" y="0.461538" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.538462" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\Monstro1\Monstro1_0.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -238,6 +224,22 @@
                             <point x="0.133333" y="0.461538" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Vignetting" sid="107746848108445">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623698202184791" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\HUD\vignetting.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JumpWaypoints" sid="723419573870152">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435820986525245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

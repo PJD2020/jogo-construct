@@ -32,7 +32,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="7" name="Set mirrored" sid="290952597054960" type="Goblin">
+                                <action disabled="1" id="7" name="Set mirrored" sid="290952597054960" type="Goblin">
                                     <param id="0" name="State">1</param>
                                 </action>
                             </actions>
@@ -42,7 +42,7 @@
                                 <condition id="-22" name="Else" sid="970096041896118" type="System" />
                             </conditions>
                             <actions>
-                                <action id="7" name="Set mirrored" sid="204224056719615" type="Goblin">
+                                <action disabled="1" id="7" name="Set mirrored" sid="204224056719615" type="Goblin">
                                     <param id="0" name="State">0</param>
                                 </action>
                             </actions>
@@ -69,7 +69,7 @@
                 <condition behavior="Pathfinding" id="0" name="On path found" sid="753724415883912" type="Goblin" />
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="554368609983484" type="Goblin" />
+                <action behavior="Pathfinding" disabled="1" id="1" name="Move along path" sid="554368609983484" type="Goblin" />
             </actions>
         </event-block>
         <event-block sid="154792004063354">
@@ -96,6 +96,66 @@
                     <param id="1" name="Value">Player.hp - 1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-group description="" sid="331376121621298" title="Movement">
+            <sub-events>
+                <event-block sid="528536423610879">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="991323113508001" type="Goblin">
+                            <param id="0" name="Object">JumpWaypoints</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="230649259974296" type="Goblin">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">Player.Y + 50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="536799834708223" type="Goblin">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="318962989632332">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="539078319512551" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="251569312343024">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="958270079467226" type="Goblin">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">Player.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="221708752328727" type="Goblin">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="962400422676231" type="Goblin">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="563772531395344">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="565416554492477" type="Goblin">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">Player.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="936436169237783" type="Goblin">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="569470289978156" type="Goblin">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

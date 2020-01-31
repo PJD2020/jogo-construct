@@ -168,15 +168,5 @@
             </actions>
         </event-block>
         <event-group description="" sid="857928062605505" title="Health" />
-        <event-block sid="782756833524145">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="508040184704085" type="System" />
-            </conditions>
-            <actions>
-                <action id="-5" name="Set width" sid="511130754797690" type="HealthBar">
-                    <param id="0" name="Width">(128 / Player.hp) * 100</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
