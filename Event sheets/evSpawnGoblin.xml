@@ -15,6 +15,18 @@
                     <param id="1" name="Layer">&quot;Main&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                 </action>
+                <action id="-27" name="Set effect enabled" sid="648361729051500" type="Goblin">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="420337611951411" type="Goblin">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="123770978430319" type="Goblin">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="169916031256694">
@@ -38,6 +50,18 @@
                     <param id="0" name="Object">Goblin</param>
                     <param id="1" name="Layer">&quot;Main&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="336837443859700" type="Goblin">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="249220873546299" type="Goblin">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="643231628073040" type="Goblin">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
                 </action>
             </actions>
         </event-block>

@@ -23,7 +23,11 @@
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="brightness">Brightness</effect>
+        <effect author="Scirra" id="gamma">Gamma</effect>
+        <effect author="Scirra" id="tint">Tint</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -85,6 +89,16 @@
                     </frame>
                     <frame duration="3" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g21.png">
                         <image-point name="hand" x="0.874603" y="0.625" />
+                        <collision-poly>
+                            <point x="0.221116" y="0.131829" />
+                            <point x="0.5" y="0.0249406" />
+                            <point x="0.719123" y="0.167458" />
+                            <point x="0.778884" y="0.5" />
+                            <point x="0.830678" y="0.991686" />
+                            <point x="0.599602" y="0.992874" />
+                            <point x="0.199203" y="0.985748" />
+                            <point x="0.201195" y="0.5" />
+                        </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="775182438214016" speed="5">
@@ -168,6 +182,17 @@
                     <behavior id="destroy" />
                 </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+                <effect-type name="Gamma">
+                    <effect id="gamma" />
+                </effect-type>
+                <effect-type name="Brightness">
+                    <effect id="brightness" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108711361465092" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.497831" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Creatures\m5.png">

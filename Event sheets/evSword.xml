@@ -33,14 +33,68 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="329883398358718" type="Goblin">
                                     <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">Goblin.hp - 50</param>
+                                    <param id="1" name="Value">Goblin.hp - 20</param>
                                 </action>
                                 <action id="0" name="Spawn another object" sid="861958453040867" type="Goblin">
                                     <param id="0" name="Object">GoblinBlood</param>
                                     <param id="1" name="Layer">&quot;Main&quot;</param>
                                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                                 </action>
+                                <action id="-27" name="Set effect enabled" sid="636683968422896" type="Goblin">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="681325827610562" type="Goblin">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="250495248143471" type="Goblin">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="142763484283433">
+                                    <conditions>
+                                        <condition id="7" name="Is mirrored" sid="427519981326731" type="Player" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-17" name="Move forward" sid="538377853017328" type="Goblin">
+                                            <param id="0" name="Distance">-50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="986455847678649">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="861454926115310" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-17" name="Move forward" sid="496162083273259" type="Goblin">
+                                            <param id="0" name="Distance">50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="728817684248969">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="820405031588941" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="821737931667823" type="Goblin">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="946937309711940" type="Goblin">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="624323892921707" type="Goblin">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>

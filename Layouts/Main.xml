@@ -179,11 +179,30 @@
                         </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>2.55</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>.5</gamma>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Brightness">
+                            <parameters>
+                                <brightness>1.1</brightness>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>411.785980225</x>
-                        <y>2773.846923828</y>
+                        <x>330.958099365</x>
+                        <y>2868.87890625</y>
                         <z>0</z>
                         <width>30.061855316</width>
                         <height>29.417133331</height>
