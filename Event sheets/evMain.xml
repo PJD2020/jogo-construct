@@ -19,7 +19,7 @@
                     <param id="2" name="Image point">&quot;hand&quot;</param>
                 </action>
                 <action id="-8" name="Set angle" sid="366004862526426" type="Sword">
-                    <param id="0" name="Angle">45</param>
+                    <param id="0" name="Angle">20</param>
                 </action>
             </actions>
         </event-block>

@@ -74,7 +74,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-8" name="Set angle" sid="293489738476956" type="Sword">
-                    <param id="0" name="Angle">45</param>
+                    <param id="0" name="Angle">20</param>
                 </action>
                 <action id="4" name="Set animation" sid="571614568608017" type="Sword">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -99,7 +99,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-8" name="Set angle" sid="818545187901176" type="Sword">
-                    <param id="0" name="Angle">315</param>
+                    <param id="0" name="Angle">340</param>
                 </action>
                 <action id="4" name="Set animation" sid="142499348976230" type="Sword">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
