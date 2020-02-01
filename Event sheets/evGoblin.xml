@@ -6,7 +6,7 @@
         <event-block sid="259107891002489">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="861161820806182" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                    <param id="0" name="Interval (seconds)">0.2</param>
                 </condition>
             </conditions>
             <actions />
@@ -19,29 +19,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="178002399835588">
-                            <conditions>
-                                <condition id="-1" name="Compare X" sid="158397784514809" type="Goblin">
-                                    <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="X co-ordinate">Player.X</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="7" name="Set mirrored" sid="290952597054960" type="Goblin">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="231418553873658">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="970096041896118" type="System" />
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="7" name="Set mirrored" sid="204224056719615" type="Goblin">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="705033956378990">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="495936845181429" type="Goblin">
@@ -56,7 +33,7 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="612055481672556" type="Player">
                                     <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">clamp(Player.hp - 10, 0, 100)</param>
+                                    <param id="1" name="Value">clamp(Player.hp - 2, 0, 100)</param>
                                 </action>
                                 <action id="0" name="Spawn another object" sid="364897045076719" type="Player">
                                     <param id="0" name="Object">PlayerBlood</param>
