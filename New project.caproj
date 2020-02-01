@@ -126,12 +126,27 @@
                 </animation>
                 <animation framecount="1" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="179072939950367" speed="5">
                     <frame duration="1" hotspotX="0.530159" hotspotY="0.528889" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g14.png">
+                        <image-point name="hand" x="0.874603" y="0.664444" />
                         <collision-poly>
                             <point x="0.177778" y="0" />
                             <point x="0.793651" y="0" />
                             <point x="0.793651" y="0.977778" />
                             <point x="0.177778" y="0.977778" />
                         </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="883856016570148" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g24.png">
+                        <image-point name="hand" x="0.633333" y="0.625" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g23.png">
+                        <image-point name="hand" x="0.804762" y="0.613636" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="hand" x="0.646032" y="0.625" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g25.png">
+                        <image-point name="hand" x="0.646032" y="0.706818" />
                     </frame>
                 </animation>
             </animation-folder>

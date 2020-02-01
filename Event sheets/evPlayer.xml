@@ -341,16 +341,35 @@
                                                 </action>
                                             </actions>
                                         </event-block>
-                                        <event-block sid="341454193684156">
+                                        <event-block sid="331046792847018">
                                             <conditions>
-                                                <condition id="-22" name="Else" sid="689558765179448" type="System" />
+                                                <condition id="-22" name="Else" sid="701696486746599" type="System" />
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="396074852880806" type="Player">
-                                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="759006821378742">
+                                                    <conditions>
+                                                        <condition behavior="Platform" id="0" name="Is moving" sid="952926814704602" type="Player" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="287218777542600" type="Player">
+                                                            <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="341454193684156">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="689558765179448" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="396074852880806" type="Player">
+                                                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
