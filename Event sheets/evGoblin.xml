@@ -52,6 +52,11 @@
                                 <condition id="1" name="Is overlapping another object" sid="495936845181429" type="Goblin">
                                     <param id="0" name="Object">Player</param>
                                 </condition>
+                                <condition id="-7" name="Compare instance variable" sid="231381151920131" type="Player">
+                                    <param id="0" name="Instance variable">isDead</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="612055481672556" type="Player">

@@ -58,6 +58,7 @@
                 <instance-variable name="right" sid="842004979723208" type="number" />
                 <instance-variable name="attacking" sid="762280591198661" type="number" />
                 <instance-variable name="hp" sid="812454145426413" type="number" />
+                <instance-variable name="isDead" sid="363719185728352" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="783970744914982">
@@ -81,6 +82,9 @@
                             <point x="0" y="0.588068" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="775182438214016" speed="5">
+                    <frame duration="1" hotspotX="0.507763" hotspotY="0.28866" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g19.png" />
                 </animation>
             </animation-folder>
         </object-type>

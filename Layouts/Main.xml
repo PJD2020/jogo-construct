@@ -112,6 +112,7 @@
                         <right>1</right>
                         <attacking>0</attacking>
                         <hp>100</hp>
+                        <isDead>0</isDead>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -392,7 +393,7 @@
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
                                 <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
+                                <gravity>300</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
                                 <jump-sustain>0</jump-sustain>
@@ -448,7 +449,7 @@
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
                                 <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
+                                <gravity>300</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
                                 <jump-sustain>0</jump-sustain>
