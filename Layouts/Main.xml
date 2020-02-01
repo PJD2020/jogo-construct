@@ -114,6 +114,7 @@
                         <hp>100</hp>
                         <isDead>0</isDead>
                         <left>0</left>
+                        <animation>&quot;idle&quot;</animation>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

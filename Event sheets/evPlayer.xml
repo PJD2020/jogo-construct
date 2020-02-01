@@ -271,27 +271,92 @@
         <event-group description="" sid="857928062605505" title="Health" />
         <event-group description="" sid="134686197468131" title="Animator">
             <sub-events>
-                <event-block sid="413659450979649">
+                <event-block sid="764519017341604">
                     <conditions>
-                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="544823859906120" type="Player" />
-                        <condition id="-7" name="Compare instance variable" sid="775254099319725" type="Player">
-                            <param id="0" name="Instance variable">isDead</param>
+                        <condition id="-7" name="Compare instance variable" sid="567405120970773" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="135427826686479" type="Player">
-                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                        <action id="4" name="Set animation" sid="978479407515691" type="Player">
+                            <param id="0" name="Animation">&quot;Attacking&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="611328592727348">
+                <event-block sid="899459009403542">
                     <conditions>
-                        <condition id="-22" name="Else" sid="122090732177793" type="System" />
+                        <condition id="-22" name="Else" sid="168355928404915" type="System" />
                     </conditions>
                     <actions />
+                    <sub-events>
+                        <event-block sid="689372012549097">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="974395263475405" type="Player">
+                                    <param id="0" name="Instance variable">isDead</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="156177018570009" type="Player">
+                                    <param id="0" name="Animation">&quot;Dead&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="566068976609304">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="465677642332147" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="841251703326116">
+                                    <conditions>
+                                        <condition behavior="Platform" id="3" name="Is jumping" sid="299287603964612" type="Player" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="533983026903372" type="Player">
+                                            <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="738447236276264">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="551626709786894" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="820064702315175">
+                                            <conditions>
+                                                <condition behavior="Platform" id="4" name="Is falling" sid="970797726033735" type="Player" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="531933144757276" type="Player">
+                                                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="341454193684156">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="689558765179448" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="396074852880806" type="Player">
+                                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

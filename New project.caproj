@@ -65,6 +65,7 @@
                 <instance-variable name="hp" sid="812454145426413" type="number" />
                 <instance-variable name="isDead" sid="363719185728352" type="number" />
                 <instance-variable name="left" sid="932075725334914" type="number" />
+                <instance-variable name="animation" sid="211066826709177" type="string" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="783970744914982">
@@ -80,20 +81,16 @@
             <animation-folder>
                 <animation framecount="2" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="869274521637166" speed="5">
                     <frame duration="3" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g20.png">
-                        <image-point name="hand" x="0.874603" y="0.623864" />
+                        <image-point name="hand" x="0.788889" y="0.611364" />
                         <collision-poly>
-                            <point x="0.221116" y="0.131829" />
-                            <point x="0.5" y="0.0249406" />
-                            <point x="0.719123" y="0.167458" />
-                            <point x="0.778884" y="0.5" />
-                            <point x="0.830678" y="0.991686" />
-                            <point x="0.599602" y="0.992874" />
-                            <point x="0.199203" y="0.985748" />
-                            <point x="0.201195" y="0.5" />
+                            <point x="0.177778" y="0" />
+                            <point x="0.733333" y="0" />
+                            <point x="0.733333" y="1" />
+                            <point x="0.177778" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="3" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g21.png">
-                        <image-point name="hand" x="0.874603" y="0.625" />
+                        <image-point name="hand" x="0.792063" y="0.6125" />
                         <collision-poly>
                             <point x="0.221116" y="0.131829" />
                             <point x="0.5" y="0.0249406" />
@@ -109,14 +106,31 @@
                 <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="775182438214016" speed="5">
                     <frame duration="1" hotspotX="0.494439" hotspotY="0.0849515" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g19.png">
                         <collision-poly>
-                            <point x="0.136502" y="0.0728155" />
-                            <point x="0.412538" y="0.065534" />
-                            <point x="0.710819" y="0.0776699" />
-                            <point x="0.991911" y="0.325243" />
-                            <point x="0.9727" y="0.648058" />
-                            <point x="0.424671" y="0.76699" />
-                            <point x="0.144591" y="0.783981" />
-                            <point x="0" y="0.480583" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.495145" />
+                            <point x="0" y="0.466019" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Attacking" pingpong="0" repeatcount="1" repeatto="0" sid="221882078521049" speed="5">
+                    <frame duration="1" hotspotX="0.531746" hotspotY="0.542045" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g22.png">
+                        <image-point name="hand" x="0.857143" y="0.620455" />
+                        <collision-poly>
+                            <point x="0.184127" y="0" />
+                            <point x="0.733333" y="0" />
+                            <point x="0.733333" y="1" />
+                            <point x="0.177778" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="179072939950367" speed="5">
+                    <frame duration="1" hotspotX="0.530159" hotspotY="0.528889" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g14.png">
+                        <collision-poly>
+                            <point x="0.177778" y="0" />
+                            <point x="0.793651" y="0" />
+                            <point x="0.793651" y="0.977778" />
+                            <point x="0.177778" y="0.977778" />
                         </collision-poly>
                     </frame>
                 </animation>
