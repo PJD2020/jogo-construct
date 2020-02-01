@@ -52,28 +52,17 @@
                                     <param id="0" name="Mode">1</param>
                                     <param id="1" name="Effect">&quot;Brightness&quot;</param>
                                 </action>
+                                <action id="-13" name="Set boolean" sid="141650638425923" type="Goblin">
+                                    <param id="0" name="Instance variable">isKnockedBack</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="740881258581485" type="Goblin">
+                                    <param id="0" name="Duration">0.1</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;knockbackDuration&quot;</param>
+                                </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="142763484283433">
-                                    <conditions>
-                                        <condition id="7" name="Is mirrored" sid="427519981326731" type="Player" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-17" name="Move forward" sid="538377853017328" type="Goblin">
-                                            <param id="0" name="Distance">-50</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="986455847678649">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="861454926115310" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-17" name="Move forward" sid="496162083273259" type="Goblin">
-                                            <param id="0" name="Distance">50</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                                 <event-block sid="728817684248969">
                                     <conditions />
                                     <actions>
@@ -99,6 +88,49 @@
                     </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="377420651385880">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="557625423773766" type="Goblin">
+                    <param id="0" name="Instance variable">isKnockedBack</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="142763484283433">
+                    <conditions>
+                        <condition id="7" name="Is mirrored" sid="427519981326731" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="538377853017328" type="Goblin">
+                            <param id="0" name="Distance">-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="986455847678649">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="861454926115310" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="496162083273259" type="Goblin">
+                            <param id="0" name="Distance">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="791639458643012">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="797658235047230" type="Goblin">
+                    <param id="0" name="Tag">&quot;knockbackDuration&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="605987976313256" type="Goblin">
+                    <param id="0" name="Instance variable">isKnockedBack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="518590519625449">
             <conditions>

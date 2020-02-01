@@ -19,6 +19,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -70,6 +71,9 @@
                 </behavior-type>
                 <behavior-type name="ScrollTo" sid="485977731619673">
                     <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="636147664337128">
+                    <behavior id="Timer" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -173,6 +177,7 @@
             <instance-variables>
                 <instance-variable name="right" sid="676950742090516" type="number" />
                 <instance-variable name="hp" sid="827484124572619" type="number" />
+                <instance-variable name="isKnockedBack" sid="404411093244943" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="319274503507632">
@@ -180,6 +185,9 @@
                 </behavior-type>
                 <behavior-type name="DestroyOutsideLayout" sid="897155834749387">
                     <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="972486877522936">
+                    <behavior id="Timer" />
                 </behavior-type>
             </behaviors>
             <effects>
