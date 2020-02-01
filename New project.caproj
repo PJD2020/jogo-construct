@@ -301,6 +301,10 @@
             </behaviors>
             <texture />
         </object-type>
+        <object-type name="GameOverScreen" sid="314857449887943">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\NewGameButton.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

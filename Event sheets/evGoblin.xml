@@ -56,7 +56,7 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="612055481672556" type="Player">
                                     <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">Player.hp - 10</param>
+                                    <param id="1" name="Value">clamp(Player.hp - 10, 0, 100)</param>
                                 </action>
                                 <action id="0" name="Spawn another object" sid="364897045076719" type="Player">
                                     <param id="0" name="Object">PlayerBlood</param>
