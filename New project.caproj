@@ -219,7 +219,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869499258322055" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\nivel_teste.jpeg" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\mapa.png" />
                 </animation>
             </animation-folder>
         </object-type>
