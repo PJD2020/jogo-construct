@@ -266,6 +266,18 @@
             </behaviors>
             <texture />
         </object-type>
+        <object-type name="PlayerBlood" sid="487186976012831">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="476364004585579">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="186430960542543">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

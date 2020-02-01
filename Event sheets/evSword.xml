@@ -35,6 +35,11 @@
                                     <param id="0" name="Instance variable">hp</param>
                                     <param id="1" name="Value">Goblin.hp - 50</param>
                                 </action>
+                                <action id="0" name="Spawn another object" sid="861958453040867" type="Goblin">
+                                    <param id="0" name="Object">GoblinBlood</param>
+                                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                                    <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>

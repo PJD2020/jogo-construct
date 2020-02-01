@@ -58,6 +58,11 @@
                                     <param id="0" name="Instance variable">hp</param>
                                     <param id="1" name="Value">Player.hp - 10</param>
                                 </action>
+                                <action id="0" name="Spawn another object" sid="364897045076719" type="Player">
+                                    <param id="0" name="Object">PlayerBlood</param>
+                                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                                    <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -80,14 +85,31 @@
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="874664421684352" type="Goblin" />
-                <action id="0" name="Spawn another object" sid="714238108221010" type="Goblin">
-                    <param id="0" name="Object">GoblinBlood</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
-                    <param id="2" name="Image point">&quot;Origin&quot;</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="273990659021137">
+                    <conditions>
+                        <condition id="-10" name="For" sid="177469624763510" type="System">
+                            <param id="0" name="Name">&quot;GoblinDead&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="438959587202151" type="Goblin">
+                            <param id="0" name="Object">GoblinBlood</param>
+                            <param id="1" name="Layer">&quot;Main&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="406645781376654">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Destroy" sid="874664421684352" type="Goblin" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="" sid="331376121621298" title="Movement">
             <sub-events>

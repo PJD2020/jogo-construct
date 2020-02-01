@@ -13,10 +13,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Main</layout>
         <layout order="6">MainMenu</layout>
         <event-sheet order="1">evGoblin</event-sheet>
-        <event-sheet order="2">evPlayer</event-sheet>
+        <event-sheet active="1" order="2">evPlayer</event-sheet>
         <event-sheet order="3">evHUD</event-sheet>
-        <event-sheet active="1" order="4">evSpawnGoblin</event-sheet>
+        <event-sheet order="4">evSpawnGoblin</event-sheet>
         <event-sheet order="5">evMain</event-sheet>
+        <event-sheet order="7">evSword</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
