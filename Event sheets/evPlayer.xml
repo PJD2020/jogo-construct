@@ -199,6 +199,9 @@
                                     <param id="0" name="Instance variable">isDead</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="341162410366767" type="GameOverScreen">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="556603671385022">
