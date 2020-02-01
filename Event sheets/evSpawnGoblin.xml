@@ -27,6 +27,9 @@
                     <param id="0" name="Mode">0</param>
                     <param id="1" name="Effect">&quot;Brightness&quot;</param>
                 </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="360391206664796" type="Goblin">
+                    <param id="0" name="Max Speed">self.Platform.MaxSpeed + random(-20, 20)</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="169916031256694">
