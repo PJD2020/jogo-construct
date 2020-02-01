@@ -135,6 +135,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -161,6 +162,7 @@
                     <instance-variables>
                         <right>1</right>
                         <hp>100</hp>
+                        <isKnockedBack>false</isKnockedBack>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -178,6 +180,7 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Timer" />
                     </behavior-instances>
                     <effect-instances>
                         <effect-instance type="Tint">
