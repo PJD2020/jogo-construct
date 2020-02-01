@@ -212,7 +212,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573801511842987" speed="5">
-                    <frame duration="1" hotspotX="0.484375" hotspotY="0.640625" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\CasaMonstro1\CasaMonstro1_0.png">
+                    <frame duration="1" hotspotX="0.484761" hotspotY="0.640852" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\casulo2.png">
                         <collision-poly>
                             <point x="0.171875" y="0.171875" />
                             <point x="0.5" y="0" />
@@ -267,6 +267,17 @@
                             <point x="0.5" y="0.998915" />
                             <point x="0.0524691" y="0.944685" />
                             <point x="0.0936214" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="106137065219965" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Goblin\Default\000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500518" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Goblin\m12.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -439,79 +450,8 @@
                 <instance-variable name="hp" sid="733583685468780" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774504334550956" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\CasaMonstro2\CasaMonstro2_0.png">
-                        <collision-poly>
-                            <point x="0.203125" y="0.22807" />
-                            <point x="0.5" y="0.0175439" />
-                            <point x="0.8125" y="0.210526" />
-                            <point x="0.9375" y="0.491228" />
-                            <point x="0.84375" y="0.824561" />
-                            <point x="0.5" y="0.789474" />
-                            <point x="0.328125" y="0.631579" />
-                            <point x="0.15625" y="0.491228" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\CasaMonstro2\CasaMonstro2_1.png">
-                        <collision-poly>
-                            <point x="0.203125" y="0.22807" />
-                            <point x="0.5" y="0.0175439" />
-                            <point x="0.8125" y="0.210526" />
-                            <point x="0.9375" y="0.491228" />
-                            <point x="0.84375" y="0.824561" />
-                            <point x="0.5" y="0.789474" />
-                            <point x="0.328125" y="0.631579" />
-                            <point x="0.15625" y="0.491228" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\CasaMonstro2\CasaMonstro2_2.png">
-                        <collision-poly>
-                            <point x="0.203125" y="0.22807" />
-                            <point x="0.5" y="0.0175439" />
-                            <point x="0.8125" y="0.210526" />
-                            <point x="0.9375" y="0.491228" />
-                            <point x="0.84375" y="0.824561" />
-                            <point x="0.5" y="0.789474" />
-                            <point x="0.328125" y="0.631579" />
-                            <point x="0.15625" y="0.491228" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\CasaMonstro2\CasaMonstro2_3.png">
-                        <collision-poly>
-                            <point x="0.203125" y="0.22807" />
-                            <point x="0.5" y="0.0175439" />
-                            <point x="0.8125" y="0.210526" />
-                            <point x="0.9375" y="0.491228" />
-                            <point x="0.84375" y="0.824561" />
-                            <point x="0.5" y="0.789474" />
-                            <point x="0.328125" y="0.631579" />
-                            <point x="0.15625" y="0.491228" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\CasaMonstro2\CasaMonstro2_4.png">
-                        <collision-poly>
-                            <point x="0.203125" y="0.22807" />
-                            <point x="0.5" y="0.0175439" />
-                            <point x="0.8125" y="0.210526" />
-                            <point x="0.9375" y="0.491228" />
-                            <point x="0.84375" y="0.824561" />
-                            <point x="0.5" y="0.789474" />
-                            <point x="0.328125" y="0.631579" />
-                            <point x="0.15625" y="0.491228" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Monstros\CasaMonstro2\CasaMonstro2_5.png">
-                        <collision-poly>
-                            <point x="0.203125" y="0.22807" />
-                            <point x="0.5" y="0.0175439" />
-                            <point x="0.8125" y="0.210526" />
-                            <point x="0.9375" y="0.491228" />
-                            <point x="0.84375" y="0.824561" />
-                            <point x="0.5" y="0.789474" />
-                            <point x="0.328125" y="0.631579" />
-                            <point x="0.15625" y="0.491228" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774504334550956" speed="5">
+                    <frame duration="1" hotspotX="0.501441" hotspotY="0.501805" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\casulo1.png" />
                 </animation>
             </animation-folder>
         </object-type>

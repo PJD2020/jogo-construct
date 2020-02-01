@@ -142,5 +142,17 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="186853427566162" title="Goblin Animator" />
+        <event-block sid="835920414187976">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="282693516359967" type="Goblin" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="868353436694583" type="Goblin">
+                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
