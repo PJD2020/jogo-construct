@@ -114,7 +114,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Attacking" pingpong="0" repeatcount="1" repeatto="0" sid="221882078521049" speed="5">
-                    <frame duration="1" hotspotX="0.531746" hotspotY="0.542045" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g22.png">
+                    <frame duration="1" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g22.png">
                         <image-point name="hand" x="0.857143" y="0.620455" />
                         <collision-poly>
                             <point x="0.184127" y="0" />
@@ -136,17 +136,41 @@
                     </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="883856016570148" speed="7">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g24.png">
+                    <frame duration="1" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g24.png">
                         <image-point name="hand" x="0.633333" y="0.625" />
+                        <collision-poly>
+                            <point x="0.177778" y="0" />
+                            <point x="0.733333" y="0" />
+                            <point x="0.733333" y="1" />
+                            <point x="0.177778" y="1" />
+                        </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g23.png">
+                    <frame duration="1" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g23.png">
                         <image-point name="hand" x="0.804762" y="0.613636" />
+                        <collision-poly>
+                            <point x="0.177778" y="0" />
+                            <point x="0.733333" y="0" />
+                            <point x="0.733333" y="1" />
+                            <point x="0.177778" y="1" />
+                        </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.530159" hotspotY="0.540909">
                         <image-point name="hand" x="0.646032" y="0.625" />
+                        <collision-poly>
+                            <point x="0.177778" y="0" />
+                            <point x="0.733333" y="0" />
+                            <point x="0.733333" y="1" />
+                            <point x="0.177778" y="1" />
+                        </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g25.png">
+                    <frame duration="1" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g25.png">
                         <image-point name="hand" x="0.646032" y="0.706818" />
+                        <collision-poly>
+                            <point x="0.177778" y="0" />
+                            <point x="0.733333" y="0" />
+                            <point x="0.733333" y="1" />
+                            <point x="0.177778" y="1" />
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
