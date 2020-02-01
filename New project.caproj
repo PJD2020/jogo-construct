@@ -76,11 +76,11 @@
                     <frame duration="1" hotspotX="0.52988" hotspotY="0.54038" original-source="C:\Users\Allan Borges\Documents\GitHub\jogo-construct\Animations\Edward\g18.png">
                         <image-point name="hand" x="0.874502" y="0.623515" />
                         <collision-poly>
-                            <point x="0.153386" y="0.138224" />
+                            <point x="0.193227" y="0.133473" />
                             <point x="0.617529" y="0" />
                             <point x="0.762949" y="0.180979" />
                             <point x="0.778884" y="0.556002" />
-                            <point x="0.84263" y="0.986936" />
+                            <point x="0.786853" y="0.975059" />
                             <point x="0.207171" y="0.983373" />
                             <point x="0.199203" y="0.548876" />
                         </collision-poly>
@@ -176,10 +176,10 @@
                         <collision-poly>
                             <point x="0.227366" y="0.239696" />
                             <point x="0.5" y="0.0878525" />
-                            <point x="0.998971" y="0.0010846" />
-                            <point x="0.782922" y="0.5" />
+                            <point x="0.873457" y="0.0303688" />
+                            <point x="0.874486" y="0.389371" />
                             <point x="0.874486" y="0.713666" />
-                            <point x="0.855967" y="0.958243" />
+                            <point x="0.868313" y="0.962581" />
                             <point x="0.5" y="0.998915" />
                             <point x="0.0524691" y="0.944685" />
                             <point x="0.0936214" y="0.5" />
@@ -321,8 +321,8 @@
         <event-sheet>evHUD.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="4" />
-        <global-instance type="Mouse" uid="12" />
+        <global-instance type="Keyboard" uid="12" />
+        <global-instance type="Mouse" uid="47" />
     </global-instances>
     <sounds-folder />
     <music-folder />
