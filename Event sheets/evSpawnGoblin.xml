@@ -29,5 +29,17 @@
                 <action id="-9" name="Destroy" sid="968801347388894" type="SpawnGoblin" />
             </actions>
         </event-block>
+        <event-block sid="993505115054627">
+            <conditions>
+                <condition id="-18" name="On created" sid="402720361050089" type="SpawnGoblin" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="676142468686698" type="SpawnGoblin">
+                    <param id="0" name="Object">Goblin</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">&quot;Origin&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

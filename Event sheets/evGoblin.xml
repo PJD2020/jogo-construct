@@ -82,6 +82,11 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="874664421684352" type="Goblin" />
+                <action id="0" name="Spawn another object" sid="714238108221010" type="Goblin">
+                    <param id="0" name="Object">GoblinBlood</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">&quot;Origin&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="331376121621298" title="Movement">
