@@ -142,11 +142,11 @@
                         <x>56</x>
                         <y>2624</y>
                         <z>0</z>
-                        <width>25.099500656</width>
-                        <height>42.100498199</height>
+                        <width>31.499372482</width>
+                        <height>44.000518799</height>
                         <depth>0</depth>
-                        <hotspotX>0.529880464</hotspotX>
-                        <hotspotY>0.540380061</hotspotY>
+                        <hotspotX>0.530158758</hotspotX>
+                        <hotspotY>0.540909111</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1387,36 +1387,6 @@
                     <world>
                         <x>207.236419678</x>
                         <y>120.084602356</y>
-                        <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GameOverScreen" uid="46">
-                    <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
-                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>,</text>
-                        <scale>0.8</scale>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <character-spacing>0</character-spacing>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>194.00630188</x>
-                        <y>132.220367432</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
