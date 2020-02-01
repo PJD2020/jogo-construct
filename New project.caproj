@@ -58,6 +58,7 @@
                 <instance-variable name="attacking" sid="762280591198661" type="number" />
                 <instance-variable name="hp" sid="812454145426413" type="number" />
                 <instance-variable name="isDead" sid="363719185728352" type="number" />
+                <instance-variable name="left" sid="932075725334914" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="783970744914982">

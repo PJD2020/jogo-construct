@@ -16,6 +16,19 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="140748502204854">
+            <conditions>
+                <condition id="3" name="On key released" sid="424651228813259" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="740442798815781" type="Player">
+                    <param id="0" name="Instance variable">right</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="401783316333617">
             <conditions>
                 <condition id="0" name="On key pressed" sid="172055494717359" type="Keyboard">
@@ -24,7 +37,20 @@
             </conditions>
             <actions>
                 <action id="-10" name="Set value" sid="415609702181644" type="Player">
-                    <param id="0" name="Instance variable">right</param>
+                    <param id="0" name="Instance variable">left</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="246309251800407">
+            <conditions>
+                <condition id="3" name="On key released" sid="302351964088202" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="242791594006830" type="Player">
+                    <param id="0" name="Instance variable">left</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -53,116 +79,149 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="223694568285819">
+        <event-block sid="867662003073979">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="870100599472261" type="Player">
+                <condition id="-7" name="Compare instance variable" sid="967517909604367" type="Player">
                     <param id="0" name="Instance variable">right</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
-                <condition id="-7" name="Compare instance variable" sid="960654342841697" type="Player">
-                    <param id="0" name="Instance variable">attacking</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="136347661169658" type="Player">
-                    <param id="0" name="Instance variable">hp</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="448602033367117" type="Player">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="242049536279689" type="Sword">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="-8" name="Set angle" sid="293489738476956" type="Sword">
-                    <param id="0" name="Angle">20</param>
-                </action>
-                <action id="4" name="Set animation" sid="571614568608017" type="Sword">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="577665506543171">
-            <conditions>
-                <condition id="-22" name="Else" sid="428140678236723" type="System" />
-                <condition id="-7" name="Compare instance variable" sid="839240685758974" type="Player">
-                    <param id="0" name="Instance variable">attacking</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="820985666855299" type="Player">
-                    <param id="0" name="Instance variable">hp</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="628775092312759" type="Player">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="886029117044667" type="Sword">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-8" name="Set angle" sid="818545187901176" type="Sword">
-                    <param id="0" name="Angle">340</param>
-                </action>
-                <action id="4" name="Set animation" sid="142499348976230" type="Sword">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="855772527267479">
-            <conditions>
-                <condition id="-22" name="Else" sid="144506253131207" type="System" />
-                <condition id="-7" name="Compare instance variable" sid="897985064548363" type="Player">
-                    <param id="0" name="Instance variable">right</param>
+                <condition id="-7" name="Compare instance variable" sid="819745293773192" type="Player">
+                    <param id="0" name="Instance variable">left</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-8" name="Set angle" sid="293984139041391" type="Sword">
-                    <param id="0" name="Angle">90</param>
-                </action>
-                <action id="4" name="Set animation" sid="294318309706263" type="Sword">
-                    <param id="0" name="Animation">&quot;Moving&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="360004209544544" type="System">
-                    <param id="0" name="Seconds">0.1</param>
-                </action>
-                <action id="-10" name="Set value" sid="677603118782329" type="Player">
-                    <param id="0" name="Instance variable">attacking</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
-        <event-block sid="129897093435945">
+        <event-block sid="246637296991769">
             <conditions>
-                <condition id="-22" name="Else" sid="796115384398533" type="System" />
+                <condition id="-22" name="Else" sid="547101746582637" type="System" />
             </conditions>
-            <actions>
-                <action id="-8" name="Set angle" sid="746403355707740" type="Sword">
-                    <param id="0" name="Angle">270</param>
-                </action>
-                <action id="4" name="Set animation" sid="107759164012557" type="Sword">
-                    <param id="0" name="Animation">&quot;Moving&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="389359034802337" type="System">
-                    <param id="0" name="Seconds">0.1</param>
-                </action>
-                <action id="-10" name="Set value" sid="637786920479572" type="Player">
-                    <param id="0" name="Instance variable">attacking</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="223694568285819">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="870100599472261" type="Player">
+                            <param id="0" name="Instance variable">right</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="960654342841697" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="136347661169658" type="Player">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="448602033367117" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="242049536279689" type="Sword">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="293489738476956" type="Sword">
+                            <param id="0" name="Angle">20</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="571614568608017" type="Sword">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="577665506543171">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="428140678236723" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="765078494270675" type="Player">
+                            <param id="0" name="Instance variable">left</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="839240685758974" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="820985666855299" type="Player">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="628775092312759" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="886029117044667" type="Sword">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="818545187901176" type="Sword">
+                            <param id="0" name="Angle">340</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="142499348976230" type="Sword">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="855772527267479">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="144506253131207" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="897985064548363" type="Player">
+                            <param id="0" name="Instance variable">right</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="293984139041391" type="Sword">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="294318309706263" type="Sword">
+                            <param id="0" name="Animation">&quot;Moving&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="360004209544544" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="677603118782329" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="129897093435945">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="796115384398533" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="793644084658644" type="Player">
+                            <param id="0" name="Instance variable">left</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="746403355707740" type="Sword">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="107759164012557" type="Sword">
+                            <param id="0" name="Animation">&quot;Moving&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="389359034802337" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="637786920479572" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="814488796276628">
             <conditions>
