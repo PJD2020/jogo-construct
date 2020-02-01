@@ -3,21 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evSword</name>
     <events>
-        <event-block sid="144978657156361">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="620867522350056" type="Sword">
-                    <param id="0" name="Object">SpawnGoblin</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="370190741323602" type="Player">
-                    <param id="0" name="Instance variable">attacking</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="511762363600164" type="SpawnGoblin" />
-            </actions>
-        </event-block>
         <event-block sid="849179579428342">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="990233138353688" type="System">
@@ -53,6 +38,34 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="518590519625449">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="219007828673840" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="144978657156361">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="620867522350056" type="Sword">
+                            <param id="0" name="Object">SpawnGoblin</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="370190741323602" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="913280145693146" type="SpawnGoblin">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">SpawnGoblin.hp - 50</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>

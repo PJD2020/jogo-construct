@@ -49,14 +49,14 @@
                         </event-block>
                         <event-block sid="705033956378990">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="495936845181429" type="Goblin">
+                                <condition id="1" name="Is overlapping another object" sid="495936845181429" type="Goblin">
                                     <param id="0" name="Object">Player</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="612055481672556" type="Player">
                                     <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">Player.hp - 1</param>
+                                    <param id="1" name="Value">Player.hp - 10</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -82,19 +82,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="874664421684352" type="Goblin" />
-            </actions>
-        </event-block>
-        <event-block sid="593440895768871">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="627467791732949" type="Goblin">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="399259330803325" type="Player">
-                    <param id="0" name="Instance variable">hp</param>
-                    <param id="1" name="Value">Player.hp - 1</param>
-                </action>
             </actions>
         </event-block>
         <event-group description="" sid="331376121621298" title="Movement">

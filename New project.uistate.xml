@@ -16,7 +16,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="3">evSword</event-sheet>
         <event-sheet order="4">evHUD</event-sheet>
         <event-sheet order="5">evMain</event-sheet>
-        <event-sheet order="6">evSpawnGoblin</event-sheet>
+        <event-sheet active="1" order="6">evSpawnGoblin</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
