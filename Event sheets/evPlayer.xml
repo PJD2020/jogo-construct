@@ -5,8 +5,11 @@
     <events>
         <event-block sid="398100477638952">
             <conditions>
-                <condition id="0" name="On key pressed" sid="364098884773604" type="Keyboard">
+                <condition id="2" name="Key is down" sid="364098884773604" type="Keyboard">
                     <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="872712221715583" type="Keyboard">
+                    <param id="0" name="Key">37</param>
                 </condition>
             </conditions>
             <actions>
@@ -14,25 +17,19 @@
                     <param id="0" name="Instance variable">right</param>
                     <param id="1" name="Value">1</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="140748502204854">
-            <conditions>
-                <condition id="3" name="On key released" sid="424651228813259" type="Keyboard">
-                    <param id="0" name="Key">39</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="740442798815781" type="Player">
-                    <param id="0" name="Instance variable">right</param>
+                <action id="-10" name="Set value" sid="977932607884075" type="Player">
+                    <param id="0" name="Instance variable">left</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="401783316333617">
             <conditions>
-                <condition id="0" name="On key pressed" sid="172055494717359" type="Keyboard">
+                <condition id="2" name="Key is down" sid="172055494717359" type="Keyboard">
                     <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="199707833601443" type="Keyboard">
+                    <param id="0" name="Key">39</param>
                 </condition>
             </conditions>
             <actions>
@@ -40,17 +37,8 @@
                     <param id="0" name="Instance variable">left</param>
                     <param id="1" name="Value">1</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="246309251800407">
-            <conditions>
-                <condition id="3" name="On key released" sid="302351964088202" type="Keyboard">
-                    <param id="0" name="Key">37</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="242791594006830" type="Player">
-                    <param id="0" name="Instance variable">left</param>
+                <action id="-10" name="Set value" sid="174456358434530" type="Player">
+                    <param id="0" name="Instance variable">right</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
