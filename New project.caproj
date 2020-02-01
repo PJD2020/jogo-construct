@@ -18,7 +18,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -67,6 +67,9 @@
                 <behavior-type name="ScrollTo" sid="485977731619673">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="Physics" sid="690388464440834">
+                    <behavior id="Physics" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869274521637166" speed="5">
@@ -76,15 +79,26 @@
                             <point x="0.153386" y="0.138224" />
                             <point x="0.617529" y="0" />
                             <point x="0.762949" y="0.180979" />
-                            <point x="1" y="0.630823" />
+                            <point x="0.778884" y="0.556002" />
                             <point x="0.84263" y="0.986936" />
                             <point x="0.207171" y="0.983373" />
-                            <point x="0" y="0.588068" />
+                            <point x="0.199203" y="0.548876" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="775182438214016" speed="5">
-                    <frame duration="1" hotspotX="0.507763" hotspotY="0.28866" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g19.png" />
+                    <frame duration="1" hotspotX="0.494439" hotspotY="0.0849515" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g19.png">
+                        <collision-poly>
+                            <point x="0.136502" y="0.0728155" />
+                            <point x="0.412538" y="0.065534" />
+                            <point x="0.710819" y="0.0776699" />
+                            <point x="0.991911" y="0.325243" />
+                            <point x="0.9727" y="0.648058" />
+                            <point x="0.424671" y="0.76699" />
+                            <point x="0.144591" y="0.783981" />
+                            <point x="0" y="0.480583" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -152,18 +166,23 @@
                 <behavior-type name="DestroyOutsideLayout" sid="897155834749387">
                     <behavior id="destroy" />
                 </behavior-type>
-                <behavior-type name="Pathfinding" sid="948390355802147">
-                    <behavior id="Pathfinding" />
+                <behavior-type name="Physics" sid="996697423606084">
+                    <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108711361465092" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500391" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Creatures\m5.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497831" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Creatures\m5.png">
                         <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
+                            <point x="0.227366" y="0.239696" />
+                            <point x="0.5" y="0.0878525" />
+                            <point x="0.998971" y="0.0010846" />
+                            <point x="0.782922" y="0.5" />
+                            <point x="0.874486" y="0.713666" />
+                            <point x="0.855967" y="0.958243" />
+                            <point x="0.5" y="0.998915" />
+                            <point x="0.0524691" y="0.944685" />
+                            <point x="0.0936214" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
