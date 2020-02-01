@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evSpawnBat</name>
+    <events>
+        <event-block sid="380684823112550">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="227724789016742" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="539753359322939" type="SpawnBat">
+                    <param id="0" name="Object">Bat</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">&quot;Origin&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="897571000622173">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="265990353584106" type="SpawnBat">
+                    <param id="0" name="Instance variable">hp</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="948684657537304" type="SpawnBat" />
+            </actions>
+        </event-block>
+        <event-block sid="317383341409896">
+            <conditions>
+                <condition id="-18" name="On created" sid="813596286508486" type="SpawnBat" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="350002033136594" type="SpawnBat">
+                    <param id="0" name="Object">Bat</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">&quot;Origin&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
