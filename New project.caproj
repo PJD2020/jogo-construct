@@ -18,7 +18,6 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -67,22 +66,20 @@
                 <behavior-type name="ScrollTo" sid="485977731619673">
                     <behavior id="scrollto" />
                 </behavior-type>
-                <behavior-type name="Physics" sid="690388464440834">
-                    <behavior id="Physics" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869274521637166" speed="5">
                     <frame duration="1" hotspotX="0.52988" hotspotY="0.54038" original-source="C:\Users\Allan Borges\Documents\GitHub\jogo-construct\Animations\Edward\g18.png">
                         <image-point name="hand" x="0.874502" y="0.623515" />
                         <collision-poly>
-                            <point x="0.193227" y="0.133473" />
-                            <point x="0.617529" y="0" />
-                            <point x="0.762949" y="0.180979" />
-                            <point x="0.778884" y="0.556002" />
-                            <point x="0.786853" y="0.975059" />
-                            <point x="0.207171" y="0.983373" />
-                            <point x="0.199203" y="0.548876" />
+                            <point x="0.221116" y="0.131829" />
+                            <point x="0.5" y="0.0249406" />
+                            <point x="0.719123" y="0.167458" />
+                            <point x="0.778884" y="0.5" />
+                            <point x="0.830678" y="0.991686" />
+                            <point x="0.599602" y="0.992874" />
+                            <point x="0.199203" y="0.985748" />
+                            <point x="0.201195" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -166,9 +163,6 @@
                 <behavior-type name="DestroyOutsideLayout" sid="897155834749387">
                     <behavior id="destroy" />
                 </behavior-type>
-                <behavior-type name="Physics" sid="996697423606084">
-                    <behavior id="Physics" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108711361465092" speed="5">
@@ -176,10 +170,9 @@
                         <collision-poly>
                             <point x="0.227366" y="0.239696" />
                             <point x="0.5" y="0.0878525" />
-                            <point x="0.873457" y="0.0303688" />
-                            <point x="0.874486" y="0.389371" />
-                            <point x="0.874486" y="0.713666" />
-                            <point x="0.868313" y="0.962581" />
+                            <point x="0.998971" y="0.0010846" />
+                            <point x="0.782922" y="0.5" />
+                            <point x="0.854938" y="0.847072" />
                             <point x="0.5" y="0.998915" />
                             <point x="0.0524691" y="0.944685" />
                             <point x="0.0936214" y="0.5" />
@@ -283,9 +276,6 @@
                 <behavior-type name="DestroyOutsideLayout" sid="106020176809162">
                     <behavior id="destroy" />
                 </behavior-type>
-                <behavior-type name="Platform" sid="761078398673152">
-                    <behavior id="Platform" />
-                </behavior-type>
             </behaviors>
             <texture />
         </object-type>
@@ -294,9 +284,6 @@
             <behaviors>
                 <behavior-type name="DestroyOutsideLayout" sid="476364004585579">
                     <behavior id="destroy" />
-                </behavior-type>
-                <behavior-type name="Platform" sid="186430960542543">
-                    <behavior id="Platform" />
                 </behavior-type>
             </behaviors>
             <texture />
