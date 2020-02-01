@@ -143,6 +143,11 @@
                             <param id="0" name="Comparison">2</param>
                             <param id="1" name="X co-ordinate">Player.X</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="335801351896696" type="Player">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="7" name="Simulate control" sid="221708752328727" type="Goblin">
@@ -158,6 +163,11 @@
                         <condition id="-1" name="Compare X" sid="565416554492477" type="Goblin">
                             <param id="0" name="Comparison">4</param>
                             <param id="1" name="X co-ordinate">Player.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="104394888691686" type="Player">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
