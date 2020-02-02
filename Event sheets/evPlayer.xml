@@ -379,5 +379,27 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="507778798115942">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="691537410939937" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-29" name="Move to object" sid="186414541826936" type="Sword">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Object">Player</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="319588311991311">
+            <conditions>
+                <condition id="-22" name="Else" sid="415444025433907" type="System" />
+            </conditions>
+            <actions>
+                <action id="-29" name="Move to object" sid="108829616811941" type="Sword">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Object">Player</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
