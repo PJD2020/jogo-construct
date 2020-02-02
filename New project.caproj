@@ -15,11 +15,13 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -291,14 +293,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="NewGameButton" sid="799678982506378">
-            <plugin id="Spritefont2" />
-            <texture original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\SpriteFont-white.png" />
-        </object-type>
-        <object-type name="QuitButton" sid="404636942320445">
-            <plugin id="Spritefont2" />
-            <texture original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\SpriteFont-white.png" />
-        </object-type>
         <object-type name="NewGameBackground" sid="281851262029964">
             <plugin id="TiledBg" />
             <texture />
@@ -455,10 +449,91 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Transition" sid="640838855307172">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="657017779653600">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577110064910477" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PrologueText" sid="229908695668747">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="NewGameText" sid="351946844430633">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451902675180996" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Text\NewGameText.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.982143" y="0.155556" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.982143" y="0.844444" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="QuitText" sid="978701999209704">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962391994136308" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Text\QuitText.png">
+                        <collision-poly>
+                            <point x="0.0460526" y="0.155556" />
+                            <point x="0.953947" y="0.155556" />
+                            <point x="0.927632" y="0.488889" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0460526" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PrologueText2" sid="469730350275011">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PrologueText3" sid="879784023645275">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PrologueText4" sid="352889890782787">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PrologueText5" sid="113146460811999">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ContinueText" sid="850928343984798">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ContinueIcon" sid="741628912447452">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495976316282808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sceneOne" sid="892295340519159">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975148948141215" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500697" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Prologue\sceneOne.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>MainMenu.xml</layout>
+        <layout>Prologue.xml</layout>
         <layout>Main.xml</layout>
     </layout-folder>
     <event-folder>
@@ -471,6 +546,7 @@
         <event-sheet>evHUD.xml</event-sheet>
         <event-sheet>evBat.xml</event-sheet>
         <event-sheet>evSpawnBat.xml</event-sheet>
+        <event-sheet>evPrologue.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="12" />
@@ -486,6 +562,14 @@
             <file name="icon-128.png" />
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="Fonts">
+            <file name="pixeled.woff" />
+            <file name="pixeled.woff2" />
+            <file name="stylesheet.css" />
+            <file name="retro_gaming.woff" />
+            <file name="retro_gaming.woff2" />
+            <file name="stylesheet2.css" />
         </file-folder>
     </files-folder>
 </c2project>

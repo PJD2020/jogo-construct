@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1580606871,
+	"version": 1580672008,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -12,8 +12,6 @@
 		"images/spawngoblin-sheet0.png",
 		"images/goblin-sheet0.png",
 		"images/background-sheet0.png",
-		"images/newgamebutton.png",
-		"images/quitbutton.png",
 		"images/newgamebackground.png",
 		"images/level-sheet0.png",
 		"images/platformcollider-sheet0.png",
@@ -27,12 +25,23 @@
 		"images/walls-sheet0.png",
 		"images/bat-sheet0.png",
 		"images/spawnbat-sheet0.png",
+		"images/transition-sheet0.png",
+		"images/newgametext-sheet0.png",
+		"images/quittext-sheet0.png",
+		"images/continueicon-sheet0.png",
+		"images/sceneone-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
 		"icon-128.png",
 		"icon-256.png",
 		"loading-logo.png",
+		"pixeled.woff",
+		"pixeled.woff2",
+		"stylesheet.css",
+		"retro_gaming.woff",
+		"retro_gaming.woff2",
+		"stylesheet2.css",
 		"pathfind.js"
 	]
 }

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evPrologue</name>
+    <events>
+        <variable constant="0" name="page" sid="618284006212542" static="0" type="number">1</variable>
+        <event-block sid="908106529187112">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="151701993055682" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="579935806335016" type="PrologueText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="464300482867871" type="PrologueText2">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="194019834124526" type="PrologueText3">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="517406589351284" type="PrologueText4">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="167546743207660" type="PrologueText5">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="561148060527219" type="ContinueText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="322184214635408">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="254530530592771" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="989693430394653" type="System">
+                    <param id="0" name="Variable">page</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="245386607407661">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="223218408275336" type="System">
+                            <param id="0" name="Variable">page</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="933185877774423" type="PrologueText">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="623658025825555" type="PrologueText2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="294159509716045">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="719598261113863" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="291130829848893">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="711791261276888" type="System">
+                                    <param id="0" name="Variable">page</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="907624527174681" type="PrologueText2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="141341988646906" type="PrologueText3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="475794353988237">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="278449256154021" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="722466471335196">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="240503661816541" type="System">
+                                            <param id="0" name="Variable">page</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="928268857371411" type="PrologueText3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="295285688699011" type="PrologueText4">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="498843111358138">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="357295032004916" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="313460920229233">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="713454867594963" type="System">
+                                                    <param id="0" name="Variable">page</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="728214922318244" type="PrologueText4">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="199220019416063" type="PrologueText5">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="907251262768013">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="487456317043533" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="778754313146311">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="177867965692279" type="System">
+                                                            <param id="0" name="Variable">page</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">6</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action behavior="Sine" id="0" name="Set active" sid="146947285004648" type="Transition">
+                                                            <param id="0" name="State">1</param>
+                                                        </action>
+                                                        <action id="-16" name="Wait" sid="540257920834371" type="System">
+                                                            <param id="0" name="Seconds">0.5</param>
+                                                        </action>
+                                                        <action id="-25" name="Go to layout (by name)" sid="350170111952028" type="System">
+                                                            <param id="0" name="Layout">&quot;Main&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
