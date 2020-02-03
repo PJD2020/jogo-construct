@@ -41,7 +41,7 @@
     </window-size>
     <pixel-rounding>1</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>MainMenu</first-layout>
+    <first-layout>Cave</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
