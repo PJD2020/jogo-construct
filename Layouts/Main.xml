@@ -115,6 +115,8 @@
                         <isDead>0</isDead>
                         <left>0</left>
                         <animation>&quot;idle&quot;</animation>
+                        <hasWallJumpedRight>false</hasWallJumpedRight>
+                        <hasWallJumpedLeft>false</hasWallJumpedLeft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

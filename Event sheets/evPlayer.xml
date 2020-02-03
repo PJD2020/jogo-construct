@@ -401,5 +401,127 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="609365692218434" title="Wall Jumping">
+            <sub-events>
+                <event-block sid="683603442183049">
+                    <conditions>
+                        <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="795880096615008" type="Player" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="981340596249419">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="844925029813122" type="Player">
+                                    <param id="0" name="Side">0</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="136244029391450" type="Player">
+                                    <param id="0" name="Instance variable">hasWallJumpedRight</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="6" name="Set max fall speed" sid="346184734409961" type="Player">
+                                    <param id="0" name="Max fall speed">50</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="395427168233408">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="218071957613528" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="8" name="Set vector X" sid="175414868668535" type="Player">
+                                            <param id="0" name="Vector X">550</param>
+                                        </action>
+                                        <action behavior="Platform" id="9" name="Set vector Y" sid="768070181865063" type="Player">
+                                            <param id="0" name="Vector Y">-550</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="324997592148184" type="Player">
+                                            <param id="0" name="Instance variable">hasWallJumpedRight</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="467696827347329" type="Player">
+                                            <param id="0" name="Instance variable">hasWallJumpedLeft</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="191830380673977">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="893101789696268" type="Player">
+                                    <param id="0" name="Side">1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="699755888915117" type="Player">
+                                    <param id="0" name="Instance variable">hasWallJumpedLeft</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="6" name="Set max fall speed" sid="906734464230532" type="Player">
+                                    <param id="0" name="Max fall speed">50</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="543011812973443">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="388507620513151" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="8" name="Set vector X" sid="963534902366807" type="Player">
+                                            <param id="0" name="Vector X">-550</param>
+                                        </action>
+                                        <action behavior="Platform" id="9" name="Set vector Y" sid="931569179036816" type="Player">
+                                            <param id="0" name="Vector Y">-550</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="982868353815179" type="Player">
+                                            <param id="0" name="Instance variable">hasWallJumpedLeft</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="564743834272987" type="Player">
+                                            <param id="0" name="Instance variable">hasWallJumpedRight</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="265920899225058">
+                    <conditions>
+                        <condition behavior="Platform" id="10" inverted="1" name="Is by wall" sid="780734677758197" type="Player">
+                            <param id="0" name="Side">0</param>
+                        </condition>
+                        <condition behavior="Platform" id="10" inverted="1" name="Is by wall" sid="141345504122879" type="Player">
+                            <param id="0" name="Side">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="561405864772464" type="Player">
+                            <param id="0" name="Max fall speed">1000</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="736072520530143">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="186768427997192" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="872249069304320" type="Player">
+                    <param id="0" name="Instance variable">hasWallJumpedRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="691088069362584" type="Player">
+                    <param id="0" name="Instance variable">hasWallJumpedLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

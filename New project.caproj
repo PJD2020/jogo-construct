@@ -68,6 +68,8 @@
                 <instance-variable name="isDead" sid="363719185728352" type="number" />
                 <instance-variable name="left" sid="932075725334914" type="number" />
                 <instance-variable name="animation" sid="211066826709177" type="string" />
+                <instance-variable name="hasWallJumpedRight" sid="717354705958437" type="boolean" />
+                <instance-variable name="hasWallJumpedLeft" sid="131151191045247" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="783970744914982">
@@ -87,21 +89,17 @@
                         <collision-poly>
                             <point x="0.177778" y="0" />
                             <point x="0.733333" y="0" />
-                            <point x="0.733333" y="1" />
-                            <point x="0.177778" y="1" />
+                            <point x="0.733333" y="0.909091" />
+                            <point x="0.177778" y="0.909091" />
                         </collision-poly>
                     </frame>
                     <frame duration="3" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g21.png">
                         <image-point name="hand" x="0.792063" y="0.6125" />
                         <collision-poly>
-                            <point x="0.221116" y="0.131829" />
-                            <point x="0.5" y="0.0249406" />
-                            <point x="0.719123" y="0.167458" />
-                            <point x="0.778884" y="0.5" />
-                            <point x="0.830678" y="0.991686" />
-                            <point x="0.599602" y="0.992874" />
-                            <point x="0.199203" y="0.985748" />
-                            <point x="0.201195" y="0.5" />
+                            <point x="0.177778" y="0" />
+                            <point x="0.733333" y="0" />
+                            <point x="0.733333" y="0.909091" />
+                            <point x="0.177778" y="0.909091" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -121,8 +119,8 @@
                         <collision-poly>
                             <point x="0.184127" y="0" />
                             <point x="0.733333" y="0" />
-                            <point x="0.733333" y="1" />
-                            <point x="0.177778" y="1" />
+                            <point x="0.733333" y="0.909091" />
+                            <point x="0.177778" y="0.909091" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -132,8 +130,8 @@
                         <collision-poly>
                             <point x="0.177778" y="0" />
                             <point x="0.793651" y="0" />
-                            <point x="0.793651" y="0.977778" />
-                            <point x="0.177778" y="0.977778" />
+                            <point x="0.793651" y="0.888889" />
+                            <point x="0.177778" y="0.888889" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -143,8 +141,10 @@
                         <collision-poly>
                             <point x="0.177778" y="0" />
                             <point x="0.733333" y="0" />
-                            <point x="0.733333" y="1" />
-                            <point x="0.177778" y="1" />
+                            <point x="0.733333" y="0.897727" />
+                            <point x="0.71746" y="0.909091" />
+                            <point x="0.193651" y="0.909091" />
+                            <point x="0.177778" y="0.897727" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g23.png">
@@ -152,8 +152,10 @@
                         <collision-poly>
                             <point x="0.177778" y="0" />
                             <point x="0.733333" y="0" />
-                            <point x="0.733333" y="1" />
-                            <point x="0.177778" y="1" />
+                            <point x="0.733333" y="0.897727" />
+                            <point x="0.71746" y="0.909091" />
+                            <point x="0.193651" y="0.909091" />
+                            <point x="0.177778" y="0.897727" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.530159" hotspotY="0.540909">
@@ -161,8 +163,10 @@
                         <collision-poly>
                             <point x="0.177778" y="0" />
                             <point x="0.733333" y="0" />
-                            <point x="0.733333" y="1" />
-                            <point x="0.177778" y="1" />
+                            <point x="0.733333" y="0.897727" />
+                            <point x="0.71746" y="0.909091" />
+                            <point x="0.193651" y="0.909091" />
+                            <point x="0.177778" y="0.897727" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g25.png">
@@ -170,8 +174,10 @@
                         <collision-poly>
                             <point x="0.177778" y="0" />
                             <point x="0.733333" y="0" />
-                            <point x="0.733333" y="1" />
-                            <point x="0.177778" y="1" />
+                            <point x="0.733333" y="0.897727" />
+                            <point x="0.71746" y="0.909091" />
+                            <point x="0.193651" y="0.909091" />
+                            <point x="0.177778" y="0.897727" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -529,12 +535,467 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="WallBlue" sid="696360189757201">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="635392783269676">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="993926096719097" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-blue.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="288808838312642">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="793843627005956" speed="5">
+                    <frame duration="1" hotspotX="0.500486" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-blue.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WallBlueHalf" sid="161829942699935">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="190165922191606">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="882452666659815" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-blue-half.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WallBlueQuarter" sid="963247669669375">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="424185783431236">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146215807248451" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-blue-quarter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CaveBackgroundBlue" sid="612694401098630">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574166355623899" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\cave-blue.png">
+                        <collision-poly>
+                            <point x="0.0074989" y="0.0109184" />
+                            <point x="0.499779" y="0.0231214" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformBlue" sid="642276076215576">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="952454377765122">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127579562704960" speed="5">
+                    <frame duration="1" hotspotX="0.500969" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-blue.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6" />
+                            <point x="0" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Home" sid="518333652355898">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="824139196274353" speed="5">
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.501099" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\house.png">
+                        <collision-poly>
+                            <point x="0.00616016" y="0.00659341" />
+                            <point x="0.498973" y="0.217582" />
+                            <point x="0.696099" y="0.325275" />
+                            <point x="0.841889" y="0.498901" />
+                            <point x="0.995893" y="0.995604" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bones" sid="739628107028098">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300595823588632" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\bones.png">
+                        <collision-poly>
+                            <point x="0.00409836" y="0.00347222" />
+                            <point x="0.5" y="0.0902778" />
+                            <point x="0.782787" y="0.184028" />
+                            <point x="0.963115" y="0.5" />
+                            <point x="0.971311" y="0.975694" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformBlueHalf" sid="445865113636472">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="835354755579426">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864654085361846" speed="5">
+                    <frame duration="1" hotspotX="0.894281" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-blue.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6" />
+                            <point x="0" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stoneBlue" sid="959439230711189">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523205523931918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gate" sid="975801524753662">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331822799228121" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501976" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\door-closed.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.996774" y="0.00395257" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformBlueBackground" sid="487235786918747">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Brightness">
+                    <effect id="brightness" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705032659229845" speed="5">
+                    <frame duration="1" hotspotX="0.500969" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-blue.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6" />
+                            <point x="0" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CaveBackgroundBlue2" sid="804777300769275">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979422078331994" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\cave-blue.png">
+                        <collision-poly>
+                            <point x="0.0074989" y="0.0109184" />
+                            <point x="0.499779" y="0.0231214" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CaveBackgroundPink" sid="815335714766298">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320271732879475" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\cave-pink.png">
+                        <collision-poly>
+                            <point x="0.0074989" y="0.0109184" />
+                            <point x="0.499779" y="0.0231214" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformPink" sid="459884944577857">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="649849218108982">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426767922802765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-pink.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6" />
+                            <point x="0" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformPinkHalf" sid="698735155722081">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="253384181912425">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357119626407397" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-pink-half.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6" />
+                            <point x="0" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformPinkBackground" sid="484933300798169">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Brightness">
+                    <effect id="brightness" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626688487681714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-pink.png">
+                        <collision-poly>
+                            <point x="0.00387597" y="0.02" />
+                            <point x="0.998062" y="0.01" />
+                            <point x="0.995155" y="0.5" />
+                            <point x="0.948643" y="0.735" />
+                            <point x="0.5" y="0.81" />
+                            <point x="0.0668605" y="0.655" />
+                            <point x="0.0174419" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WallPink" sid="323366428891617">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="802572472225175">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475110694698246" speed="5">
+                    <frame duration="1" hotspotX="0.500486" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-pink.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WallPinkHalf" sid="535186770035790">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="634840595830959">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="593275739303419" speed="5">
+                    <frame duration="1" hotspotX="0.500971" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-pink-half.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WallPinkQuarter" sid="549971916556106">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="566184401451464">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830745895369853" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-pink-quarter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CaveBackgroundRed" sid="576810649836706">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819989901284799" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\cave-red.png">
+                        <collision-poly>
+                            <point x="0.0074989" y="0.0109184" />
+                            <point x="0.499779" y="0.0231214" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformRed" sid="572809772346291">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="693937726226796">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416758933271944" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-red.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6" />
+                            <point x="0" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformRedBackground" sid="746392137473043">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Brightness">
+                    <effect id="brightness" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="988661532284842" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-red.png">
+                        <collision-poly>
+                            <point x="0.00387597" y="0.02" />
+                            <point x="0.998062" y="0.01" />
+                            <point x="0.995155" y="0.5" />
+                            <point x="0.948643" y="0.735" />
+                            <point x="0.5" y="0.81" />
+                            <point x="0.0668605" y="0.655" />
+                            <point x="0.0174419" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlatformReadHalf" sid="278150030697947">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="428013157774033">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="348529038997765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-red-half.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.6" />
+                            <point x="0" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WallRed" sid="154584617890675">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="809042080772028">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677710456208590" speed="5">
+                    <frame duration="1" hotspotX="0.500486" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-red.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WallRedQuarter" sid="909109922771981">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="949400145696565">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727260083883309" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\wall-red-quarter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Exit" sid="468813755237976">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751405216702960" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\exit.png">
+                        <collision-poly>
+                            <point x="0.0730769" y="0.122977" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.498382" />
+                            <point x="0.823077" y="0.702265" />
+                            <point x="0.5" y="0.673139" />
+                            <point x="0.290385" y="0.511327" />
+                            <point x="0.286538" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stoneRed" sid="148600898854163">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153656066244265" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stonePink" sid="238962548863315">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660580912229066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>MainMenu.xml</layout>
         <layout>Prologue.xml</layout>
         <layout>Main.xml</layout>
+        <layout>Cave.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>evMain.xml</event-sheet>
@@ -547,6 +1008,7 @@
         <event-sheet>evBat.xml</event-sheet>
         <event-sheet>evSpawnBat.xml</event-sheet>
         <event-sheet>evPrologue.xml</event-sheet>
+        <event-sheet>evCave.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="12" />
