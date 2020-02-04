@@ -12,7 +12,7 @@
             <actions>
                 <action id="0" name="Spawn another object" sid="592436863810669" type="SpawnGoblin">
                     <param id="0" name="Object">Goblin</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="1" name="Layer">&quot;Enemies&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                 </action>
                 <action id="-27" name="Set effect enabled" sid="648361729051500" type="Goblin">
@@ -51,7 +51,7 @@
             <actions>
                 <action id="0" name="Spawn another object" sid="676142468686698" type="SpawnGoblin">
                     <param id="0" name="Object">Goblin</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="1" name="Layer">&quot;Enemies&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                 </action>
                 <action id="-27" name="Set effect enabled" sid="336837443859700" type="Goblin">

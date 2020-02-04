@@ -36,8 +36,8 @@
                                     <param id="1" name="Value">Goblin.hp - 20</param>
                                 </action>
                                 <action id="0" name="Spawn another object" sid="861958453040867" type="Goblin">
-                                    <param id="0" name="Object">GoblinBlood</param>
-                                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                                    <param id="0" name="Object">EBlood</param>
+                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
                                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                                 </action>
                                 <action id="-27" name="Set effect enabled" sid="636683968422896" type="Goblin">
@@ -112,9 +112,50 @@
                                     <param id="1" name="Value">Bat.hp - 20</param>
                                 </action>
                                 <action id="0" name="Spawn another object" sid="490494989366234" type="Bat">
-                                    <param id="0" name="Object">GoblinBlood</param>
-                                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                                    <param id="0" name="Object">EBlood</param>
+                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
                                     <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="271036033805632" type="Bat">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="860876605965337" type="Bat">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="540951014220463" type="Bat">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="753097488402350" type="Bat">
+                                    <param id="0" name="Instance variable">isKnockedBack</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="974284069662210" type="Bat">
+                                    <param id="0" name="Duration">0.1</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;knockbackDuration&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="177516126487313">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="392470508817825" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="609013061621656" type="Bat">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="109128169336167" type="Bat">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="667102623105412" type="Bat">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -152,6 +193,36 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="471568724723642">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="241060782341608" type="Bat">
+                    <param id="0" name="Instance variable">isKnockedBack</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="233250927902065">
+                    <conditions>
+                        <condition id="7" name="Is mirrored" sid="859346790267635" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="376753463021034" type="Bat">
+                            <param id="0" name="Distance">-2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="968665047109847">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="365414003126572" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="680697394185780" type="Bat">
+                            <param id="0" name="Distance">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="791639458643012">
             <conditions>
                 <condition behavior="Timer" id="0" name="On timer" sid="797658235047230" type="Goblin">
@@ -160,6 +231,19 @@
             </conditions>
             <actions>
                 <action id="-13" name="Set boolean" sid="605987976313256" type="Goblin">
+                    <param id="0" name="Instance variable">isKnockedBack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442607851069813">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="506894665296584" type="Bat">
+                    <param id="0" name="Tag">&quot;knockbackDuration&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="956737146153986" type="Goblin">
                     <param id="0" name="Instance variable">isKnockedBack</param>
                     <param id="1" name="Value">0</param>
                 </action>
@@ -188,6 +272,24 @@
                         <action id="-10" name="Set value" sid="913280145693146" type="SpawnGoblin">
                             <param id="0" name="Instance variable">hp</param>
                             <param id="1" name="Value">SpawnGoblin.hp - 50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="523613822803100">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="705659675395005" type="Sword">
+                            <param id="0" name="Object">SpawnBat</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="970208584460745" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="199231279330987" type="SpawnBat">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">SpawnBat.hp - 50</param>
                         </action>
                     </actions>
                 </event-block>

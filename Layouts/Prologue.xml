@@ -164,13 +164,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="NextBackground" uid="329">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>387.796447754</x>
+                        <y>246.046600342</y>
+                        <z>0</z>
+                        <width>70.815185547</width>
+                        <height>14.308624268</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="ContinueText" uid="64">
                     <properties>
                         <text>CONTINUAR</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-5,400,0</font>
                         <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Bottom</vertical-alignment>
                         <hotspot>Bottom-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -179,36 +199,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>413.522583008</x>
-                        <y>259.205505371</y>
+                        <x>387.930053711</x>
+                        <y>257.387878418</y>
                         <z>0</z>
-                        <width>45.893981934</width>
-                        <height>7.033157349</height>
+                        <width>70.486816406</width>
+                        <height>7.551147461</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ContinueIcon" uid="65">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>397.660919189</x>
-                        <y>255.878265381</y>
-                        <z>0</z>
-                        <width>15.119508743</width>
-                        <height>15.119508743</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

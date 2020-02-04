@@ -3,6 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evHUD</name>
     <events>
+        <event-block sid="307404487961396">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="653098773572020" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="161569519939427" type="GameOverText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="789338390305052">
             <conditions>
                 <condition id="-1" name="Every tick" sid="590443469483625" type="System" />

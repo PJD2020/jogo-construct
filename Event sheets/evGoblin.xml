@@ -36,8 +36,8 @@
                                     <param id="1" name="Value">clamp(Player.hp - 2, 0, 100)</param>
                                 </action>
                                 <action id="0" name="Spawn another object" sid="364897045076719" type="Player">
-                                    <param id="0" name="Object">PlayerBlood</param>
-                                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                                    <param id="0" name="Object">PBlood</param>
+                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
                                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                                 </action>
                             </actions>
@@ -66,8 +66,8 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Spawn another object" sid="438959587202151" type="Goblin">
-                            <param id="0" name="Object">GoblinBlood</param>
-                            <param id="1" name="Layer">&quot;Main&quot;</param>
+                            <param id="0" name="Object">EBlood</param>
+                            <param id="1" name="Layer">&quot;Blood&quot;</param>
                             <param id="2" name="Image point">&quot;Origin&quot;</param>
                         </action>
                     </actions>

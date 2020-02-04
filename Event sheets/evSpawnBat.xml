@@ -12,7 +12,7 @@
             <actions>
                 <action id="0" name="Spawn another object" sid="539753359322939" type="SpawnBat">
                     <param id="0" name="Object">Bat</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="1" name="Layer">&quot;Enemies&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                 </action>
             </actions>
@@ -36,7 +36,7 @@
             <actions>
                 <action id="0" name="Spawn another object" sid="350002033136594" type="SpawnBat">
                     <param id="0" name="Object">Bat</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="1" name="Layer">&quot;Enemies&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                 </action>
             </actions>

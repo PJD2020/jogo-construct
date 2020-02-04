@@ -35,10 +35,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="322184214635408">
+        <event-block any="1" sid="322184214635408">
             <conditions>
                 <condition id="0" name="On key pressed" sid="254530530592771" type="Keyboard">
                     <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="521944425457631" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ContinueText</param>
                 </condition>
             </conditions>
             <actions>
@@ -156,7 +161,7 @@
                                                             <param id="0" name="Seconds">0.5</param>
                                                         </action>
                                                         <action id="-25" name="Go to layout (by name)" sid="350170111952028" type="System">
-                                                            <param id="0" name="Layout">&quot;Main&quot;</param>
+                                                            <param id="0" name="Layout">&quot;Cave&quot;</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -169,6 +174,34 @@
                     </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="689384349955740">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="810564736888103" type="Mouse">
+                    <param id="0" name="Object">NextBackground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="922226226685119" type="NextBackground">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set font color" sid="689766767016087" type="ContinueText">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="341743906521136">
+            <conditions>
+                <condition id="-22" name="Else" sid="221433155619465" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="510463039751717" type="NextBackground">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="4" name="Set font color" sid="124404105230764" type="ContinueText">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

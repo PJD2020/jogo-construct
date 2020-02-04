@@ -23,6 +23,9 @@
                 <action id="-8" name="Set angle" sid="366004862526426" type="Sword">
                     <param id="0" name="Angle">20</param>
                 </action>
+                <action id="0" name="Set cursor style" sid="548462374845728" type="Mouse">
+                    <param id="0" name="Cursor style">7</param>
+                </action>
             </actions>
         </event-block>
     </events>
