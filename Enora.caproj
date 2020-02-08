@@ -21,6 +21,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -749,7 +750,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Gate" sid="975801524753662">
+        <object-type name="Gate_1" sid="975801524753662">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331822799228121" speed="5">
@@ -761,6 +762,9 @@
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="737644222019756" speed="5">
+                    <frame duration="1" hotspotX="0.501493" hotspotY="0.501832" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\door-open.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1129,6 +1133,102 @@
         <object-type name="EdwardText" sid="428301405466905">
             <plugin id="Text" />
         </object-type>
+        <object-type name="DeathOverlay" sid="332907836501018">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="685903717269856" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FirstBossKey" sid="639179456322735">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="133373340152777">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="212361144136712" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\key.png">
+                        <collision-poly>
+                            <point x="0.195313" y="0.195313" />
+                            <point x="0.804688" y="0.195313" />
+                            <point x="0.601563" y="0.601563" />
+                            <point x="0.5" y="0.914063" />
+                            <point x="0.304688" y="0.695313" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FirstBossKeyLines" sid="315447408250568">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="841635424454571">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="108870853347871">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869482005265519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\radial-lines.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FirstBossKeyText" sid="702342605625139">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dialogue_2" sid="415719019670661">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="FirstBossKeyIcon" sid="843756085458870">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944245536569737" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\key.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FirstBossGateText" sid="207349684672532">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Gate_2" sid="609148944550686">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889011010830271" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501976" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\door-closed.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.996774" y="0.00395257" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gate_3" sid="354633452947252">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326720554989624" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501976" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\door-closed.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.996774" y="0.00395257" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialogue_3" sid="542373879888376">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1149,6 +1249,8 @@
         <event-sheet>evSpawnBat.xml</event-sheet>
         <event-sheet>evPrologue.xml</event-sheet>
         <event-sheet>evCave.xml</event-sheet>
+        <event-sheet>evKey.xml</event-sheet>
+        <event-sheet>evGate.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="12" />

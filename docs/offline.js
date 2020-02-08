@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1581133690,
+	"version": 1581204351,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -39,7 +39,8 @@
 		"images/bones-sheet0.png",
 		"images/platformbluehalf-sheet0.png",
 		"images/stoneblue-sheet0.png",
-		"images/gate-sheet0.png",
+		"images/gate_1-sheet0.png",
+		"images/gate_1-sheet1.png",
 		"images/cavebackgroundpink-sheet0.png",
 		"images/platformpink-sheet0.png",
 		"images/platformpinkhalf-sheet0.png",
@@ -59,6 +60,9 @@
 		"images/nextbackground.png",
 		"images/edwarddialoguebox-sheet0.png",
 		"images/ingamemenu-sheet0.png",
+		"images/deathoverlay-sheet0.png",
+		"images/firstbosskey-sheet0.png",
+		"images/firstbosskeylines-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

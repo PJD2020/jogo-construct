@@ -328,6 +328,9 @@
                         <action id="-15" name="Set visible" sid="341162410366767" type="GameOverText">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="418798299638025" type="DeathOverlay">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                         <action id="-16" name="Wait" sid="282998995057057" type="System">
                             <param id="0" name="Seconds">2.0</param>
                         </action>

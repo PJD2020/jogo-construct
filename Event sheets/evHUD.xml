@@ -16,6 +16,14 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="968097932164654" type="dialogue_2">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="777330630616573" type="dialogue_3">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
                 <action id="5" name="Set web font" sid="441591286470419" type="PausedText">
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
@@ -29,6 +37,14 @@
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="806994339555034" type="EdwardText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="894386466589822" type="FirstBossKeyText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="230680695989731" type="FirstBossGateText">
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
