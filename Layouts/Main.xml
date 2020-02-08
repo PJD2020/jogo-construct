@@ -117,6 +117,8 @@
                         <animation>&quot;idle&quot;</animation>
                         <hasWallJumpedRight>false</hasWallJumpedRight>
                         <hasWallJumpedLeft>false</hasWallJumpedLeft>
+                        <isKnockedBack>false</isKnockedBack>
+                        <attackingFromAbove>false</attackingFromAbove>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -140,6 +142,25 @@
                         </behavior-instance>
                         <behavior-instance type="Timer" />
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Brightness">
+                            <parameters>
+                                <brightness>1</brightness>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -166,6 +187,7 @@
                         <right>1</right>
                         <hp>100</hp>
                         <isKnockedBack>false</isKnockedBack>
+                        <isKnockedBackFromAbove>false</isKnockedBackFromAbove>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -694,18 +716,19 @@
                     <instance-variables>
                         <hp>100</hp>
                         <isKnockedBack>false</isKnockedBack>
+                        <isKnockedBackFromAbove>false</isKnockedBackFromAbove>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="DestroyOutsideLayout" />
                         <behavior-instance type="Pathfinding">
                             <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>-1</cell-border>
+                                <cell-size>20</cell-size>
+                                <cell-border>-50</cell-border>
                                 <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
+                                <max-speed>300</max-speed>
+                                <acceleration>2000</acceleration>
                                 <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
+                                <rotate-speed>2000</rotate-speed>
                                 <rotate-object>No</rotate-object>
                                 <diagonals>Enabled</diagonals>
                                 <initial-state>Enabled</initial-state>

@@ -70,6 +70,8 @@
                 <instance-variable name="animation" sid="211066826709177" type="string" />
                 <instance-variable name="hasWallJumpedRight" sid="717354705958437" type="boolean" />
                 <instance-variable name="hasWallJumpedLeft" sid="131151191045247" type="boolean" />
+                <instance-variable name="isKnockedBack" sid="860883278391654" type="boolean" />
+                <instance-variable name="attackingFromAbove" sid="807042907381953" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="783970744914982">
@@ -82,6 +84,17 @@
                     <behavior id="Timer" />
                 </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+                <effect-type name="Brightness">
+                    <effect id="brightness" />
+                </effect-type>
+                <effect-type name="Gamma">
+                    <effect id="gamma" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="869274521637166" speed="5">
                     <frame duration="3" hotspotX="0.530159" hotspotY="0.540909" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g20.png">
@@ -181,6 +194,39 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="Falling" pingpong="0" repeatcount="1" repeatto="0" sid="602995056897235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g26.png">
+                        <image-point name="hand" x="0.862426" y="0.553879" />
+                        <collision-poly>
+                            <point x="0.16568" y="0" />
+                            <point x="0.739645" y="0" />
+                            <point x="0.739645" y="0.862069" />
+                            <point x="0.16568" y="0.862069" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Climbing" pingpong="0" repeatcount="1" repeatto="0" sid="116172445664471" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g27.png">
+                        <image-point name="hand" x="0.136095" y="0.564655" />
+                        <collision-poly>
+                            <point x="0.83432" y="0.862069" />
+                            <point x="0.260355" y="0.862069" />
+                            <point x="0.260355" y="0" />
+                            <point x="0.83432" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="AttackingFromAbove" pingpong="0" repeatcount="1" repeatto="0" sid="207642641409928" speed="5">
+                    <frame duration="1" hotspotX="0.530159" hotspotY="0.566667" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Animations\Edward\g28.png">
+                        <image-point name="hand" x="0.655556" y="0.921429" />
+                        <collision-poly>
+                            <point x="0.220907" y="0" />
+                            <point x="0.793651" y="0" />
+                            <point x="0.793651" y="0.952381" />
+                            <point x="0.220907" y="0.952381" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Keyboard" sid="280001073996506">
@@ -211,6 +257,9 @@
                 <animation framecount="1" loop="1" name="Moving" pingpong="0" repeatcount="1" repeatto="0" sid="322907985019821" speed="5">
                     <frame duration="1" hotspotX="0.748977" hotspotY="0.730864" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\Weapons\espada_movimento.png" />
                 </animation>
+                <animation framecount="1" loop="0" name="MovingDown" pingpong="0" repeatcount="1" repeatto="0" sid="498912629373646" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\Weapons\espada_movimento_baixo.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="SpawnGoblin" sid="342175272946712">
@@ -240,6 +289,7 @@
                 <instance-variable name="right" sid="676950742090516" type="number" />
                 <instance-variable name="hp" sid="827484124572619" type="number" />
                 <instance-variable name="isKnockedBack" sid="404411093244943" type="boolean" />
+                <instance-variable name="isKnockedBackFromAbove" sid="307072358167370" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="319274503507632">
@@ -410,6 +460,7 @@
             <instance-variables>
                 <instance-variable name="hp" sid="778055859904831" type="number" />
                 <instance-variable name="isKnockedBack" sid="927348762712050" type="boolean" />
+                <instance-variable name="isKnockedBackFromAbove" sid="472494559800136" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="DestroyOutsideLayout" sid="630206554938536">
@@ -534,7 +585,7 @@
         <object-type name="PrologueText5" sid="113146460811999">
             <plugin id="Text" />
         </object-type>
-        <object-type name="ContinueText" sid="850928343984798">
+        <object-type name="NextText" sid="850928343984798">
             <plugin id="Text" />
         </object-type>
         <object-type name="ContinueIcon" sid="741628912447452">
@@ -1021,6 +1072,62 @@
         <object-type name="NextBackground" sid="524803663035225">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="EdwardDialogueBox" sid="378588655818652">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832169373666640" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\edward-dialogue.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.286585" />
+                            <point x="0.908669" y="0.359756" />
+                            <point x="0.990712" y="0.5" />
+                            <point x="0.995356" y="0.981707" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialogue_1" sid="136423435342056">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="InGameMenu" sid="162203981608999">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708351674683887" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\ingame-menu.png">
+                        <collision-poly>
+                            <point x="0.0164609" y="0.0714286" />
+                            <point x="0.983539" y="0.0714286" />
+                            <point x="0.993827" y="0.973214" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseOverlay" sid="659903808315959">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549068995802763" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PausedText" sid="457933954109077">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ContinueText" sid="830755334493098">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="QuitGameText" sid="964031818249469">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="EdwardText" sid="428301405466905">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

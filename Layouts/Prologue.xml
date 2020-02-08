@@ -184,7 +184,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ContinueText" uid="64">
+                <instance type="NextText" uid="64">
                     <properties>
                         <text>CONTINUAR</text>
                         <initial-visibility>Visible</initial-visibility>

@@ -3,37 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evBat</name>
     <events>
-        <event-block sid="532735559498612">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="351053533965279" type="System">
-                    <param id="0" name="Interval (seconds)">0.5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="630496033437843">
-                    <conditions>
-                        <condition id="-11" name="For Each" sid="105208662895752" type="System">
-                            <param id="0" name="Object">Bat</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="489613498434521" type="Bat">
-                            <param id="0" name="X">Player.X</param>
-                            <param id="1" name="Y">Player.Y</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="758189577169015">
-            <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="961534753073328" type="Bat" />
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="374004975158694" type="Bat" />
-            </actions>
-        </event-block>
         <event-block sid="961912530316761">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="428671090785942" type="System">
@@ -71,11 +40,85 @@
                                     <param id="1" name="Layer">&quot;Blood&quot;</param>
                                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                                 </action>
+                                <action id="-27" name="Set effect enabled" sid="635826488955392" type="Player">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="149766279000464" type="Player">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="617301083689575" type="Player">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="175680358168408" type="Player">
+                                    <param id="0" name="Instance variable">isKnockedBack</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="282197041910757" type="Player">
+                                    <param id="0" name="Duration">0.1</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;knockbackDuration&quot;</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="242717326349931">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="262298736942138" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="833472227557955" type="Player">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="328444586967291" type="Player">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="963477732981475" type="Player">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="532735559498612">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="351053533965279" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="630496033437843">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="105208662895752" type="System">
+                            <param id="0" name="Object">Bat</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="489613498434521" type="Bat">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="758189577169015">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="961534753073328" type="Bat" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="374004975158694" type="Bat" />
+            </actions>
         </event-block>
         <event-block sid="296281953193494">
             <conditions>

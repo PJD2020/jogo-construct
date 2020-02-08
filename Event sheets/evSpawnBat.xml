@@ -15,6 +15,21 @@
                     <param id="1" name="Layer">&quot;Enemies&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                 </action>
+                <action id="-27" name="Set effect enabled" sid="222585996390800" type="Bat">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="434899097739953" type="Bat">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="126290065412234" type="Bat">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                </action>
+                <action behavior="Pathfinding" id="7" name="Set max speed" sid="477167255520157" type="Bat">
+                    <param id="0" name="Speed">self.Pathfinding.MaxSpeed + random(-20, 20)</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="897571000622173">
@@ -38,6 +53,18 @@
                     <param id="0" name="Object">Bat</param>
                     <param id="1" name="Layer">&quot;Enemies&quot;</param>
                     <param id="2" name="Image point">&quot;Origin&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="171407777774232" type="Bat">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="669914787772952" type="Bat">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="755032498666027" type="Bat">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
                 </action>
             </actions>
         </event-block>

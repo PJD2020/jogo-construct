@@ -40,6 +40,83 @@
                                     <param id="1" name="Layer">&quot;Blood&quot;</param>
                                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                                 </action>
+                                <action id="-27" name="Set effect enabled" sid="843004047425633" type="Player">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="463629383869855" type="Player">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="450382317347089" type="Player">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="902643474389959" type="Player">
+                                    <param id="0" name="Instance variable">isKnockedBack</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="317049956989278" type="Player">
+                                    <param id="0" name="Duration">0.1</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;knockbackDuration&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="764062485460295">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="936483966999112" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="294616400803672" type="Player">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="983769751624190" type="Player">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="726432323088575" type="Player">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="344765796132723">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="874344300330430" type="Player">
+                            <param id="0" name="Instance variable">isKnockedBack</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="454138395121175">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="748104745521588" type="System">
+                                    <param id="0" name="First value">Player.X</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">Goblin.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-17" name="Move forward" sid="367146414363921" type="Player">
+                                    <param id="0" name="Distance">-4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="565986574180690">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="199272562347593" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-17" name="Move forward" sid="106312654540643" type="Player">
+                                    <param id="0" name="Distance">4</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -151,6 +228,19 @@
                 <action id="4" name="Set animation" sid="868353436694583" type="Goblin">
                     <param id="0" name="Animation">&quot;Walking&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="991313210009129">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="405303823280155" type="Player">
+                    <param id="0" name="Tag">&quot;knockbackDuration&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="312876086772001" type="Player">
+                    <param id="0" name="Instance variable">isKnockedBack</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>

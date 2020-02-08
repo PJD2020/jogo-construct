@@ -29,7 +29,7 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="561148060527219" type="ContinueText">
+                <action id="5" name="Set web font" sid="561148060527219" type="NextText">
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
@@ -43,7 +43,7 @@
                 <condition id="6" name="On object clicked" sid="521944425457631" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">ContinueText</param>
+                    <param id="2" name="Object clicked">NextText</param>
                 </condition>
             </conditions>
             <actions>
@@ -185,7 +185,7 @@
                 <action id="-15" name="Set visible" sid="922226226685119" type="NextBackground">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="4" name="Set font color" sid="689766767016087" type="ContinueText">
+                <action id="4" name="Set font color" sid="689766767016087" type="NextText">
                     <param id="0" name="Color">rgb(0, 0, 0)</param>
                 </action>
             </actions>
@@ -198,7 +198,7 @@
                 <action id="-15" name="Set visible" sid="510463039751717" type="NextBackground">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="4" name="Set font color" sid="124404105230764" type="ContinueText">
+                <action id="4" name="Set font color" sid="124404105230764" type="NextText">
                     <param id="0" name="Color">rgb(255, 255, 255)</param>
                 </action>
             </actions>
