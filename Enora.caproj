@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
@@ -1413,6 +1414,102 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+        <object-type name="Touch" sid="226978873510219">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="ButtonLeft" sid="803730332172637">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151149785209669" speed="5">
+                    <frame duration="1" hotspotX="0.46875" hotspotY="0.53125" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Controls\Arrows-Left-Round-icon.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.1875" />
+                            <point x="0.46875" y="0.03125" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="0.96875" y="0.53125" />
+                            <point x="0.8125" y="0.875" />
+                            <point x="0.46875" y="1" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0" y="0.53125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonUp" sid="187035629187527">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="678612251317436" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Controls\Arrows-Up-Circular-icon.png">
+                        <collision-poly>
+                            <point x="0.161765" y="0.161765" />
+                            <point x="0.5" y="0.0147059" />
+                            <point x="0.838235" y="0.161765" />
+                            <point x="0.985294" y="0.5" />
+                            <point x="0.838235" y="0.838235" />
+                            <point x="0.5" y="0.985294" />
+                            <point x="0.161765" y="0.838235" />
+                            <point x="0.0147059" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonRight" sid="613366310682000">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="813067534036898" speed="5">
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.513889" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Controls\Arrows-Right-Round-icon.png">
+                        <collision-poly>
+                            <point x="0.175654" y="0.175654" />
+                            <point x="0.513889" y="0.0285948" />
+                            <point x="0.852124" y="0.175654" />
+                            <point x="0.999183" y="0.513889" />
+                            <point x="0.852124" y="0.852124" />
+                            <point x="0.513889" y="0.999183" />
+                            <point x="0.175654" y="0.852124" />
+                            <point x="0.0285948" y="0.513889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonFire" sid="169634838574562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877714846807171" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.428571" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Controls\Cinema-Crime-icon.png">
+                        <collision-poly>
+                            <point x="0.202703" y="0.0357143" />
+                            <point x="0.797297" y="0.0357143" />
+                            <point x="0.648649" y="0.428571" />
+                            <point x="0.608108" y="0.571429" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.0945946" y="0.964286" />
+                            <point x="0.0945946" y="0.428571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonFire2" sid="665525265170735">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="646623510845508" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.428571" original-source="C:\Users\allan\Downloads\CaveSurvivor\Assets\Imagens\Controls\Cinema-Crime-icon.png">
+                        <collision-poly>
+                            <point x="0.202703" y="0.0357143" />
+                            <point x="0.797297" y="0.0357143" />
+                            <point x="0.648649" y="0.428571" />
+                            <point x="0.608108" y="0.571429" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.0945946" y="0.964286" />
+                            <point x="0.0945946" y="0.428571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1440,6 +1537,11 @@
     <global-instances>
         <global-instance type="Keyboard" uid="12" />
         <global-instance type="Mouse" uid="47" />
+        <global-instance type="Touch" uid="385">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />
