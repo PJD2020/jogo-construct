@@ -1721,6 +1721,50 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Home" uid="83">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>97</x>
+                        <y>3600</y>
+                        <z>0</z>
+                        <width>151.064544678</width>
+                        <height>141.138336182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50102669</hotspotX>
+                        <hotspotY>0.501098931</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bones" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>65.343444824</x>
+                        <y>3603.656494141</y>
+                        <z>0</z>
+                        <width>80.221801758</width>
+                        <height>94.688026428</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -3539,50 +3583,6 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Home" uid="83">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>99.343444824</x>
-                        <y>3585.656494141</y>
-                        <z>0</z>
-                        <width>151.064544678</width>
-                        <height>141.138336182</height>
-                        <depth>0</depth>
-                        <hotspotX>0.50102669</hotspotX>
-                        <hotspotY>0.501098931</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Bones" uid="84">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>65.343444824</x>
-                        <y>3603.656494141</y>
-                        <z>0</z>
-                        <width>80.221801758</width>
-                        <height>94.688026428</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -6848,8 +6848,8 @@
                         <x>1995.039672852</x>
                         <y>2364.48046875</y>
                         <z>0.000001907</z>
-                        <width>17.135303497</width>
-                        <height>32.312286377</height>
+                        <width>33.255672455</width>
+                        <height>33.255672455</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -7434,8 +7434,8 @@
                         <x>447.656555176</x>
                         <y>24.8436203</y>
                         <z>0</z>
-                        <width>10.43225956</width>
-                        <height>19.672260284</height>
+                        <width>14.050489426</width>
+                        <height>14.050489426</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
