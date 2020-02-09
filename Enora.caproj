@@ -1297,10 +1297,14 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="hp" sid="873699153742177" type="number" />
+                <instance-variable name="isAttacking" sid="527651414833317" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="106418332162568">
                     <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="541160408365417">
+                    <behavior id="Timer" />
                 </behavior-type>
             </behaviors>
             <effects>
@@ -1316,12 +1320,32 @@
             </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873751466362134" speed="5">
-                    <frame duration="1" hotspotX="0.658609" hotspotY="0.49368" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\orc1\m4.png">
+                    <frame duration="1" hotspotX="0.80027" hotspotY="0.520922" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\orc1\m4.png">
                         <collision-poly>
-                            <point x="0.498914" y="0.0762082" />
-                            <point x="0.810972" y="0.0762082" />
-                            <point x="0.810972" y="0.869145" />
-                            <point x="0.498914" y="0.869145" />
+                            <point x="0.659378" y="0.182535" />
+                            <point x="0.924256" y="0.182535" />
+                            <point x="0.924256" y="0.826562" />
+                            <point x="0.659378" y="0.826562" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="AboutToAttack" pingpong="0" repeatcount="1" repeatto="0" sid="887573224765037" speed="5">
+                    <frame duration="1" hotspotX="0.80027" hotspotY="0.520922" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\orc1\m3.png">
+                        <collision-poly>
+                            <point x="0.659378" y="0.182535" />
+                            <point x="0.924256" y="0.182535" />
+                            <point x="0.924256" y="0.826562" />
+                            <point x="0.659378" y="0.826562" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Attack1" pingpong="0" repeatcount="1" repeatto="0" sid="310845156191390" speed="5">
+                    <frame duration="1" hotspotX="0.80027" hotspotY="0.520922" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\orc1\m2.png">
+                        <collision-poly>
+                            <point x="0.659378" y="0.182535" />
+                            <point x="0.924256" y="0.182535" />
+                            <point x="0.924256" y="0.826562" />
+                            <point x="0.659378" y="0.826562" />
                         </collision-poly>
                     </frame>
                 </animation>

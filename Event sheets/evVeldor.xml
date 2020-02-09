@@ -72,5 +72,89 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="146513288624858" title="Attack">
+            <sub-events>
+                <event-block sid="768509011558247">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="706429704041505" type="Veldor">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="755161101159540" type="Player">
+                            <param id="0" name="Instance variable">isDead</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="901322405966844" type="Veldor">
+                            <param id="0" name="Instance variable">isAttacking</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="350085103714786" type="Veldor">
+                            <param id="0" name="Animation">&quot;AboutToAttack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="225006620775041" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="221048370605643" type="Veldor">
+                            <param id="0" name="Animation">&quot;Attack1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="159642984186242" type="Player">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">clamp(Player.hp - 20, 0, 100)</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="166400679389636" type="Player">
+                            <param id="0" name="Object">PBlood</param>
+                            <param id="1" name="Layer">&quot;Blood&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="296897934621249" type="Player">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="589156105277425" type="Player">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="499493739190520" type="Player">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="697642764006754" type="Player">
+                            <param id="0" name="Instance variable">isKnockedBack</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="352084278941436" type="Player">
+                            <param id="0" name="Duration">0.1</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;knockbackDuration&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="180174195905798">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="352232592962230" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="174404082470780" type="Player">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="904044132171051" type="Player">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="700068879276328" type="Player">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

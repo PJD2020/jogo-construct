@@ -8061,6 +8061,7 @@
                     </properties>
                     <instance-variables>
                         <hp>100</hp>
+                        <isAttacking>false</isAttacking>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -8077,6 +8078,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                     </behavior-instances>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -8103,11 +8105,11 @@
                         <x>3591.199707031</x>
                         <y>2956.538085938</y>
                         <z>0</z>
-                        <width>310.861968994</width>
-                        <height>227.109909058</height>
+                        <width>374.520294189</width>
+                        <height>278.441802979</height>
                         <depth>0</depth>
-                        <hotspotX>0.65860945</hotspotX>
-                        <hotspotY>0.493680298</hotspotY>
+                        <hotspotX>0.800270498</hotspotX>
+                        <hotspotY>0.520921767</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -8194,8 +8196,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1941</x>
-                        <y>2370</y>
+                        <x>3173.147949219</x>
+                        <y>2921.857177734</y>
                         <z>0</z>
                         <width>31.499372482</width>
                         <height>44.000518799</height>
