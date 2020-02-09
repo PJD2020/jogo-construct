@@ -274,13 +274,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573801511842987" speed="5">
                     <frame duration="1" hotspotX="0.484761" hotspotY="0.640852" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\casulo2.png">
                         <collision-poly>
-                            <point x="0.171875" y="0.171875" />
-                            <point x="0.5" y="0" />
-                            <point x="0.828125" y="0.171875" />
-                            <point x="0.8125" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.203125" y="0.5" />
+                            <point x="0.20029" y="0.133591" />
+                            <point x="0.499274" y="0.11423" />
+                            <point x="0.741655" y="0.172314" />
+                            <point x="0.850508" y="0.499516" />
+                            <point x="0.806967" y="0.871249" />
+                            <point x="0.499274" y="0.966118" />
+                            <point x="0.197388" y="0.868345" />
+                            <point x="0.0377358" y="0.499516" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -491,26 +492,24 @@
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826448186002325" speed="5">
                     <frame duration="1" hotspotX="0.415408" hotspotY="0.555249" original-source="C:\Users\allan\Documents\GitHub\jogo-construct\Animations\Creatures\m7.png">
                         <collision-poly>
-                            <point x="0.0196375" y="0.00276243" />
-                            <point x="0.413897" y="0.417127" />
-                            <point x="0.749245" y="0.11326" />
+                            <point x="0.00151057" y="0.00276243" />
+                            <point x="0.5" y="0.30663" />
+                            <point x="0.953172" y="0.0856354" />
+                            <point x="0.892749" y="0.5" />
                             <point x="0.756798" y="0.555249" />
-                            <point x="0.613293" y="0.748619" />
-                            <point x="0.413897" y="0.969613" />
-                            <point x="0.246224" y="0.69337" />
-                            <point x="0.137462" y="0.555249" />
+                            <point x="0.5" y="0.969613" />
+                            <point x="0.182779" y="0.665746" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.465732" hotspotY="0.538462" original-source="C:\Users\allan\Documents\GitHub\jogo-construct\Animations\Creatures\m6.png">
                         <collision-poly>
-                            <point x="0.320872" y="0.319004" />
-                            <point x="0.464174" y="0.115385" />
-                            <point x="0.562305" y="0.386878" />
-                            <point x="0.749221" y="0.538462" />
-                            <point x="0.696262" y="0.884615" />
-                            <point x="0.464174" y="0.613122" />
-                            <point x="0.202492" y="0.929864" />
-                            <point x="0.141745" y="0.538462" />
+                            <point x="0.281931" y="0.409502" />
+                            <point x="0.5" y="0.0475113" />
+                            <point x="0.702492" y="0.432127" />
+                            <point x="0.951713" y="0.929864" />
+                            <point x="0.5" y="0.590498" />
+                            <point x="0.00155763" y="0.997738" />
+                            <point x="0.141745" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -523,7 +522,16 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774504334550956" speed="5">
-                    <frame duration="1" hotspotX="0.501441" hotspotY="0.501805" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\casulo1.png" />
+                    <frame duration="1" hotspotX="0.501441" hotspotY="0.501805" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\casulo1.png">
+                        <collision-poly>
+                            <point x="0.26513" y="0.33213" />
+                            <point x="0.498559" y="0.0866426" />
+                            <point x="0.726225" y="0.34296" />
+                            <point x="0.726225" y="0.65704" />
+                            <point x="0.498559" y="0.953069" />
+                            <point x="0.26513" y="0.66787" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -681,10 +689,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127579562704960" speed="5">
                     <frame duration="1" hotspotX="0.500969" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-blue.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.6" />
-                            <point x="0" y="0.6" />
+                            <point x="0.00387597" y="0.02" />
+                            <point x="0.998062" y="0.01" />
+                            <point x="0.995155" y="0.5" />
+                            <point x="0.948643" y="0.735" />
+                            <point x="0.5" y="0.81" />
+                            <point x="0.0668605" y="0.655" />
+                            <point x="0.0174419" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -735,10 +746,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864654085361846" speed="5">
                     <frame duration="1" hotspotX="0.894281" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-blue.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.6" />
-                            <point x="0" y="0.6" />
+                            <point x="0.00693241" y="0.02" />
+                            <point x="0.998267" y="0.005" />
+                            <point x="1" y="0.5" />
+                            <point x="0.902946" y="0.72" />
+                            <point x="0.499133" y="0.705" />
+                            <point x="0.119584" y="0.655" />
+                            <point x="0.0311958" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -833,10 +847,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426767922802765" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-pink.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.6" />
-                            <point x="0" y="0.6" />
+                            <point x="0.00387597" y="0.02" />
+                            <point x="0.998062" y="0.01" />
+                            <point x="0.995155" y="0.5" />
+                            <point x="0.948643" y="0.735" />
+                            <point x="0.5" y="0.81" />
+                            <point x="0.0668605" y="0.655" />
+                            <point x="0.0174419" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -853,10 +870,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357119626407397" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-pink-half.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.6" />
-                            <point x="0" y="0.6" />
+                            <point x="0.00775194" y="0.02" />
+                            <point x="0.998062" y="0.005" />
+                            <point x="0.994186" y="0.5" />
+                            <point x="0.860465" y="0.64" />
+                            <point x="0.5" y="0.76" />
+                            <point x="0.133721" y="0.655" />
+                            <point x="0.0348837" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -951,10 +971,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416758933271944" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-red.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.6" />
-                            <point x="0" y="0.6" />
+                            <point x="0.00387597" y="0.02" />
+                            <point x="0.998062" y="0.01" />
+                            <point x="0.995155" y="0.5" />
+                            <point x="0.948643" y="0.735" />
+                            <point x="0.5" y="0.81" />
+                            <point x="0.0668605" y="0.655" />
+                            <point x="0.0174419" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -994,10 +1017,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="348529038997765" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\platform-red-half.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.6" />
-                            <point x="0" y="0.6" />
+                            <point x="0.00775194" y="0.02" />
+                            <point x="0.998062" y="0.005" />
+                            <point x="0.994186" y="0.5" />
+                            <point x="0.860465" y="0.64" />
+                            <point x="0.5" y="0.76" />
+                            <point x="0.133721" y="0.655" />
+                            <point x="0.0348837" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1168,7 +1194,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869482005265519" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\radial-lines.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\radial-lines.png">
+                        <collision-poly>
+                            <point x="0.373529" y="0.373529" />
+                            <point x="0.5" y="0.291176" />
+                            <point x="0.629412" y="0.370588" />
+                            <point x="0.711765" y="0.5" />
+                            <point x="0.635294" y="0.635294" />
+                            <point x="0.5" y="0.711765" />
+                            <point x="0.364706" y="0.635294" />
+                            <point x="0.288235" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1289,7 +1326,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303067176091912" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\br1\mini-platform-blue.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\br1\mini-platform-blue.png">
+                        <collision-poly>
+                            <point x="0.0152672" y="0.0645161" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984733" y="0.0645161" />
+                            <point x="1" y="0.5" />
+                            <point x="0.950382" y="0.790323" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0458015" y="0.806452" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
