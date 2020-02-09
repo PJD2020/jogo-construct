@@ -11,117 +11,117 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="454741936253052">
+                <event-block sid="670377811019826">
                     <conditions>
-                        <condition id="-11" name="For Each" sid="416694829724354" type="System">
+                        <condition id="-11" name="For Each" sid="830651770548972" type="System">
                             <param id="0" name="Object">Goblin</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="395454882157656">
+                        <event-block sid="328553416155320">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="227290583177396" type="Sword">
+                                <condition id="1" name="Is overlapping another object" sid="216215245135232" type="Sword">
                                     <param id="0" name="Object">Goblin</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="334148055145396">
+                                <event-block sid="336116112788819">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="539905984390063" type="Player">
+                                        <condition id="-7" name="Compare instance variable" sid="879865187482161" type="Player">
                                             <param id="0" name="Instance variable">attacking</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="263464605199371" type="Goblin">
+                                        <action id="-10" name="Set value" sid="329883398358718" type="Goblin">
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">Goblin.hp - 20</param>
                                         </action>
-                                        <action id="0" name="Spawn another object" sid="571082994669522" type="Goblin">
+                                        <action id="0" name="Spawn another object" sid="861958453040867" type="Goblin">
                                             <param id="0" name="Object">EBlood</param>
                                             <param id="1" name="Layer">&quot;Blood&quot;</param>
                                             <param id="2" name="Image point">&quot;Origin&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="588122942990552" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="636683968422896" type="Goblin">
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;Tint&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="867690741442740" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="681325827610562" type="Goblin">
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;Gamma&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="688281443291483" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="250495248143471" type="Goblin">
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;Brightness&quot;</param>
                                         </action>
-                                        <action id="-13" name="Set boolean" sid="969551433375851" type="Goblin">
+                                        <action id="-13" name="Set boolean" sid="141650638425923" type="Goblin">
                                             <param id="0" name="Instance variable">isKnockedBack</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action behavior="Timer" id="0" name="Start timer" sid="213036546878410" type="Goblin">
+                                        <action behavior="Timer" id="0" name="Start timer" sid="740881258581485" type="Goblin">
                                             <param id="0" name="Duration">0.1</param>
                                             <param id="1" name="Type">0</param>
                                             <param id="2" name="Tag">&quot;knockbackDuration&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="794190121878785">
+                                <event-block sid="138176937912741">
                                     <conditions>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="851706214451142" type="Player">
+                                        <condition id="-8" name="Is boolean instance variable set" sid="332161553324864" type="Player">
                                             <param id="0" name="Instance variable">attackingFromAbove</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="988008196537972" type="Goblin">
+                                        <action id="-10" name="Set value" sid="413855723938218" type="Goblin">
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">Goblin.hp - 40</param>
                                         </action>
-                                        <action id="0" name="Spawn another object" sid="110233791924274" type="Goblin">
+                                        <action id="0" name="Spawn another object" sid="417607202774384" type="Goblin">
                                             <param id="0" name="Object">EBlood</param>
                                             <param id="1" name="Layer">&quot;Blood&quot;</param>
                                             <param id="2" name="Image point">&quot;Origin&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="568163095067245" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="243805505382335" type="Goblin">
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;Tint&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="234019751677094" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="274740704119527" type="Goblin">
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;Gamma&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="892155290157334" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="222290165490069" type="Goblin">
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;Brightness&quot;</param>
                                         </action>
-                                        <action id="-13" name="Set boolean" sid="606527499813876" type="Goblin">
+                                        <action id="-13" name="Set boolean" sid="632450750192183" type="Goblin">
                                             <param id="0" name="Instance variable">isKnockedBackFromAbove</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action behavior="Timer" id="0" name="Start timer" sid="670394156921999" type="Goblin">
+                                        <action behavior="Timer" id="0" name="Start timer" sid="716443155916464" type="Goblin">
                                             <param id="0" name="Duration">0.1</param>
                                             <param id="1" name="Type">0</param>
                                             <param id="2" name="Tag">&quot;knockbackDuration&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="400757408655405">
+                                <event-block sid="728817684248969">
                                     <conditions />
                                     <actions>
-                                        <action id="-16" name="Wait" sid="892482464256710" type="System">
+                                        <action id="-16" name="Wait" sid="820405031588941" type="System">
                                             <param id="0" name="Seconds">0.1</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="741521296011735" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="821737931667823" type="Goblin">
                                             <param id="0" name="Mode">0</param>
                                             <param id="1" name="Effect">&quot;Tint&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="720530592895339" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="946937309711940" type="Goblin">
                                             <param id="0" name="Mode">0</param>
                                             <param id="1" name="Effect">&quot;Gamma&quot;</param>
                                         </action>
-                                        <action id="-27" name="Set effect enabled" sid="359308193786339" type="Goblin">
+                                        <action id="-27" name="Set effect enabled" sid="624323892921707" type="Goblin">
                                             <param id="0" name="Mode">0</param>
                                             <param id="1" name="Effect">&quot;Brightness&quot;</param>
                                         </action>
@@ -158,7 +158,7 @@
                                     <actions>
                                         <action id="-10" name="Set value" sid="564341286078232" type="Bat">
                                             <param id="0" name="Instance variable">hp</param>
-                                            <param id="1" name="Value">Bat.hp - 40</param>
+                                            <param id="1" name="Value">Bat.hp - 20</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="490494989366234" type="Bat">
                                             <param id="0" name="Object">EBlood</param>
@@ -197,7 +197,7 @@
                                     <actions>
                                         <action id="-10" name="Set value" sid="945738753503581" type="Bat">
                                             <param id="0" name="Instance variable">hp</param>
-                                            <param id="1" name="Value">Bat.hp - 80</param>
+                                            <param id="1" name="Value">Bat.hp - 40</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="757155963152388" type="Bat">
                                             <param id="0" name="Object">EBlood</param>
@@ -436,96 +436,36 @@
                         <condition id="1" name="Is overlapping another object" sid="620867522350056" type="Sword">
                             <param id="0" name="Object">SpawnGoblin</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="370190741323602" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="498078220658717">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="922973349276594" type="Player">
-                                    <param id="0" name="Instance variable">attacking</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="869654139859603" type="SpawnGoblin">
-                                    <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">SpawnGoblin.hp - 10</param>
-                                </action>
-                                <action id="0" name="Spawn another object" sid="521065478178400" type="SpawnGoblin">
-                                    <param id="0" name="Object">EBlood</param>
-                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
-                                    <param id="2" name="Image point">&quot;Origin&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="573852093292205">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="397822446121858" type="Player">
-                                    <param id="0" name="Instance variable">attackingFromAbove</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="566071706066653" type="SpawnGoblin">
-                                    <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">SpawnGoblin.hp - 20</param>
-                                </action>
-                                <action id="0" name="Spawn another object" sid="331318196248533" type="SpawnGoblin">
-                                    <param id="0" name="Object">EBlood</param>
-                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
-                                    <param id="2" name="Image point">&quot;Origin&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-10" name="Set value" sid="913280145693146" type="SpawnGoblin">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">SpawnGoblin.hp - 50</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="523613822803100">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="705659675395005" type="Sword">
                             <param id="0" name="Object">SpawnBat</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="970208584460745" type="Player">
+                            <param id="0" name="Instance variable">attacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="820472873297016">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="794527287334455" type="Player">
-                                    <param id="0" name="Instance variable">attacking</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="293790338647090" type="SpawnBat">
-                                    <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">SpawnBat.hp - 20</param>
-                                </action>
-                                <action id="0" name="Spawn another object" sid="291141668235286" type="SpawnBat">
-                                    <param id="0" name="Object">EBlood</param>
-                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
-                                    <param id="2" name="Image point">&quot;Origin&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="814718551445660">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="558461289696643" type="Player">
-                                    <param id="0" name="Instance variable">attackingFromAbove</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="776695241517555" type="SpawnBat">
-                                    <param id="0" name="Instance variable">hp</param>
-                                    <param id="1" name="Value">SpawnBat.hp - 40</param>
-                                </action>
-                                <action id="0" name="Spawn another object" sid="284399236319445" type="SpawnBat">
-                                    <param id="0" name="Object">EBlood</param>
-                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
-                                    <param id="2" name="Image point">&quot;Origin&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-10" name="Set value" sid="199231279330987" type="SpawnBat">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">SpawnBat.hp - 50</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>

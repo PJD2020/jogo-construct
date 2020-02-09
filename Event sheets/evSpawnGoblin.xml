@@ -40,29 +40,9 @@
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="437947827105597">
-                    <conditions>
-                        <condition id="-12" name="Repeat" sid="582907369658019" type="System">
-                            <param id="0" name="Count">100</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="276529769598088" type="SpawnGoblin">
-                            <param id="0" name="Object">EBlood</param>
-                            <param id="1" name="Layer">&quot;Blood&quot;</param>
-                            <param id="2" name="Image point">&quot;Origin&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="306508442054197">
-                    <conditions />
-                    <actions>
-                        <action id="-9" name="Destroy" sid="968801347388894" type="SpawnGoblin" />
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action id="-9" name="Destroy" sid="968801347388894" type="SpawnGoblin" />
+            </actions>
         </event-block>
         <event-block sid="993505115054627">
             <conditions>
