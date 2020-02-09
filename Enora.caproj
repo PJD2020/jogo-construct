@@ -1151,7 +1151,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="212361144136712" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\key-silver.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\key.png">
+                        <collision-poly>
+                            <point x="0.195313" y="0.195313" />
+                            <point x="0.804688" y="0.195313" />
+                            <point x="0.601563" y="0.601563" />
+                            <point x="0.5" y="0.914063" />
+                            <point x="0.304688" y="0.695313" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1181,7 +1190,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944245536569737" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\key-silver.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\jogo-construct\Textures\Items\key.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1234,58 +1243,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948274884369303" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
-        <object-type name="FirstBossChamber" sid="729501617427167">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251915925505708" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500268" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\br1\mapa 2.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MiniPlatformBlue" sid="531295867656069">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="342445325669847">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="673516704975655" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\br1\mini-platform-blue.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Gate_4" sid="803455962817402">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="605185295390697" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501976" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\door-closed.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.996774" y="0.00395257" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="114327533088623" speed="5">
-                    <frame duration="1" hotspotX="0.501493" hotspotY="0.501832" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\door-open.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Lever" sid="449114758219800">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578398900068102" speed="5">
-                    <frame duration="1" hotspotX="0.501718" hotspotY="0.500952" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\br1\alavanca.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="suspendedBlueRock" sid="747464923026131">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225135829397112" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\map\br1\suspended-blue-rock.png" />
                 </animation>
             </animation-folder>
         </object-type>
