@@ -7669,7 +7669,7 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>130</magnitude>
+                                <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
@@ -7682,8 +7682,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>722</x>
-                        <y>2509</y>
+                        <x>720.506652832</x>
+                        <y>2558.782226563</y>
                         <z>0</z>
                         <width>76.364990234</width>
                         <height>18.071105957</height>
@@ -8196,8 +8196,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3173.147949219</x>
-                        <y>2921.857177734</y>
+                        <x>64.211639404</x>
+                        <y>3621.938720703</y>
                         <z>0</z>
                         <width>31.499372482</width>
                         <height>44.000518799</height>
