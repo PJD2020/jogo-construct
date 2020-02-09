@@ -1768,6 +1768,323 @@
             </instances>
             <effects />
         </layer>
+        <layer name="Enemies" sid="136530344869568">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Goblin" uid="325">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <right>1</right>
+                        <hp>100</hp>
+                        <isKnockedBack>false</isKnockedBack>
+                        <isKnockedBackFromAbove>false</isKnockedBackFromAbove>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>600</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>2.55</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>.5</gamma>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Brightness">
+                            <parameters>
+                                <brightness>1.1</brightness>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>62.187614441</x>
+                        <y>-30.625017166</y>
+                        <z>0</z>
+                        <width>30.061855316</width>
+                        <height>29.417133331</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.497830808</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bat" uid="326">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <hp>100</hp>
+                        <isKnockedBack>false</isKnockedBack>
+                        <isKnockedBackFromAbove>false</isKnockedBackFromAbove>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>20</cell-size>
+                                <cell-border>-50</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>2000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>2000</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>2.55</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Brightness">
+                            <parameters>
+                                <brightness>1.2</brightness>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>120.000030518</x>
+                        <y>-30.000017166</y>
+                        <z>0</z>
+                        <width>30.045999527</width>
+                        <height>16.454000473</height>
+                        <depth>0</depth>
+                        <hotspotX>0.415407866</hotspotX>
+                        <hotspotY>0.555248618</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpawnGoblin" uid="323">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <hp>100</hp>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>938.50970459</x>
+                        <y>3547.149902344</y>
+                        <z>0</z>
+                        <width>60.820453644</width>
+                        <height>91.186538696</height>
+                        <depth>0</depth>
+                        <hotspotX>0.484760523</hotspotX>
+                        <hotspotY>0.640851915</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpawnBat" uid="324">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <hp>100</hp>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>883.018432617</x>
+                        <y>3150.505126953</y>
+                        <z>0</z>
+                        <width>66.577484131</width>
+                        <height>53.146873474</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501440942</hotspotX>
+                        <hotspotY>0.501805067</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Player" sid="836492844780328">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Player" uid="71">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <right>1</right>
+                        <attacking>0</attacking>
+                        <hp>100</hp>
+                        <isDead>0</isDead>
+                        <left>0</left>
+                        <animation>&quot;idle&quot;</animation>
+                        <hasWallJumpedRight>false</hasWallJumpedRight>
+                        <hasWallJumpedLeft>false</hasWallJumpedLeft>
+                        <isKnockedBack>false</isKnockedBack>
+                        <attackingFromAbove>false</attackingFromAbove>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>250</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>600</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>2.55</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Brightness">
+                            <parameters>
+                                <brightness>1</brightness>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>66</x>
+                        <y>3608</y>
+                        <z>0</z>
+                        <width>31.499372482</width>
+                        <height>44.000518799</height>
+                        <depth>0</depth>
+                        <hotspotX>0.530158758</hotspotX>
+                        <hotspotY>0.540909111</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sword" uid="73">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>80.849975586</x>
+                        <y>3633.118896484</y>
+                        <z>0</z>
+                        <width>9.720000267</width>
+                        <height>37.919998169</height>
+                        <depth>0</depth>
+                        <hotspotX>0.537037015</hotspotX>
+                        <hotspotY>0.821202517</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
         <layer name="Blood" sid="297132234233905">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -6923,56 +7240,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpawnBat" uid="324">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <hp>100</hp>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>887.687805176</x>
-                        <y>3136.499023438</y>
-                        <z>0</z>
-                        <width>66.577484131</width>
-                        <height>53.146873474</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501440942</hotspotX>
-                        <hotspotY>0.501805067</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="SpawnGoblin" uid="323">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <hp>100</hp>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>958.937927246</x>
-                        <y>3564.072998047</y>
-                        <z>0</z>
-                        <width>60.820453644</width>
-                        <height>91.186538696</height>
-                        <depth>0</depth>
-                        <hotspotX>0.484760523</hotspotX>
-                        <hotspotY>0.640851915</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="MobilePlatform" uid="345">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -7221,273 +7488,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.519999981</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
-            <effects />
-        </layer>
-        <layer name="Player" sid="836492844780328">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="Player" uid="71">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <right>1</right>
-                        <attacking>0</attacking>
-                        <hp>100</hp>
-                        <isDead>0</isDead>
-                        <left>0</left>
-                        <animation>&quot;idle&quot;</animation>
-                        <hasWallJumpedRight>false</hasWallJumpedRight>
-                        <hasWallJumpedLeft>false</hasWallJumpedLeft>
-                        <isKnockedBack>false</isKnockedBack>
-                        <attackingFromAbove>false</attackingFromAbove>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>250</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>600</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>Yes</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="ScrollTo">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Timer" />
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Tint">
-                            <parameters>
-                                <blue>0</blue>
-                                <green>0</green>
-                                <red>2.55</red>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Brightness">
-                            <parameters>
-                                <brightness>1</brightness>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Gamma">
-                            <parameters>
-                                <gamma>1</gamma>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>66</x>
-                        <y>3608</y>
-                        <z>0</z>
-                        <width>31.499372482</width>
-                        <height>44.000518799</height>
-                        <depth>0</depth>
-                        <hotspotX>0.530158758</hotspotX>
-                        <hotspotY>0.540909111</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sword" uid="73">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="DestroyOutsideLayout" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>80.849975586</x>
-                        <y>3633.118896484</y>
-                        <z>0</z>
-                        <width>9.720000267</width>
-                        <height>37.919998169</height>
-                        <depth>0</depth>
-                        <hotspotX>0.537037015</hotspotX>
-                        <hotspotY>0.821202517</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
-            <effects />
-        </layer>
-        <layer name="Enemies" sid="136530344869568">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="Goblin" uid="325">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <right>1</right>
-                        <hp>100</hp>
-                        <isKnockedBack>false</isKnockedBack>
-                        <isKnockedBackFromAbove>false</isKnockedBackFromAbove>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>150</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>600</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="DestroyOutsideLayout" />
-                        <behavior-instance type="Timer" />
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Tint">
-                            <parameters>
-                                <blue>0</blue>
-                                <green>0</green>
-                                <red>2.55</red>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Gamma">
-                            <parameters>
-                                <gamma>.5</gamma>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Brightness">
-                            <parameters>
-                                <brightness>1.1</brightness>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>62.187614441</x>
-                        <y>-30.625017166</y>
-                        <z>0</z>
-                        <width>30.061855316</width>
-                        <height>29.417133331</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.497830808</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Bat" uid="326">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <hp>100</hp>
-                        <isKnockedBack>false</isKnockedBack>
-                        <isKnockedBackFromAbove>false</isKnockedBackFromAbove>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="DestroyOutsideLayout" />
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>20</cell-size>
-                                <cell-border>-50</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>2000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>2000</rotate-speed>
-                                <rotate-object>No</rotate-object>
-                                <diagonals>Enabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Timer" />
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Tint">
-                            <parameters>
-                                <blue>0</blue>
-                                <green>0</green>
-                                <red>2.55</red>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Brightness">
-                            <parameters>
-                                <brightness>1.2</brightness>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Gamma">
-                            <parameters>
-                                <gamma>1</gamma>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>120.000030518</x>
-                        <y>-30.000017166</y>
-                        <z>0</z>
-                        <width>30.045999527</width>
-                        <height>16.454000473</height>
-                        <depth>0</depth>
-                        <hotspotX>0.415407866</hotspotX>
-                        <hotspotY>0.555248618</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
