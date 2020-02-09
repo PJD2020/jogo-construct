@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evCredits</name>
+    <events>
+        <event-block sid="619887335333408">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="423341928718412" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="558423648617470" type="CreditsText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="353007589311381" type="CreditsSkipText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="134204246410815" type="CreditsText">
+                    <param id="0" name="Text">&quot;Créditos&quot; &amp; newline &amp; newline &amp; newline &amp; &quot;Um jogo feito por estudantes da UNIRIO&quot; &amp; newline &amp; newline &amp; &quot;Enredo&quot; &amp; newline &amp; &quot;Allan Borges&quot; &amp; newline &amp; &quot;Breno Sousa&quot; &amp; newline &amp; &quot;Rafael Mota&quot; &amp; newline &amp; &quot;Daniel Mota&quot; &amp; newline &amp; newline &amp;  &quot;Programação&quot; &amp; newline &amp; &quot;Allan Borges&quot; &amp; newline &amp; &quot;Breno Sousa&quot; &amp; newline &amp; newline &amp; &quot;Arte&quot; &amp; newline &amp; &quot;Breno Sousa&quot; &amp; newline &amp; &quot;Elias Souza&quot; &amp; newline &amp; &quot;Daniel Mota&quot; &amp; newline &amp; &quot;Rafael Mota&quot; &amp; newline &amp; newline &amp; &quot;Efeitos sonoros&quot; &amp; newline &amp; &quot;Ninguém fez ainda&quot; &amp; newline &amp; newline &amp; &quot;Música&quot; &amp; newline &amp; &quot;Undertale&quot; &amp; newline &amp; &quot;The Witcher 3&quot; &amp; newline &amp; newline &amp; &quot;Testes&quot; &amp; newline &amp; &quot;Menina da foto do rafael&quot; &amp; newline &amp; &quot;Irmão do allan&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="300716845313716">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="712533981696073" type="System" />
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="383734572279473" type="CreditsText">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="903205677036351">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="144699560515507" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="931982076626763" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
