@@ -332,7 +332,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="282998995057057" type="System">
-                            <param id="0" name="Seconds">2.0</param>
+                            <param id="0" name="Seconds">4</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="227368351579142" type="System" />
                     </actions>
