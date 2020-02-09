@@ -25,6 +25,7 @@
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -1228,6 +1229,22 @@
         </object-type>
         <object-type name="dialogue_3" sid="542373879888376">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="MobilePlatform" sid="817482053687671">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="923240400914515">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="476663930939414">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948274884369303" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
