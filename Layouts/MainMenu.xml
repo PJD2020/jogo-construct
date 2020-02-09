@@ -60,7 +60,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>178.230026245</x>
-                        <y>177.430679321</y>
+                        <y>204.641036987</y>
                         <z>0</z>
                         <width>124</width>
                         <height>24</height>
@@ -113,6 +113,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="CreditsBackground" uid="382">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>178.651275635</x>
+                        <y>176.716201782</y>
+                        <z>0</z>
+                        <width>124</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="QuitText" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -124,13 +144,35 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240.384017944</x>
-                        <y>189.547119141</y>
+                        <y>216.842453003</y>
                         <z>0</z>
                         <width>33.834148407</width>
                         <height>10.016689301</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.51111114</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CreditsMenuText" uid="383">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240.84286499</x>
+                        <y>186.135559082</y>
+                        <z>0</z>
+                        <width>76.350646973</width>
+                        <height>13.982822418</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507936537</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
