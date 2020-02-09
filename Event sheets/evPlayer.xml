@@ -118,34 +118,31 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="923566599437889">
-                            <conditions>
-                                <condition id="0" name="On key pressed" sid="320731918995913" type="Keyboard">
-                                    <param id="0" name="Key">90</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="219067458213934" type="Player">
-                                    <param id="0" name="Instance variable">attacking</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="655968193382191">
                             <conditions>
-                                <condition id="2" name="Mouse button is down" sid="142394897930772" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                </condition>
                                 <condition id="-6" name="Every X seconds" sid="330598454984223" type="System">
                                     <param id="0" name="Interval (seconds)">0.3</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="384901269783011" type="Player">
-                                    <param id="0" name="Instance variable">attacking</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="515091634838777">
+                                    <conditions>
+                                        <condition id="2" name="Mouse button is down" sid="871765090770142" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="320731918995913" type="Keyboard">
+                                            <param id="0" name="Key">90</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="384901269783011" type="Player">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
