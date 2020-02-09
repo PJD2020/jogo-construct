@@ -68,5 +68,41 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" disabled="1" sid="737059805174170" title="Collision Behavior">
+            <sub-events>
+                <event-block disabled="1" sid="697169048577278">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="212088821900316" type="System">
+                            <param id="0" name="Object">Bat</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="816230804297256">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="202323415198239" type="Bat">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block disabled="1" sid="404246158886410">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="963564417725003" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block disabled="1" sid="846244260624438">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="696750014226513" type="Bat">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

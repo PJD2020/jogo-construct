@@ -249,5 +249,16 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="541668859998416">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="804789705399547" type="System" />
+            </conditions>
+            <actions>
+                <action id="-29" name="Set layout effect enabled" sid="538826124138152" type="System">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

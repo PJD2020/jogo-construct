@@ -722,8 +722,8 @@
                         <behavior-instance type="DestroyOutsideLayout" />
                         <behavior-instance type="Pathfinding">
                             <properties>
-                                <cell-size>20</cell-size>
-                                <cell-border>-50</cell-border>
+                                <cell-size>1</cell-size>
+                                <cell-border>1</cell-border>
                                 <obstacles>Solids</obstacles>
                                 <max-speed>300</max-speed>
                                 <acceleration>2000</acceleration>

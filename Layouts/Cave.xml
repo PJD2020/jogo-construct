@@ -8123,8 +8123,8 @@
                         <behavior-instance type="DestroyOutsideLayout" />
                         <behavior-instance type="Pathfinding">
                             <properties>
-                                <cell-size>20</cell-size>
-                                <cell-border>-50</cell-border>
+                                <cell-size>1</cell-size>
+                                <cell-border>1</cell-border>
                                 <obstacles>Solids</obstacles>
                                 <max-speed>200</max-speed>
                                 <acceleration>2000</acceleration>
@@ -8683,5 +8683,14 @@
         </layer>
     </layers>
     <nonworld-instances />
-    <effects />
+    <effects>
+        <effect-type name="Grayscale">
+            <effect id="grayscale" />
+            <effect-instance type="Grayscale">
+                <parameters>
+                    <intensity>0.5</intensity>
+                </parameters>
+            </effect-instance>
+        </effect-type>
+    </effects>
 </c2layout>

@@ -112,7 +112,7 @@
                             <actions>
                                 <action id="-3" name="Set position" sid="812778173121509" type="Player">
                                     <param id="0" name="X">3200</param>
-                                    <param id="1" name="Y">3000</param>
+                                    <param id="1" name="Y">2915</param>
                                 </action>
                             </actions>
                         </event-block>
