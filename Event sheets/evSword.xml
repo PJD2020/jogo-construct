@@ -251,6 +251,122 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="800924934357571">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="566511222829470" type="System">
+                            <param id="0" name="Object">SpawnGoblin</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="982074591766582">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="947006930038133" type="Sword">
+                                    <param id="0" name="Object">SpawnGoblin</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="248268702621463">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="358451851565297" type="Player">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="748677022553976" type="SpawnGoblin">
+                                            <param id="0" name="Instance variable">hp</param>
+                                            <param id="1" name="Value">SpawnGoblin.hp - 10</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="110538709335530" type="SpawnGoblin">
+                                            <param id="0" name="Object">EBlood</param>
+                                            <param id="1" name="Layer">&quot;Blood&quot;</param>
+                                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="140441780426891">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="553220062815739" type="Player">
+                                            <param id="0" name="Instance variable">attackingFromAbove</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="242466933146103" type="SpawnGoblin">
+                                            <param id="0" name="Instance variable">hp</param>
+                                            <param id="1" name="Value">SpawnGoblin.hp - 20</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="472792350747625" type="SpawnGoblin">
+                                            <param id="0" name="Object">EBlood</param>
+                                            <param id="1" name="Layer">&quot;Blood&quot;</param>
+                                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="105094972807731">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="796733587378041" type="System">
+                            <param id="0" name="Object">SpawnBat</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="696408097814255">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="667462148359723" type="Sword">
+                                    <param id="0" name="Object">SpawnBat</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="401263382751447">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="787877232861807" type="Player">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="483379197035054" type="SpawnBat">
+                                            <param id="0" name="Instance variable">hp</param>
+                                            <param id="1" name="Value">SpawnBat.hp - 20</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="261544160395481" type="SpawnBat">
+                                            <param id="0" name="Object">EBlood</param>
+                                            <param id="1" name="Layer">&quot;Blood&quot;</param>
+                                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="924654775185964">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="640162824682155" type="Player">
+                                            <param id="0" name="Instance variable">attackingFromAbove</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="217306025533980" type="SpawnBat">
+                                            <param id="0" name="Instance variable">hp</param>
+                                            <param id="1" name="Value">SpawnBat.hp - 40</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="464264221124727" type="SpawnBat">
+                                            <param id="0" name="Object">EBlood</param>
+                                            <param id="1" name="Layer">&quot;Blood&quot;</param>
+                                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="377420651385880">
@@ -422,52 +538,6 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="518590519625449">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="219007828673840" type="System">
-                    <param id="0" name="Interval (seconds)">0.1</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="144978657156361">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="620867522350056" type="Sword">
-                            <param id="0" name="Object">SpawnGoblin</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="370190741323602" type="Player">
-                            <param id="0" name="Instance variable">attacking</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="913280145693146" type="SpawnGoblin">
-                            <param id="0" name="Instance variable">hp</param>
-                            <param id="1" name="Value">SpawnGoblin.hp - 50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="523613822803100">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="705659675395005" type="Sword">
-                            <param id="0" name="Object">SpawnBat</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="970208584460745" type="Player">
-                            <param id="0" name="Instance variable">attacking</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="199231279330987" type="SpawnBat">
-                            <param id="0" name="Instance variable">hp</param>
-                            <param id="1" name="Value">SpawnBat.hp - 50</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-group description="" sid="369615745653814" title="Veldor">
             <sub-events>

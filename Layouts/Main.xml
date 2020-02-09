@@ -722,13 +722,13 @@
                         <behavior-instance type="DestroyOutsideLayout" />
                         <behavior-instance type="Pathfinding">
                             <properties>
-                                <cell-size>1</cell-size>
-                                <cell-border>1</cell-border>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
                                 <obstacles>Solids</obstacles>
-                                <max-speed>300</max-speed>
-                                <acceleration>2000</acceleration>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
-                                <rotate-speed>2000</rotate-speed>
+                                <rotate-speed>135</rotate-speed>
                                 <rotate-object>No</rotate-object>
                                 <diagonals>Enabled</diagonals>
                                 <initial-state>Enabled</initial-state>

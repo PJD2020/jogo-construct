@@ -3,46 +3,76 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evSpawnBat</name>
     <events>
-        <event-block sid="380684823112550">
+        <event-block sid="870597329647259">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="227724789016742" type="System">
+                <condition id="-6" name="Every X seconds" sid="280176753369308" type="System">
                     <param id="0" name="Interval (seconds)">10</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="539753359322939" type="SpawnBat">
-                    <param id="0" name="Object">Bat</param>
-                    <param id="1" name="Layer">&quot;Enemies&quot;</param>
-                    <param id="2" name="Image point">&quot;Origin&quot;</param>
-                </action>
-                <action id="-27" name="Set effect enabled" sid="222585996390800" type="Bat">
-                    <param id="0" name="Mode">0</param>
-                    <param id="1" name="Effect">&quot;Tint&quot;</param>
-                </action>
-                <action id="-27" name="Set effect enabled" sid="434899097739953" type="Bat">
-                    <param id="0" name="Mode">0</param>
-                    <param id="1" name="Effect">&quot;Gamma&quot;</param>
-                </action>
-                <action id="-27" name="Set effect enabled" sid="126290065412234" type="Bat">
-                    <param id="0" name="Mode">0</param>
-                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
-                </action>
-                <action behavior="Pathfinding" id="7" name="Set max speed" sid="477167255520157" type="Bat">
-                    <param id="0" name="Speed">self.Pathfinding.MaxSpeed + random(-20, 20)</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="380684823112550">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="295800759312891" type="System">
+                            <param id="0" name="Object">SpawnBat</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="539753359322939" type="SpawnBat">
+                            <param id="0" name="Object">Bat</param>
+                            <param id="1" name="Layer">&quot;Enemies&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="222585996390800" type="Bat">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="434899097739953" type="Bat">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="126290065412234" type="Bat">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                        </action>
+                        <action behavior="Pathfinding" id="7" name="Set max speed" sid="477167255520157" type="Bat">
+                            <param id="0" name="Speed">self.Pathfinding.MaxSpeed + random(-20, 20)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block sid="897571000622173">
+        <event-block sid="221383393671694">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="265990353584106" type="SpawnBat">
+                <condition id="-7" name="Compare instance variable" sid="593748474192156" type="SpawnBat">
                     <param id="0" name="Instance variable">hp</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="948684657537304" type="SpawnBat" />
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="256321931383826">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="937887842870449" type="System">
+                            <param id="0" name="Count">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="984981275332163" type="SpawnBat">
+                            <param id="0" name="Object">EBlood</param>
+                            <param id="1" name="Layer">&quot;Blood&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="523614304459027">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Destroy" sid="706233373590024" type="SpawnBat" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="317383341409896">
             <conditions>
