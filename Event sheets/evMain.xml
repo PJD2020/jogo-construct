@@ -12,6 +12,7 @@
         <include>evPlayer</include>
         <include>evKey</include>
         <include>evGate</include>
+        <include>evVeldor</include>
         <event-block sid="783372210809090">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="364817476453812" type="System" />

@@ -1293,6 +1293,54 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Veldor" sid="929125716657501">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="hp" sid="873699153742177" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="106418332162568">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+                <effect-type name="Gamma">
+                    <effect id="gamma" />
+                </effect-type>
+                <effect-type name="Brightness">
+                    <effect id="brightness" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873751466362134" speed="5">
+                    <frame duration="1" hotspotX="0.658609" hotspotY="0.49368" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\orc1\m4.png">
+                        <collision-poly>
+                            <point x="0.498914" y="0.0762082" />
+                            <point x="0.810972" y="0.0762082" />
+                            <point x="0.810972" y="0.869145" />
+                            <point x="0.498914" y="0.869145" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VeldorHealthBar" sid="189963856812641">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="max" sid="407149172300452" type="number" />
+            </instance-variables>
+            <texture />
+        </object-type>
+        <object-type name="VeldorHealthText" sid="585313648224923">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="VBlood" sid="255394567192143">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1315,6 +1363,7 @@
         <event-sheet>evCave.xml</event-sheet>
         <event-sheet>evKey.xml</event-sheet>
         <event-sheet>evGate.xml</event-sheet>
+        <event-sheet>evVeldor.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="12" />

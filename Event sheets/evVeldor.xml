@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evVeldor</name>
+    <events>
+        <event-group description="" sid="639390369957530" title="Movement2">
+            <sub-events>
+                <event-block sid="426320968338573">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="831911509747578" type="Veldor">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">Player.X + 25</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="886986862997780" type="Player">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="613577800813539" type="Veldor">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="567130439310670" type="Veldor">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="426877472908566">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="521631988597153" type="Veldor">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">Player.X - 25</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="844976640818742" type="Player">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="161603102019144" type="Veldor">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="334730481473873" type="Veldor">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="941405832112864" title="Start">
+            <sub-events>
+                <event-block sid="259583180273588">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="181062432749113" type="Veldor" />
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="261138551995288" type="Veldor">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="600465936665411" type="Veldor">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="556945175842260" type="Veldor">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

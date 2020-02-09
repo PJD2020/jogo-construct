@@ -48,6 +48,10 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="481308619557036" type="VeldorHealthText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="732782908254467">
@@ -85,6 +89,9 @@
             <actions>
                 <action id="-5" name="Set width" sid="415522322883898" type="HealthBar">
                     <param id="0" name="Width">(128 / 100) * Player.hp</param>
+                </action>
+                <action id="-5" name="Set width" sid="140234712621443" type="VeldorHealthBar">
+                    <param id="0" name="Width">(256 / 100) * Veldor.hp</param>
                 </action>
             </actions>
         </event-block>

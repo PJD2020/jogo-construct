@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1581204351,
+	"version": 1581279167,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -63,6 +63,13 @@
 		"images/deathoverlay-sheet0.png",
 		"images/firstbosskey-sheet0.png",
 		"images/firstbosskeylines-sheet0.png",
+		"images/firstbosschamber-sheet0.png",
+		"images/miniplatformblue-sheet0.png",
+		"images/lever-sheet0.png",
+		"images/suspendedbluerock-sheet0.png",
+		"images/veldor-sheet0.png",
+		"images/veldorhealthbar.png",
+		"images/vblood.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
