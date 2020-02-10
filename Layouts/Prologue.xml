@@ -31,7 +31,7 @@
             <instances>
                 <instance type="PrologueText" uid="59">
                     <properties>
-                        <text>Houve uma época em que o rei Hobb governava Keogia, o reino mais próspero da Terra Enora. Seus inimigos especulavam que toda a família real usava magia para permanecer no poder.</text>
+                        <text>Houve uma época em que o rei Hoppe governava Keogia, o reino mais próspero da Terra de Enora. Porém, o que muitos não sabiam é que ele guardava um segredo.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-8,400,0</font>
                         <color>255,255,255</color>
@@ -58,7 +58,7 @@
                 </instance>
                 <instance type="PrologueText2" uid="60">
                     <properties>
-                        <text>Certa noite, a princesa Liza foi capturada por Sephiroth, e o rei imediatamente ordenou uma expedição para resgatá-la.</text>
+                        <text>Após descobrir que toda a família real possuía poderes mágicos, o necromante Sephiroth invadiu o castelo do reino de Keogia e capturou a princesa Lisa.</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-8,400,0</font>
                         <color>255,255,255</color>
@@ -85,7 +85,7 @@
                 </instance>
                 <instance type="PrologueText3" uid="61">
                     <properties>
-                        <text>No decurso da batalha, o cavaleiro Edward e toda a sua tropa se veem cercados e acabam sendo massacrados pelo orc Yazgash.</text>
+                        <text>Enfurecido, o rei ordenou à Guarda Real que fosse iniciada uma expedição para salvá-la. Edward e Altair foram escolhidos para liderar a missão.</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-8,400,0</font>
                         <color>255,255,255</color>
@@ -112,7 +112,7 @@
                 </instance>
                 <instance type="PrologueText4" uid="62">
                     <properties>
-                        <text>Edward acorda em uma caverna e descobre que uma bruxa o ressuscitou como escravo. Ela conta como o império de Sephiroth destruiu a vida na superfície da Terra Enora com os poderes da princesa, que esteve durante os últimos cem anos aprisionada.</text>
+                        <text>No decurso da sangrenta batalha de resgate, Altair é atingido por uma pedra e desaba. Edward tenta ajudá-lo, mas um grupo de Orcs os cerca e acaba os massacrando.</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-8,400,0</font>
                         <color>255,255,255</color>
@@ -139,7 +139,7 @@
                 </instance>
                 <instance type="PrologueText5" uid="63">
                     <properties>
-                        <text>O cavaleiro engana a bruxa e quebra o feitiço de serventia ao assassiná-la. Com o feitiço de ressuscitação incompleto, ele foge com metade do corpo quase sem vida em busca de retaliação.</text>
+                        <text>Edward acorda em uma caverna e descobre que uma bruxa o ressuscitou como escravo. Ela conta como o império de Sephiroth destruiu a vida na superfície da Terra Enora com os poderes da princesa, que esteve durante os últimos cem anos aprisionada.</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-8,400,0</font>
                         <color>255,255,255</color>
@@ -211,7 +211,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="sceneOne" uid="67">
+                <instance type="scenes" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -229,6 +229,33 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.500697374</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PrologueText6" uid="395">
+                    <properties>
+                        <text>O cavaleiro engana a bruxa e quebra o feitiço de serventia ao assassiná-la. Com o feitiço de ressuscitação incompleto, ele foge com metade do corpo quase sem vida em busca de retaliação.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-8,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>15.00399971</x>
+                        <y>205.695999146</y>
+                        <z>0</z>
+                        <width>447.972473145</width>
+                        <height>40.079818726</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

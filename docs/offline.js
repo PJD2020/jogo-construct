@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1581303904,
+	"version": 1581313171,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -28,7 +28,9 @@
 		"images/newgametext-sheet0.png",
 		"images/quittext-sheet0.png",
 		"images/continueicon-sheet0.png",
-		"images/sceneone-sheet0.png",
+		"images/scenes-sheet0.png",
+		"images/scenes-sheet1.png",
+		"images/scenes-sheet2.png",
 		"images/wallblue-sheet0.png",
 		"images/sprite-sheet0.png",
 		"images/wallbluehalf-sheet0.png",

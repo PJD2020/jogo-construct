@@ -29,6 +29,10 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="357015240855393" type="PrologueText6">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
                 <action id="5" name="Set web font" sid="561148060527219" type="NextText">
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
@@ -71,6 +75,10 @@
                         <action id="-15" name="Set visible" sid="623658025825555" type="PrologueText2">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="749002863598276" type="scenes">
+                            <param id="0" name="Animation">&quot;scene2&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="294159509716045">
@@ -93,6 +101,10 @@
                                 </action>
                                 <action id="-15" name="Set visible" sid="141341988646906" type="PrologueText3">
                                     <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="153213868738085" type="scenes">
+                                    <param id="0" name="Animation">&quot;scene3&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -117,6 +129,10 @@
                                         <action id="-15" name="Set visible" sid="295285688699011" type="PrologueText4">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
+                                        <action id="4" name="Set animation" sid="465252920288344" type="scenes">
+                                            <param id="0" name="Animation">&quot;scene4&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="498843111358138">
@@ -140,6 +156,10 @@
                                                 <action id="-15" name="Set visible" sid="199220019416063" type="PrologueText5">
                                                     <param id="0" name="Visibility">1</param>
                                                 </action>
+                                                <action id="4" name="Set animation" sid="688566843260172" type="scenes">
+                                                    <param id="0" name="Animation">&quot;scene5&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="907251262768013">
@@ -157,16 +177,45 @@
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action behavior="Sine" id="0" name="Set active" sid="146947285004648" type="Transition">
-                                                            <param id="0" name="State">1</param>
+                                                        <action id="-15" name="Set visible" sid="555416714695211" type="PrologueText5">
+                                                            <param id="0" name="Visibility">0</param>
                                                         </action>
-                                                        <action id="-16" name="Wait" sid="540257920834371" type="System">
-                                                            <param id="0" name="Seconds">0.5</param>
+                                                        <action id="-15" name="Set visible" sid="461601830054512" type="PrologueText6">
+                                                            <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                        <action id="-25" name="Go to layout (by name)" sid="350170111952028" type="System">
-                                                            <param id="0" name="Layout">&quot;Cave&quot;</param>
+                                                        <action id="4" name="Set animation" sid="552461060871476" type="scenes">
+                                                            <param id="0" name="Animation">&quot;scene6&quot;</param>
+                                                            <param id="1" name="From">1</param>
                                                         </action>
                                                     </actions>
+                                                </event-block>
+                                                <event-block sid="806584211775751">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="813067377508204" type="System" />
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="737837622669431">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="902631482881889" type="System">
+                                                                    <param id="0" name="Variable">page</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">7</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action behavior="Sine" id="0" name="Set active" sid="722412236134499" type="Transition">
+                                                                    <param id="0" name="State">1</param>
+                                                                </action>
+                                                                <action id="-16" name="Wait" sid="132512236965113" type="System">
+                                                                    <param id="0" name="Seconds">0.5</param>
+                                                                </action>
+                                                                <action id="-25" name="Go to layout (by name)" sid="594773267285498" type="System">
+                                                                    <param id="0" name="Layout">&quot;Cave&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
