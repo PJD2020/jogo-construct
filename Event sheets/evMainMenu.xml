@@ -70,12 +70,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="337397855676819">
+        <event-block any="1" sid="337397855676819">
             <conditions>
                 <condition id="6" name="On object clicked" sid="309364502017956" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">NewGameBackground</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="334314447852316" type="Touch">
+                    <param id="0" name="Object">NewGameBackground</param>
                 </condition>
             </conditions>
             <actions>
@@ -90,12 +93,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="649976997730104">
+        <event-block any="1" sid="649976997730104">
             <conditions>
                 <condition id="6" name="On object clicked" sid="267148945784663" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">CreditsBackground</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="389376626477373" type="Touch">
+                    <param id="0" name="Object">CreditsBackground</param>
                 </condition>
             </conditions>
             <actions>

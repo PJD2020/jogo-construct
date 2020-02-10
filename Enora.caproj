@@ -1555,9 +1555,9 @@
         <event-sheet>evCredits.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="12" />
-        <global-instance type="Mouse" uid="47" />
-        <global-instance type="Touch" uid="385">
+        <global-instance type="Keyboard" uid="392" />
+        <global-instance type="Mouse" uid="393" />
+        <global-instance type="Touch" uid="394">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
