@@ -1510,24 +1510,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="CreditsText" sid="883415234524554">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="CreditsSkipText" sid="219334775056480">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="CreditsBackground" sid="866379904773948">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="CreditsMenuText" sid="118559025191603">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837143180796950" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\cred.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1535,7 +1517,6 @@
         <layout>Prologue.xml</layout>
         <layout>Main.xml</layout>
         <layout>Cave.xml</layout>
-        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>evMain.xml</event-sheet>
@@ -1552,7 +1533,6 @@
         <event-sheet>evKey.xml</event-sheet>
         <event-sheet>evGate.xml</event-sheet>
         <event-sheet>evVeldor.xml</event-sheet>
-        <event-sheet>evCredits.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="12" />
