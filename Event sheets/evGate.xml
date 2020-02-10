@@ -39,7 +39,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="887616370280308">
+                        <event-block any="1" sid="887616370280308">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="409971388994595" type="Keyboard">
                                     <param id="0" name="Key">69</param>
