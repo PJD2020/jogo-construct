@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evTriggers</name>
+    <events>
+        <variable constant="0" name="TriggerBoss1" sid="890034134764006" static="0" type="number">0</variable>
+        <variable constant="0" name="TriggerEdwardDialogue1" sid="680946377928898" static="0" type="number">0</variable>
+        <event-block sid="966140974586536">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="484380878196875" type="Player">
+                    <param id="0" name="Object">TriggerBoss1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="984988240861741" type="System">
+                    <param id="0" name="Variable">TriggerBoss1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="867305315652452" type="System">
+                    <param id="0" name="Variable">TriggerBoss1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="373702792874609" type="VeldorHealthBar">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="231227292210905" type="VeldorHealthText">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="916141428751204" type="Veldor">
+                    <param id="0" name="Instance variable">isFollowingPlayer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="513691691046923">
+                    <conditions />
+                    <actions>
+                        <action id="-15" name="Set visible" sid="343102098289776" type="dialogue_4">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="674679615127791" type="VeldorText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="472752127829979" type="VeldorDialogueBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="187477357710389" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="405004192474801" type="dialogue_4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="443196657170628" type="VeldorDialogueBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="136049970224807" type="VeldorText">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="506250602196327">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="935197217595615" type="Player">
+                    <param id="0" name="Object">TriggerEdwardDialogue1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="318112926470675" type="System">
+                    <param id="0" name="Variable">TriggerEdwardDialogue1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="397210598652847" type="System">
+                    <param id="0" name="Variable">TriggerEdwardDialogue1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="618290246421216" type="dialogue_1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="329406970513654" type="EdwardText">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="376425380200956" type="EdwardDialogueBox">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="700311731346224" type="System">
+                    <param id="0" name="Seconds">8</param>
+                </action>
+                <action id="-15" name="Set visible" sid="501572291203027" type="dialogue_1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="402831850227828" type="EdwardDialogueBox">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="718791962546966" type="EdwardText">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

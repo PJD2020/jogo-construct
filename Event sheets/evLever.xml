@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evLever</name>
+    <events>
+        <event-block sid="993127960448112">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="221659246941131" type="Lever">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="363008335581821" type="LeverText">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="591727916401526">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="870426667222390" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="294971265704075" type="Lever">
+                            <param id="0" name="Animation">&quot;Activated&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="493430477299947" type="suspendedBlueRock">
+                            <param id="0" name="Instance variable">isFalling</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="413255964557315">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="485685854000506" type="suspendedBlueRock">
+                    <param id="0" name="Instance variable">isFalling</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="402906918427951" type="suspendedBlueRock">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="317717709491018">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="209940648962953" type="suspendedBlueRock">
+                    <param id="0" name="Object">Veldor</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="975778614037092">
+                    <conditions />
+                    <actions>
+                        <action id="-10" name="Set value" sid="259919924879689" type="Veldor">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Value">Veldor.hp - 0.3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="150512942578461" type="Veldor">
+                            <param id="0" name="Object">VBlood</param>
+                            <param id="1" name="Layer">&quot;Blood&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="697570554660163" type="Veldor">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="985213391488887" type="Veldor">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="367442223627966" type="Veldor">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="834508593727798">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="752803307618260" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="732683591524960" type="Veldor">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="132782995277088" type="Veldor">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Gamma&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="684059472868676" type="Veldor">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

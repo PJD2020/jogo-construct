@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1581313171,
+	"version": 1581353424,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -72,6 +72,10 @@
 		"images/veldor-sheet0.png",
 		"images/veldor-sheet1.png",
 		"images/veldor-sheet2.png",
+		"images/veldor-sheet3.png",
+		"images/veldor-sheet4.png",
+		"images/veldor-sheet5.png",
+		"images/veldor-sheet6.png",
 		"images/veldorhealthbar.png",
 		"images/vblood.png",
 		"images/buttonleft-sheet0.png",
@@ -80,6 +84,8 @@
 		"images/buttonfire-sheet0.png",
 		"images/buttonfire2-sheet0.png",
 		"images/creditsmenutext-sheet0.png",
+		"images/triggerboss1-sheet0.png",
+		"images/veldordialoguebox-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

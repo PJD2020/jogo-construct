@@ -24,6 +24,10 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="197068913327189" type="dialogue_4">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
                 <action id="5" name="Set web font" sid="441591286470419" type="PausedText">
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
@@ -40,7 +44,15 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="806606390275806" type="VeldorText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
                 <action id="5" name="Set web font" sid="894386466589822" type="FirstBossKeyText">
+                    <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="333628360271858" type="LeverText">
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
@@ -51,34 +63,6 @@
                 <action id="5" name="Set web font" sid="481308619557036" type="VeldorHealthText">
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="732782908254467">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="959578317168990" type="System" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="530379685568847" type="dialogue_1">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="152996508581340" type="EdwardText">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="338955291829397" type="EdwardDialogueBox">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="749574968864513" type="System">
-                    <param id="0" name="Seconds">8</param>
-                </action>
-                <action id="-15" name="Set visible" sid="869855791268033" type="dialogue_1">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="488119135460983" type="EdwardDialogueBox">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="264603385727739" type="EdwardText">
-                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>

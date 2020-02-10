@@ -2069,11 +2069,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3296.730712891</x>
-                        <y>3085.065429688</y>
+                        <x>3295.092529297</x>
+                        <y>3085.060058594</y>
                         <z>0</z>
-                        <width>434.278289795</width>
-                        <height>84.162628174</height>
+                        <width>431.008514404</width>
+                        <height>84.172637939</height>
                         <depth>0</depth>
                         <hotspotX>0.500968993</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2163,50 +2163,6 @@
                         <height>84.162628174</height>
                         <depth>0</depth>
                         <hotspotX>0.500968993</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="suspendedBlueRock" uid="368">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3764</x>
-                        <y>2457</y>
-                        <z>0</z>
-                        <width>31.677564621</width>
-                        <height>660.057006836</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="suspendedBlueRock" uid="369">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3499</x>
-                        <y>2457</y>
-                        <z>0</z>
-                        <width>31.677564621</width>
-                        <height>660.057006836</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -4472,7 +4428,7 @@
                         <x>1358.853393555</x>
                         <y>3212.016357422</y>
                         <z>0.00000006</z>
-                        <width>244.507522583</width>
+                        <width>261.754089355</width>
                         <height>17.091789246</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -4585,10 +4541,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1341.77355957</x>
+                        <x>1358.862670898</x>
                         <y>2967.496582031</y>
                         <z>0.00000006</z>
-                        <width>485</width>
+                        <width>467.910766602</width>
                         <height>17.234043121</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -7493,14 +7449,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4040.141845703</x>
-                        <y>2928.528564453</y>
+                        <x>4035.874511719</x>
+                        <y>2938.216308594</y>
                         <z>0</z>
                         <width>17.520101547</width>
                         <height>31.608428955</height>
                         <depth>0</depth>
-                        <hotspotX>0.501718223</hotspotX>
-                        <hotspotY>0.500952363</hotspotY>
+                        <hotspotX>0.539518893</hotspotX>
+                        <hotspotY>0.771428585</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -7757,6 +7713,106 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="suspendedBlueRock" uid="368">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <isFalling>false</isFalling>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3764</x>
+                        <y>2457</y>
+                        <z>0</z>
+                        <width>31.677564621</width>
+                        <height>660.057006836</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="suspendedBlueRock" uid="369">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <isFalling>false</isFalling>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3499</x>
+                        <y>2457</y>
+                        <z>0</z>
+                        <width>31.677564621</width>
+                        <height>660.057006836</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="suspendedBlueRock" uid="402">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <isFalling>false</isFalling>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3941</x>
+                        <y>2457</y>
+                        <z>0</z>
+                        <width>31.677564621</width>
+                        <height>660.057006836</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="suspendedBlueRock" uid="403">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <isFalling>false</isFalling>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3311</x>
+                        <y>2457</y>
+                        <z>0</z>
+                        <width>31.677564621</width>
+                        <height>660.057006836</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -7915,6 +7971,10 @@
                     <instance-variables>
                         <hp>100</hp>
                         <isAttacking>false</isAttacking>
+                        <isAttacking2>false</isAttacking2>
+                        <isFollowingPlayer>false</isFollowingPlayer>
+                        <isAboutToAttack>false</isAboutToAttack>
+                        <isCoolingDown>false</isCoolingDown>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -8224,8 +8284,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64.211639404</x>
-                        <y>3621.938720703</y>
+                        <x>3171.03125</x>
+                        <y>2921.874511719</y>
                         <z>0</z>
                         <width>31.499372482</width>
                         <height>44.000518799</height>
@@ -8470,6 +8530,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="LeverText" uid="401">
+                    <properties>
+                        <text>PRESSIONE [E] PARA PUXAR</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-8,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4024.763183594</x>
+                        <y>2893.302734375</y>
+                        <z>0</z>
+                        <width>74.271606445</width>
+                        <height>58.141357422</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -8698,6 +8785,55 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="VeldorDialogueBox" uid="398">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>65</y>
+                        <z>0</z>
+                        <width>229.539993286</width>
+                        <height>58.27299881</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="VeldorText" uid="399">
+                    <properties>
+                        <text>VELDOR</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-5,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>184.384994507</x>
+                        <y>49.169998169</y>
+                        <z>0</z>
+                        <width>44.023345947</width>
+                        <height>6.544910431</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="EdwardText" uid="336">
                     <properties>
                         <text>EDWARD</text>
@@ -8752,28 +8888,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PauseOverlay" uid="332">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>0</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>480</width>
-                        <height>270</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.600000024</opacity>
-                    </world>
-                </instance>
                 <instance type="dialogue_2" uid="341">
                     <properties>
                         <text>Esta chave deve abrir uma das portas da caverna. Mal vejo a hora de encontrar os malditos Orcs...</text>
@@ -8801,112 +8915,36 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="InGameMenu" uid="331">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>240</x>
-                        <y>135</y>
-                        <z>0</z>
-                        <width>206.725387573</width>
-                        <height>47.640419006</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="QuitGameText" uid="335">
-                    <properties>
-                        <text>SAIR</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-5,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>137.859558105</x>
-                        <y>147.916320801</y>
-                        <z>0</z>
-                        <width>199.312438965</width>
-                        <height>8.896224976</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ContinueText" uid="334">
-                    <properties>
-                        <text>CONTINUAR</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-5,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>138.203216553</x>
-                        <y>135.289550781</y>
-                        <z>0</z>
-                        <width>199.312438965</width>
-                        <height>9.835250854</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="PausedText" uid="333">
-                    <properties>
-                        <text>PAUSA</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-8,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>137.906723022</x>
-                        <y>119.024932861</y>
-                        <z>0</z>
-                        <width>199.584197998</width>
-                        <height>10.034889221</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="dialogue_3" uid="344">
                     <properties>
                         <text>Está trancado! Os Orcs devem ter escondido a chave em algum lugar...</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-5,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>185.475006104</x>
+                        <y>57.631000519</y>
+                        <z>0</z>
+                        <width>162.126373291</width>
+                        <height>35.360889435</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="dialogue_4" uid="400">
+                    <properties>
+                        <text>NÃO HÁ NADA PARA VOCÊ AQUI, HUMANO... DESAPAREÇA!</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-5,400,0</font>
                         <color>255,255,255</color>
@@ -8950,6 +8988,131 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PauseOverlay" uid="332">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>270</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="InGameMenu" uid="331">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>135</y>
+                        <z>0</z>
+                        <width>206.725387573</width>
+                        <height>47.640419006</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ContinueText" uid="334">
+                    <properties>
+                        <text>CONTINUAR</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-5,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138.203216553</x>
+                        <y>135.289550781</y>
+                        <z>0</z>
+                        <width>199.312438965</width>
+                        <height>9.835250854</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="QuitGameText" uid="335">
+                    <properties>
+                        <text>SAIR</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-5,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>137.859558105</x>
+                        <y>147.916320801</y>
+                        <z>0</z>
+                        <width>199.312438965</width>
+                        <height>8.896224976</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PausedText" uid="333">
+                    <properties>
+                        <text>PAUSA</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-8,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>137.906723022</x>
+                        <y>119.024932861</y>
+                        <z>0</z>
+                        <width>199.584197998</width>
+                        <height>10.034889221</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -9062,6 +9225,69 @@
                         <hotspotY>0.428571433</hotspotY>
                         <angle>0</angle>
                         <opacity>0.400000006</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Triggers" sid="282022820892521">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="TriggerBoss1" uid="396">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3182</x>
+                        <y>2895.5</y>
+                        <z>0</z>
+                        <width>142</width>
+                        <height>141</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TriggerEdwardDialogue1" uid="397">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>146.875076294</x>
+                        <y>3577.191162109</y>
+                        <z>0</z>
+                        <width>261.874603271</width>
+                        <height>169.375976563</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
