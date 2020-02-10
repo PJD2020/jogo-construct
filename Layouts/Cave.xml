@@ -1828,28 +1828,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Bones" uid="84">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>65.343444824</x>
-                        <y>3603.656494141</y>
-                        <z>0</z>
-                        <width>80.221801758</width>
-                        <height>94.688026428</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Home" uid="231">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1912,6 +1890,28 @@
                         <depth>0</depth>
                         <hotspotX>0.50102669</hotspotX>
                         <hotspotY>0.501098931</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bones" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>65.343444824</x>
+                        <y>3603.656494141</y>
+                        <z>0</z>
+                        <width>80.221801758</width>
+                        <height>94.688026428</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -8535,7 +8535,7 @@
                 </instance>
                 <instance type="VeldorHealthBar" uid="377">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Center</hotspot>
                     </properties>
                     <instance-variables>
@@ -8559,7 +8559,7 @@
                 <instance type="VeldorHealthText" uid="378">
                     <properties>
                         <text>VELDOR</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-8,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
@@ -8762,8 +8762,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7.475557327</x>
-                        <y>-14.429561615</y>
+                        <x>0</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>480</width>
                         <height>270</height>
@@ -8986,8 +8986,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>58</x>
-                        <y>212</y>
+                        <x>405.875152588</x>
+                        <y>153</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -9030,8 +9030,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448.82699585</x>
-                        <y>244</y>
+                        <x>445.702514648</x>
+                        <y>240.875030518</y>
                         <z>0</z>
                         <width>42.285713196</width>
                         <height>32</height>
@@ -9052,8 +9052,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448.82699585</x>
-                        <y>202</y>
+                        <x>433.201629639</x>
+                        <y>194.499954224</y>
                         <z>0</z>
                         <width>42.285999298</width>
                         <height>32</height>
@@ -9074,7 +9074,7 @@
             <effect id="grayscale" />
             <effect-instance type="Grayscale">
                 <parameters>
-                    <intensity>0.5</intensity>
+                    <intensity>0</intensity>
                 </parameters>
             </effect-instance>
         </effect-type>
