@@ -2472,7 +2472,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpawnGoblin" uid="382">
+                <instance type="SpawnGoblin" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2547,7 +2547,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpawnGoblin" uid="383">
+                <instance type="SpawnGoblin" uid="47">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -8956,7 +8956,7 @@
                 </instance>
                 <instance type="ButtonLeft" uid="386">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -8978,7 +8978,7 @@
                 </instance>
                 <instance type="ButtonUp" uid="387">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -9000,7 +9000,7 @@
                 </instance>
                 <instance type="ButtonRight" uid="388">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -9022,7 +9022,7 @@
                 </instance>
                 <instance type="ButtonFire" uid="389">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -9044,7 +9044,7 @@
                 </instance>
                 <instance type="ButtonFire2" uid="390">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>

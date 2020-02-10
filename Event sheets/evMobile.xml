@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evMobile</name>
+    <events>
+        <event-block sid="844403416688766">
+            <conditions>
+                <condition id="-20" name="Is on mobile device" sid="462231373728091" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="814793962377941" type="ButtonLeft">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="209034901558356" type="ButtonRight">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="283705848772742" type="ButtonUp">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="718131324551299" type="ButtonFire">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="901262698891990" type="ButtonFire2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
