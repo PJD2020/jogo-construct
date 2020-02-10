@@ -48,15 +48,34 @@
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="337397855676819">
+        <event-block sid="898534117635936">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="311439227100714" type="Mouse">
+                    <param id="0" name="Object">CreditsBackground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="412192727070937" type="CreditsBackground">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="509020893615028">
+            <conditions>
+                <condition id="-22" name="Else" sid="976559652317053" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="721640119594570" type="CreditsBackground">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="337397855676819">
             <conditions>
                 <condition id="6" name="On object clicked" sid="309364502017956" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">NewGameBackground</param>
-                </condition>
-                <condition id="4" name="Is touching object" sid="159834426571283" type="Touch">
-                    <param id="0" name="Object">NewGameBackground</param>
                 </condition>
             </conditions>
             <actions>
@@ -68,6 +87,26 @@
                 </action>
                 <action id="-25" name="Go to layout (by name)" sid="843297718013695" type="System">
                     <param id="0" name="Layout">&quot;Prologue&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="649976997730104">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="267148945784663" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">CreditsBackground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="0" name="Set active" sid="169444013572919" type="Transition">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="760613486482988" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="185109859921816" type="System">
+                    <param id="0" name="Layout">&quot;Credits&quot;</param>
                 </action>
             </actions>
         </event-block>
