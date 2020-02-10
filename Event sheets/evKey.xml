@@ -31,44 +31,54 @@
         </event-group>
         <event-group description="" sid="112548514954122" title="Interation">
             <sub-events>
-                <event-block sid="227773453058981">
+                <event-block any="1" sid="227773453058981">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="541469639467877" type="Keyboard">
                             <param id="0" name="Key">69</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="629665165653471" type="Player">
+                        <condition id="4" name="Is touching object" sid="560487629392621" type="Touch">
                             <param id="0" name="Object">FirstBossKeyLines</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="678496524910001" type="FirstBossKey" />
-                        <action id="-9" name="Destroy" sid="438080758593651" type="FirstBossKeyLines" />
-                        <action id="-15" name="Set visible" sid="812930029481310" type="FirstBossKeyIcon">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="528076269270962" type="FirstBossKeyText" />
-                        <action id="-15" name="Set visible" sid="449389468608818" type="dialogue_2">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="874113931996106" type="EdwardText">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="662901021741104" type="EdwardDialogueBox">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="306162602110737" type="System">
-                            <param id="0" name="Seconds">7</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="206199925755962" type="dialogue_2">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="852426504017728" type="EdwardText">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="213000592311507" type="EdwardDialogueBox">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="213735280143630">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="629665165653471" type="Player">
+                                    <param id="0" name="Object">FirstBossKeyLines</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="678496524910001" type="FirstBossKey" />
+                                <action id="-9" name="Destroy" sid="438080758593651" type="FirstBossKeyLines" />
+                                <action id="-15" name="Set visible" sid="812930029481310" type="FirstBossKeyIcon">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="528076269270962" type="FirstBossKeyText" />
+                                <action id="-15" name="Set visible" sid="449389468608818" type="dialogue_2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="874113931996106" type="EdwardText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="662901021741104" type="EdwardDialogueBox">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="306162602110737" type="System">
+                                    <param id="0" name="Seconds">7</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="206199925755962" type="dialogue_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="852426504017728" type="EdwardText">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="213000592311507" type="EdwardDialogueBox">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

@@ -33,88 +33,98 @@
             <sub-events>
                 <event-block sid="787346952758976">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="409971388994595" type="Keyboard">
-                            <param id="0" name="Key">69</param>
-                        </condition>
                         <condition id="1" name="Is overlapping another object" sid="480088676129532" type="Player">
                             <param id="0" name="Object">Gate_1</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="922078406981422">
+                        <event-block sid="887616370280308">
                             <conditions>
-                                <condition id="2" name="Is playing" sid="323198016665357" type="Gate_1">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                <condition id="0" name="On key pressed" sid="409971388994595" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="116093861484073" type="Touch">
+                                    <param id="0" name="Object">Gate_1</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="236901465868120">
+                                <event-block sid="922078406981422">
                                     <conditions>
-                                        <condition id="-31" name="Object UID exists" sid="605404880881210" type="System">
-                                            <param id="0" name="UID">338</param>
+                                        <condition id="2" name="Is playing" sid="323198016665357" type="Gate_1">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="765478485507627">
+                                        <event-block sid="236901465868120">
                                             <conditions>
-                                                <condition id="-9" inverted="1" name="Is visible" sid="563419543071575" type="dialogue_3" />
+                                                <condition id="-31" name="Object UID exists" sid="605404880881210" type="System">
+                                                    <param id="0" name="UID">338</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="765478485507627">
+                                                    <conditions>
+                                                        <condition id="-9" inverted="1" name="Is visible" sid="563419543071575" type="dialogue_3" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-15" name="Set visible" sid="325834683784470" type="dialogue_3">
+                                                            <param id="0" name="Visibility">1</param>
+                                                        </action>
+                                                        <action id="-15" name="Set visible" sid="778140032782951" type="EdwardText">
+                                                            <param id="0" name="Visibility">1</param>
+                                                        </action>
+                                                        <action id="-15" name="Set visible" sid="587865360010537" type="EdwardDialogueBox">
+                                                            <param id="0" name="Visibility">1</param>
+                                                        </action>
+                                                        <action id="-16" name="Wait" sid="298619152429056" type="System">
+                                                            <param id="0" name="Seconds">5</param>
+                                                        </action>
+                                                        <action id="-15" name="Set visible" sid="492271796668554" type="dialogue_3">
+                                                            <param id="0" name="Visibility">0</param>
+                                                        </action>
+                                                        <action id="-15" name="Set visible" sid="290451594681865" type="EdwardText">
+                                                            <param id="0" name="Visibility">0</param>
+                                                        </action>
+                                                        <action id="-15" name="Set visible" sid="279743504842781" type="EdwardDialogueBox">
+                                                            <param id="0" name="Visibility">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="682219841848388">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="191016906981985" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="-15" name="Set visible" sid="325834683784470" type="dialogue_3">
-                                                    <param id="0" name="Visibility">1</param>
+                                                <action id="4" name="Set animation" sid="736567027939605" type="Gate_1">
+                                                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                                                    <param id="1" name="From">1</param>
                                                 </action>
-                                                <action id="-15" name="Set visible" sid="778140032782951" type="EdwardText">
-                                                    <param id="0" name="Visibility">1</param>
-                                                </action>
-                                                <action id="-15" name="Set visible" sid="587865360010537" type="EdwardDialogueBox">
-                                                    <param id="0" name="Visibility">1</param>
-                                                </action>
-                                                <action id="-16" name="Wait" sid="298619152429056" type="System">
-                                                    <param id="0" name="Seconds">5</param>
-                                                </action>
-                                                <action id="-15" name="Set visible" sid="492271796668554" type="dialogue_3">
-                                                    <param id="0" name="Visibility">0</param>
-                                                </action>
-                                                <action id="-15" name="Set visible" sid="290451594681865" type="EdwardText">
-                                                    <param id="0" name="Visibility">0</param>
-                                                </action>
-                                                <action id="-15" name="Set visible" sid="279743504842781" type="EdwardDialogueBox">
-                                                    <param id="0" name="Visibility">0</param>
+                                                <action id="-9" name="Destroy" sid="470170932427917" type="FirstBossKeyIcon" />
+                                                <action id="0" name="Set text" sid="924214372130968" type="FirstBossGateText">
+                                                    <param id="0" name="Text">&quot;PRESSIONE [E] PARA ENTRAR&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
-                                <event-block sid="682219841848388">
+                                <event-block sid="253134001009285">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="191016906981985" type="System" />
+                                        <condition id="-22" name="Else" sid="173116006934769" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="736567027939605" type="Gate_1">
-                                            <param id="0" name="Animation">&quot;Open&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
-                                        <action id="-9" name="Destroy" sid="470170932427917" type="FirstBossKeyIcon" />
-                                        <action id="0" name="Set text" sid="924214372130968" type="FirstBossGateText">
-                                            <param id="0" name="Text">&quot;PRESSIONE [E] PARA ENTRAR&quot;</param>
+                                        <action id="-3" name="Set position" sid="812778173121509" type="Player">
+                                            <param id="0" name="X">3200</param>
+                                            <param id="1" name="Y">2915</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
-                        </event-block>
-                        <event-block sid="108591933342271">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="653600043669402" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="812778173121509" type="Player">
-                                    <param id="0" name="X">3200</param>
-                                    <param id="1" name="Y">2915</param>
-                                </action>
-                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
