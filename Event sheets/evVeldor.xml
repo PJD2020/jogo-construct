@@ -207,6 +207,12 @@
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">clamp(Player.hp - 20, 0, 100)</param>
                                         </action>
+                                        <action id="0" name="Play" sid="260576149246478" type="Audio">
+                                            <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-20</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="327951584875070" type="Player">
                                             <param id="0" name="Object">PBlood</param>
                                             <param id="1" name="Layer">&quot;Blood&quot;</param>
@@ -334,6 +340,12 @@
                                         <action id="-10" name="Set value" sid="465032668086186" type="Player">
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">clamp(Player.hp - 50, 0, 100)</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="981151869637739" type="Audio">
+                                            <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-20</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="642801594820813" type="Player">
                                             <param id="0" name="Object">PBlood</param>
@@ -557,6 +569,12 @@
                                 </action>
                                 <action id="-15" name="Set visible" sid="644703370024146" type="VeldorHealthText">
                                     <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="511855634737276" type="Audio">
+                                    <param id="0" name="Audio file">hit-orc</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="807117442830198" type="System">
                                     <param id="0" name="Seconds">2</param>

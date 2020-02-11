@@ -49,6 +49,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="618243631079619" type="Audio">
+                                    <param id="0" name="Audio file">pegar-item</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-9" name="Destroy" sid="678496524910001" type="FirstBossKey" />
                                 <action id="-9" name="Destroy" sid="438080758593651" type="FirstBossKeyLines" />
                                 <action id="-15" name="Set visible" sid="812930029481310" type="FirstBossKeyIcon">

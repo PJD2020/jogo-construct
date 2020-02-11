@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1581384563,
+	"version": 1581389061,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -87,6 +87,13 @@
 		"images/creditsmenutext-sheet0.png",
 		"images/triggerboss1-sheet0.png",
 		"images/veldordialoguebox-sheet0.png",
+		"media/andar-edward.ogg",
+		"media/menu game.ogg",
+		"media/hit-orc.ogg",
+		"media/pegar-item.ogg",
+		"media/hit-dar-dano-ou-tomar-dano.ogg",
+		"media/abir-porta-boss.ogg",
+		"media/the witcher 3 one hour of emotional and relaxing music.ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

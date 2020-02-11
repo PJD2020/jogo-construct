@@ -40,6 +40,12 @@
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">Goblin.hp - 20</param>
                                         </action>
+                                        <action id="0" name="Play" sid="625125279088093" type="Audio">
+                                            <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-20</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="861958453040867" type="Goblin">
                                             <param id="0" name="Object">EBlood</param>
                                             <param id="1" name="Layer">&quot;Blood&quot;</param>
@@ -78,6 +84,12 @@
                                         <action id="-10" name="Set value" sid="413855723938218" type="Goblin">
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">Goblin.hp - 40</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="707242564769665" type="Audio">
+                                            <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-20</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="417607202774384" type="Goblin">
                                             <param id="0" name="Object">EBlood</param>
@@ -160,6 +172,12 @@
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">Bat.hp - 40</param>
                                         </action>
+                                        <action id="0" name="Play" sid="290265187867684" type="Audio">
+                                            <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-20</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="490494989366234" type="Bat">
                                             <param id="0" name="Object">EBlood</param>
                                             <param id="1" name="Layer">&quot;Blood&quot;</param>
@@ -198,6 +216,12 @@
                                         <action id="-10" name="Set value" sid="945738753503581" type="Bat">
                                             <param id="0" name="Instance variable">hp</param>
                                             <param id="1" name="Value">Bat.hp - 40</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="359955946608673" type="Audio">
+                                            <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-20</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="757155963152388" type="Bat">
                                             <param id="0" name="Object">EBlood</param>
@@ -562,6 +586,12 @@
                                     <param id="0" name="Instance variable">hp</param>
                                     <param id="1" name="Value">Veldor.hp - 0.2</param>
                                 </action>
+                                <action id="0" name="Play" sid="618401897290801" type="Audio">
+                                    <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="0" name="Spawn another object" sid="618332790604509" type="Sword">
                                     <param id="0" name="Object">VBlood</param>
                                     <param id="1" name="Layer">&quot;Blood&quot;</param>
@@ -591,6 +621,12 @@
                                 <action id="-10" name="Set value" sid="170357162699961" type="Veldor">
                                     <param id="0" name="Instance variable">hp</param>
                                     <param id="1" name="Value">Veldor.hp - 0.3</param>
+                                </action>
+                                <action id="0" name="Play" sid="297416572253888" type="Audio">
+                                    <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="0" name="Spawn another object" sid="506532804662133" type="Sword">
                                     <param id="0" name="Object">VBlood</param>

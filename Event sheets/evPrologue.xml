@@ -37,6 +37,12 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="629180387444901" type="Audio">
+                    <param id="0" name="Audio file">The Witcher 3 One hour of Emotional and Relaxing Music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="322184214635408">

@@ -40,6 +40,12 @@
                                     <param id="1" name="Layer">&quot;Blood&quot;</param>
                                     <param id="2" name="Image point">&quot;Origin&quot;</param>
                                 </action>
+                                <action id="0" name="Play" sid="540719590016268" type="Audio">
+                                    <param id="0" name="Audio file">hit-dar-dano-ou-tomar-dano</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-29" name="Set layout effect enabled" sid="597905649035668" type="System">
                                     <param id="0" name="Mode">1</param>
                                     <param id="1" name="Effect">&quot;Grayscale&quot;</param>
@@ -158,6 +164,12 @@
                     <conditions />
                     <actions>
                         <action id="-9" name="Destroy" sid="448968373133567" type="Bat" />
+                        <action id="0" name="Play" sid="242072411327107" type="Audio">
+                            <param id="0" name="Audio file">hit-orc</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

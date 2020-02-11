@@ -956,5 +956,91 @@
             <conditions />
             <actions />
         </event-block>
+        <event-group description="" sid="601314386086286" title="Audio">
+            <sub-events>
+                <event-block sid="684846295106629">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="384525658885394" type="Audio">
+                            <param id="0" name="Tag">&quot;footsteps&quot;</param>
+                        </condition>
+                        <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="376303182667462" type="Player" />
+                        <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="604820712040359" type="Player" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="262967289032911">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="351799552157829" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="793948966449926" type="Keyboard">
+                                    <param id="0" name="Key">65</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="561926094442749" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="299498361072943" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="421326879237971" type="Audio">
+                                    <param id="0" name="Audio file">andar-edward</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;footsteps&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="104914071500804">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="219189711303352" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="927348279812635">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="736689836004699" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="248904538199345">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Key is down" sid="490414525227404" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Key is down" sid="421080492406062" type="Keyboard">
+                                    <param id="0" name="Key">65</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Key is down" sid="248846326731134" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Key is down" sid="132221075683456" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="249795318928064" type="Audio">
+                                    <param id="0" name="Tag">&quot;footsteps&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block any="1" sid="757176121727005">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="892289607484304" type="Player" />
+                <condition behavior="Platform" id="4" name="Is falling" sid="358403691623636" type="Player" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="714027645772916" type="Audio">
+                    <param id="0" name="Tag">&quot;footsteps&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

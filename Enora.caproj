@@ -10,6 +10,7 @@
     <unique-id>1idpstlps3dhu</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -1618,6 +1619,9 @@
         <object-type name="LeverText" sid="301361811983805">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Audio" sid="124444417125240">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1655,9 +1659,32 @@
                 <use-mouse-input>No</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="404">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="andar-edward.ogg" />
+        <file name="menu game.ogg" />
+        <file name="hit-orc.ogg" />
+        <file name="pegar-item.ogg" />
+        <file name="hit-dar-dano-ou-tomar-dano.ogg" />
+        <file name="abir-porta-boss.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="The Witcher 3 One hour of Emotional and Relaxing Music.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

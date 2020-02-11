@@ -82,6 +82,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="924100082714643" type="Audio">
+                    <param id="0" name="Audio file">menu game</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action behavior="Sine" id="0" name="Set active" sid="935020015534447" type="Transition">
                     <param id="0" name="State">1</param>
                 </action>
@@ -105,6 +111,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="396657734996300" type="Audio">
+                    <param id="0" name="Audio file">menu game</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action behavior="Sine" id="0" name="Set active" sid="169444013572919" type="Transition">
                     <param id="0" name="State">1</param>
                 </action>
