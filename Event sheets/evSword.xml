@@ -158,7 +158,7 @@
                                     <actions>
                                         <action id="-10" name="Set value" sid="564341286078232" type="Bat">
                                             <param id="0" name="Instance variable">hp</param>
-                                            <param id="1" name="Value">Bat.hp - 20</param>
+                                            <param id="1" name="Value">Bat.hp - 40</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="490494989366234" type="Bat">
                                             <param id="0" name="Object">EBlood</param>

@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1581353424,
+	"version": 1581380596,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -76,6 +76,7 @@
 		"images/veldor-sheet4.png",
 		"images/veldor-sheet5.png",
 		"images/veldor-sheet6.png",
+		"images/veldor-sheet7.png",
 		"images/veldorhealthbar.png",
 		"images/vblood.png",
 		"images/buttonleft-sheet0.png",

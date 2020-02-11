@@ -1337,6 +1337,7 @@
                 <instance-variable name="isFollowingPlayer" sid="416383254819166" type="boolean" />
                 <instance-variable name="isAboutToAttack" sid="335201246813371" type="boolean" />
                 <instance-variable name="isCoolingDown" sid="466409438407393" type="boolean" />
+                <instance-variable name="isDead" sid="656520297403249" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="106418332162568">
@@ -1429,6 +1430,16 @@
                             <point x="0.924256" y="0.182535" />
                             <point x="0.924256" y="0.826562" />
                             <point x="0.659378" y="0.826562" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="775236725977204" speed="5">
+                    <frame duration="1" hotspotX="0.744815" hotspotY="0.642814" original-source="C:\Users\kille\Documents\Home\Projects\Construct\jogo-construct\assets\orc1\m8.png">
+                        <collision-poly>
+                            <point x="0.488729" y="0.567617" />
+                            <point x="0.971145" y="0.567617" />
+                            <point x="0.971145" y="0.735597" />
+                            <point x="0.488729" y="0.735598" />
                         </collision-poly>
                     </frame>
                 </animation>

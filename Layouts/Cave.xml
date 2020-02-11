@@ -7969,12 +7969,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <hp>100</hp>
+                        <hp>10</hp>
                         <isAttacking>false</isAttacking>
                         <isAttacking2>false</isAttacking2>
                         <isFollowingPlayer>false</isFollowingPlayer>
                         <isAboutToAttack>false</isAboutToAttack>
                         <isCoolingDown>false</isCoolingDown>
+                        <isDead>false</isDead>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -8284,9 +8285,9 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3171.03125</x>
-                        <y>2921.874511719</y>
-                        <z>0</z>
+                        <x>67.119987488</x>
+                        <y>3632.599365234</y>
+                        <z>0.000001907</z>
                         <width>31.499372482</width>
                         <height>44.000518799</height>
                         <depth>0</depth>

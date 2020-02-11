@@ -5,99 +5,109 @@
     <events>
         <event-group description="" sid="639390369957530" title="Movement2">
             <sub-events>
-                <event-block sid="250832930256587">
+                <event-block sid="353501684505441">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="306930632353220" type="Veldor">
-                            <param id="0" name="Instance variable">isFollowingPlayer</param>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="217470412105649" type="Veldor">
+                            <param id="0" name="Instance variable">isDead</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="426320968338573">
+                        <event-block sid="250832930256587">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="831911509747578" type="Veldor">
+                                <condition id="-8" name="Is boolean instance variable set" sid="306930632353220" type="Veldor">
+                                    <param id="0" name="Instance variable">isFollowingPlayer</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="426320968338573">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="831911509747578" type="Veldor">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">Player.X + 25</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="886986862997780" type="Player">
+                                            <param id="0" name="Instance variable">hp</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="613577800813539" type="Veldor">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="567130439310670" type="Veldor">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="426877472908566">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="521631988597153" type="Veldor">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">Player.X - 25</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="844976640818742" type="Player">
+                                            <param id="0" name="Instance variable">hp</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="161603102019144" type="Veldor">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="334730481473873" type="Veldor">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="819310208841023">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="660362302405823" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="369031944422291">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="106615434716325" type="Veldor">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="X co-ordinate">Player.X + 25</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="886986862997780" type="Player">
+                                <condition id="-7" name="Compare instance variable" sid="509611857852970" type="Player">
                                     <param id="0" name="Instance variable">hp</param>
                                     <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="613577800813539" type="Veldor">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="567130439310670" type="Veldor">
+                                <action id="7" name="Set mirrored" sid="763074685537870" type="Veldor">
                                     <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="426877472908566">
+                        <event-block sid="444316656776608">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="521631988597153" type="Veldor">
+                                <condition id="-1" name="Compare X" sid="949443356625922" type="Veldor">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="X co-ordinate">Player.X - 25</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="844976640818742" type="Player">
+                                <condition id="-7" name="Compare instance variable" sid="628349791713640" type="Player">
                                     <param id="0" name="Instance variable">hp</param>
                                     <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="161603102019144" type="Veldor">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="334730481473873" type="Veldor">
+                                <action id="7" name="Set mirrored" sid="950423808475632" type="Veldor">
                                     <param id="0" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="819310208841023">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="660362302405823" type="System" />
-                    </conditions>
-                    <actions />
-                </event-block>
-                <event-block sid="369031944422291">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="106615434716325" type="Veldor">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">Player.X + 25</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="509611857852970" type="Player">
-                            <param id="0" name="Instance variable">hp</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="763074685537870" type="Veldor">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="444316656776608">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="949443356625922" type="Veldor">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">Player.X - 25</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="628349791713640" type="Player">
-                            <param id="0" name="Instance variable">hp</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="950423808475632" type="Veldor">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -130,6 +140,9 @@
                     <conditions>
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="681816555409348" type="Veldor">
                             <param id="0" name="Instance variable">isCoolingDown</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="224048428433363" type="Veldor">
+                            <param id="0" name="Instance variable">isDead</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -455,37 +468,119 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="804554108827460">
+                                <event-block sid="295098724790053">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="466384938864777" type="System" />
+                                        <condition id="-22" name="Else" sid="483411382881329" type="System" />
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="326912677741723">
+                                        <event-block sid="747641749288720">
                                             <conditions>
-                                                <condition behavior="Platform" id="0" name="Is moving" sid="870870144061845" type="Veldor" />
+                                                <condition id="-8" name="Is boolean instance variable set" sid="430993271200940" type="Veldor">
+                                                    <param id="0" name="Instance variable">isDead</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="4" name="Set animation" sid="767613625641306" type="Veldor">
-                                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                                <action id="4" name="Set animation" sid="874652220677245" type="Veldor">
+                                                    <param id="0" name="Animation">&quot;Dead&quot;</param>
                                                     <param id="1" name="From">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
-                                        <event-block sid="620871764971994">
+                                        <event-block sid="804554108827460">
                                             <conditions>
-                                                <condition id="-22" name="Else" sid="900757441406266" type="System" />
+                                                <condition id="-22" name="Else" sid="466384938864777" type="System" />
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="441749197996713" type="Veldor">
-                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="326912677741723">
+                                                    <conditions>
+                                                        <condition behavior="Platform" id="0" name="Is moving" sid="870870144061845" type="Veldor" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="767613625641306" type="Veldor">
+                                                            <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="620871764971994">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="900757441406266" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="441749197996713" type="Veldor">
+                                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="461627578924635" title="Veldor Health">
+            <sub-events>
+                <event-block sid="266149385814924">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="189873378709248" type="Veldor">
+                            <param id="0" name="Instance variable">hp</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="305875531582088" type="Veldor">
+                            <param id="0" name="Instance variable">isDead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="278340071090972">
+                            <conditions />
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="490761641695874" type="Veldor">
+                                    <param id="0" name="Instance variable">isDead</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="203248392179201" type="Veldor">
+                                    <param id="0" name="Instance variable">isAttacking</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="210521427292086" type="Veldor">
+                                    <param id="0" name="Instance variable">isAttacking2</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="644703370024146" type="VeldorHealthText">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="807117442830198" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="784272934073387" type="System">
+                                    <param id="0" name="Layout">Credits</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="991473878135844">
+                            <conditions>
+                                <condition id="-10" name="For" sid="593307955371815" type="System">
+                                    <param id="0" name="Name">&quot;VeldorDead&quot;</param>
+                                    <param id="1" name="Start index">1</param>
+                                    <param id="2" name="End index">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="934806338236900" type="Veldor">
+                                    <param id="0" name="Object">VBlood</param>
+                                    <param id="1" name="Layer">&quot;Blood&quot;</param>
+                                    <param id="2" name="Image point">&quot;Origin&quot;</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
