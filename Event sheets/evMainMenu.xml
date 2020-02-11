@@ -124,5 +124,15 @@
             </conditions>
             <actions />
         </event-block>
+        <event-block sid="598704999909729">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="324749834554613" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="244635927848296" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

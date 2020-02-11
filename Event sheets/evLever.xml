@@ -15,10 +15,13 @@
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="591727916401526">
+                <event-block any="1" sid="591727916401526">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="870426667222390" type="Keyboard">
                             <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="17" name="On tap object" sid="515148632323914" type="Touch">
+                            <param id="0" name="Object">Lever</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -33,6 +36,16 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="759702040659120">
+            <conditions>
+                <condition id="-22" name="Else" sid="389919030845676" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="386775048179229" type="LeverText">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="413255964557315">
             <conditions>

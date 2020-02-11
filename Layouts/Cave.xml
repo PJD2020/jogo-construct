@@ -7969,7 +7969,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <hp>10</hp>
+                        <hp>100</hp>
                         <isAttacking>false</isAttacking>
                         <isAttacking2>false</isAttacking2>
                         <isFollowingPlayer>false</isFollowingPlayer>
