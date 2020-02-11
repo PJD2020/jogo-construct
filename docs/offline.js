@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1581389061,
+	"version": 1581390821,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -94,6 +94,8 @@
 		"media/hit-dar-dano-ou-tomar-dano.ogg",
 		"media/abir-porta-boss.ogg",
 		"media/the witcher 3 one hour of emotional and relaxing music.ogg",
+		"media/dark souls iii soundtrack ost - soul of cinder.ogg",
+		"media/the long dark soundtrack.ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

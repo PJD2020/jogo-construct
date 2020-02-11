@@ -64,6 +64,12 @@
                     <param id="0" name="Family name">&quot;retro_gamingregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="759682445558325" type="Audio">
+                    <param id="0" name="Audio file">The Long Dark Soundtrack</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cave&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="789338390305052">

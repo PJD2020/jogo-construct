@@ -109,6 +109,9 @@
                                                 <action id="0" name="Set text" sid="924214372130968" type="FirstBossGateText">
                                                     <param id="0" name="Text">&quot;PRESSIONE [E] PARA ENTRAR&quot;</param>
                                                 </action>
+                                                <action id="6" name="Stop" sid="521030069968562" type="Audio">
+                                                    <param id="0" name="Tag">&quot;cave&quot;</param>
+                                                </action>
                                                 <action id="0" name="Play" sid="205929003781873" type="Audio">
                                                     <param id="0" name="Audio file">abir-porta-boss</param>
                                                     <param id="2" name="Loop">0</param>

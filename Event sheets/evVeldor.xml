@@ -576,6 +576,9 @@
                                     <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
+                                <action id="6" name="Stop" sid="296963734153290" type="Audio">
+                                    <param id="0" name="Tag">&quot;veldor&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="807117442830198" type="System">
                                     <param id="0" name="Seconds">2</param>
                                 </action>
