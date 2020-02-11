@@ -327,6 +327,12 @@
                     <conditions />
                     <actions>
                         <action id="-9" name="Destroy" sid="130247968302545" type="Sword" />
+                        <action id="6" name="Stop" sid="749451202071841" type="Audio">
+                            <param id="0" name="Tag">&quot;cave&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="894126157231137" type="Audio">
+                            <param id="0" name="Tag">&quot;veldor&quot;</param>
+                        </action>
                         <action id="4" name="Set animation" sid="765121233311972" type="Player">
                             <param id="0" name="Animation">&quot;Dead&quot;</param>
                             <param id="1" name="From">1</param>
@@ -346,6 +352,12 @@
                         </action>
                         <action id="-16" name="Wait" sid="282998995057057" type="System">
                             <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="0" name="Play" sid="424330101019561" type="Audio">
+                            <param id="0" name="Audio file">The Long Dark Soundtrack</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;cave&quot;</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="227368351579142" type="System" />
                         <action id="-21" name="Reset global variables" sid="847725102269346" type="System" />
